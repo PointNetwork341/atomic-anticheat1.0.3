@@ -1,0 +1,29 @@
+{
+	"format_version": 1,
+	"header": {
+		"name": "§¶§c⋰       Atomic Anti-Cheat  1.0.0 Official    ⋱",
+		"description": "§¶§c⋮ Made By PointNetwork341 ",
+		"uuid": "6a2ec633-aa21-4483-bddc-f07082b37dd8",
+		"version": [
+			1,
+			0,
+			8
+		],
+		"min_engine_version": [
+			1,
+			8,
+			0
+		]
+	},
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "43f05cf0-eeea-4624-a18b-c8613ff56d9a",
+			"version": [
+				1,
+				1,
+				7
+			]
+		}
+	]
+}

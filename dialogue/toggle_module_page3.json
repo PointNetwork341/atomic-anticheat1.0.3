@@ -1,0 +1,60 @@
+{
+	"format_version": "1.14",
+	"minecraft:npc_dialogue":
+	{
+		"scenes":
+		[
+			{
+				"scene_tag": "toggle_module_pag3",
+        "npc_name": { "rawtext": [ { "text": "§¶§bAtomic AntiCheat §7[§1v0.1§7]" } ] },
+				"text": { "rawtext": [ { "text": "§¶§c§lAtomic → §5GUI TOGGLE MENU PAGE 3\n\n§¶§l§0NEM → Disable EnderChests \n§¶§l§0NFM → Anti-Frostwalker \n§¶§l§0OPAM → Anti OP Abuse \n§¶§l§0RSM → Random World Spawn \n§¶§l§0TPM → Time Played Tracker" } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "text": "§l§2NEM" } ] },
+						"commands": [
+							"/execute @s[tag=stafftag] ~~~ dialogue open @s @s toggle_module_pag3",
+							"/execute @s[tag=stafftag] ~~~ function toggle/noechest"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "text": "§l§2NFM" } ] },
+						"commands": [
+              "/execute @s[tag=stafftag] ~~~ dialogue open @s @s toggle_module_pag3",
+              "/execute @s[tag=stafftag] ~~~ function toggle/nofrostwalker"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "text": "§l§2OPAM" } ] },
+						"commands": [
+							"/execute @s[tag=stafftag] ~~~ dialogue open @s @s toggle_module_pag3",
+							"/execute @s[tag=stafftag] ~~~ function toggle/opabuse"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "text": "§l§2RSM" } ] },
+						"commands": [
+							"/execute @s[tag=stafftag] ~~~ dialogue open @s @s toggle_module_pag3",
+							"/execute @s[tag=stafftag] ~~~ function toggle/randomspawn"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "text": "§l§2TPM" } ] },
+						"commands": [
+							"/execute @s[tag=stafftag] ~~~ dialogue open @s @s toggle_module_pag3",
+							"/execute @s[tag=stafftag] ~~~ function toggle/timeplayed"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "text": "§l§9Page 4" } ] },
+						"commands": [
+							"/execute @s[tag=stafftag] ~~~ dialogue open @s @s toggle_module_pag4"
+						]
+					}
+				],
+				"on_close_commands": [
+                    " "
+				]
+			}
+		]
+	}
+}

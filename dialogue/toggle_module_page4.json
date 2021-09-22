@@ -1,0 +1,58 @@
+{
+	"format_version": "1.14",
+	"minecraft:npc_dialogue":
+	{
+		"scenes":
+		[
+			{
+				"scene_tag": "toggle_module_pag4",
+        "npc_name": { "rawtext": [ { "text": "§¶§bAtomic AntiCheat §7[§1v0.1§7]" } ] },
+				"text": { "rawtext": [ { "text": "§¶§c§lAtomic → §5GUI TOGGLE MENU PAGE 4\n\n§¶§l§0UOIM → Unobtainable Items Protection \n§¶§l§0WBM → World Border \n§¶§l§0DEM → Death Effects " } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "text": "§l§2UOIM" } ] },
+						"commands": [
+							"/execute @s[tag=stafftag] ~~~ dialogue open @s @s toggle_module_pag4",
+							"/execute @s[tag=stafftag] ~~~ function toggle/unobtainableitems"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "text": "§l§2WBM" } ] },
+						"commands": [
+              "/execute @s[tag=stafftag] ~~~ dialogue open @s @s toggle_module_pag4",
+              "/execute @s[tag=stafftag] ~~~ function toggle/worldborder"
+						]
+					},
+          {
+						"name": { "rawtext": [ { "text": "§l§2DEM" } ] },
+						"commands": [
+              "/execute @s[tag=stafftag] ~~~ dialogue open @s @s toggle_module_pag4",
+              "/execute @s[tag=stafftag] ~~~ function toggle/deatheffect"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "text": "§l§9Page 1" } ] },
+						"commands": [
+							"/execute @s[tag=stafftag] ~~~ dialogue open @s @s toggle_module_pag1"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "text": "§l§9Page 2" } ] },
+						"commands": [
+							"/execute @s[tag=stafftag] ~~~ dialogue open @s @s toggle_module_pag2"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "text": "§l§5MAIN MENU" } ] },
+						"commands": [
+							"/execute @s[tag=stafftag] ~~~ function UAC/gui"
+						]
+					}
+				],
+				"on_close_commands": [
+                    " "
+				]
+			}
+		]
+	}
+}
