@@ -29,7 +29,7 @@ execute @s[tag=!stafftag,scores={SSDEBUG2=2}] ~~~ tellraw @a[tag=stafftag] {"raw
 execute @s[scores={SSDEBUG2=2}] ~~~ scoreboard players set @s SSDEBUG2 0
 
 #fucntion call name: (I would change this if i were you. Using a UUID works best.)
-# /function atomic/ownerprotection/2c8e4d832765463a980587a554d412d4/65d26252eff042699a3dc0718eb6812c
+# /function atomic/ownerprotection/1f87e0b90fa949558b06995897ee2688/51f39e7b84bf4aa792fb786609ae30ed
 
 scoreboard players set @s lstcmd 1
 
