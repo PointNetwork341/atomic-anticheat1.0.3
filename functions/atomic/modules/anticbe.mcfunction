@@ -13,29 +13,27 @@ execute @r[scores={acmtoggle=1}] ~~~ effect @e[type=llama] regeneration 10 255
 
 #stops cbe for staffstatus
 execute @r[tag=staffstatus,tag=!stafftag] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic → §¶§cFlagged §d"},{"selector":"@s"},{"text":"§¶§c for trying to get staff tag"}]}
-execute @a[tag=staffstatus,tag=!stafftag] ~~~ gamemode s @s
-execute @a[tag=staffstatus,tag=!stafftag] ~~~ kill @s
 execute @a[tag=staffstatus,tag=!stafftag] ~~~ tag @s remove staffstatus
 
 #stops cbe for staff
 execute @r[tag=staff,tag=!stafftag] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic → §¶§cFlagged §d"},{"selector":"@s"},{"text":"§¶§c for trying to get staff tag"}]}
-execute @a[tag=staff,tag=!stafftag] ~~~ gamemode s @s
-execute @a[tag=staff,tag=!stafftag] ~~~ kill @s
 execute @a[tag=staff,tag=!stafftag] ~~~ tag @s remove staff
 
 #stops cbe for admin
 execute @r[tag=admin,tag=!stafftag] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic → §¶§cFlagged §d"},{"selector":"@s"},{"text":"§¶§c for trying to get staff tag"}]}
-execute @a[tag=admin,tag=!stafftag] ~~~ gamemode s @s
-execute @a[tag=admin,tag=!stafftag] ~~~ kill @s
 execute @a[tag=admin,tag=!stafftag] ~~~ tag @s remove admin
 
 #stops cbe for MOD
-execute @r[tag=Admin,tag=!stafftag] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic → §¶§cFlagged §d"},{"selector":"@s"},{"text":"§¶§c for trying to get staff tag"}]}
-execute @a[tag=Admin,tag=!stafftag] ~~~ tag @s remove MOD
+execute @r[tag=MOD,tag=!stafftag] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic → §¶§cFlagged §d"},{"selector":"@s"},{"text":"§¶§c for trying to get staff tag"}]}
+execute @a[tag=MOD,tag=!stafftag] ~~~ tag @s remove MOD
 
 #stops cbe for Moderator
 execute @r[tag=Moderator,tag=!stafftag] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic → §¶§cFlagged §d"},{"selector":"@s"},{"text":"§¶§c for trying to get staff tag"}]}
 execute @a[tag=Moderator,tag=!stafftag] ~~~ tag @s remove Moderator
+
+#stops cbe for Mod
+execute @r[tag=Mod,tag=!stafftag] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic → §¶§cFlagged §d"},{"selector":"@s"},{"text":"§¶§c for trying to get staff tag"}]}
+execute @a[tag=Mod,tag=!stafftag] ~~~ tag @s remove Mod
 
 #leaf blocks (yes i know lol, you can cbe with them)
 execute @r[scores={acmtoggle=1}] ~~~ clear @s leaves 64 0
