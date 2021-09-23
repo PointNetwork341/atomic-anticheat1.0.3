@@ -346,6 +346,7 @@ scoreboard objectives add 2KK001 dummy 2KK001
 scoreboard players set @s 2KK001 0
 gamerule functioncommandlimit 10000
 gamerule commandblocksenabled true
+gamerule commandblockoutput false
 scoreboard players set @s hometp 3
 scoreboard players set @s opabusemodule 2
 scoreboard players set @s welcomed 1
