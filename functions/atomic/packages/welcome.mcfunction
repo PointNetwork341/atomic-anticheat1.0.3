@@ -3,7 +3,7 @@ scoreboard objectives add welcome dummy welcome
 execute @r[scores={welcome=120}] ~~~ playsound random.levelup @s ~~~ 2
 title @r[scores={welcome=120}] title §¶§c§l→ Server Protected By: ←
 title @r[scores={welcome=120}] subtitle §¶§f→ Atomic Anti-Cheat v1.0 ←
-execute @r[scores={welcome=120}] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic §b→ §d"},{"selector":"@s"},{"text":" §¶§bhas joined for the first time! Let's greet them."}]}
+execute @r[scores={welcome=120}] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic §b→ §d"},{"selector":"@s"},{"text":" §¶§bhas joined for the first time!."}]}
 tellraw @r[scores={welcome=120}] {"rawtext":[{"text":"§¶§cAtomic §b→ §bType the following to perform the help command"}]}
 tellraw @r[scores={welcome=120}] {"rawtext":[{"text":"§¶§c→ /function atomic/help"}]}
 tellraw @r[scores={welcome=120}] {"rawtext":[{"text":"§¶§cAtomic §b→ §cWARNING§7: §bWhen Testing in a local world, make sure all experimental options are on!"}]}

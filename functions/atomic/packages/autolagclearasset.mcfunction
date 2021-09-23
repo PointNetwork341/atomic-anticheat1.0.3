@@ -15,7 +15,7 @@ gamerule doentitydrops true
 execute @a[scores={AMM=1}] ~~~ difficulty hard
 execute @a[scores={KPM=1}] ~~~ difficulty peaceful
 execute @a[scores={FMM=1}] ~~~ difficulty normal
-tellraw @a {"rawtext":[{"text":"§¶§cAtomic §¶§b→ Entities have been §2cleared"}]}
+tellraw @a {"rawtext":[{"text":"§¶§cAtomic §¶§b→ Lag has been §2cleared"}]}
 
 #This hides this from the in-game function command directory
 execute @f ~~~ hide
