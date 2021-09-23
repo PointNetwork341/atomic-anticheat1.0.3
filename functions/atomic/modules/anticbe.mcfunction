@@ -29,6 +29,14 @@ execute @a[tag=admin,tag=!stafftag] ~~~ gamemode s @s
 execute @a[tag=admin,tag=!stafftag] ~~~ kill @s
 execute @a[tag=admin,tag=!stafftag] ~~~ tag @s remove admin
 
+#stops cbe for MOD
+execute @r[tag=Admin,tag=!stafftag] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic → §¶§cFlagged §d"},{"selector":"@s"},{"text":"§¶§c for trying to get staff tag"}]}
+execute @a[tag=Admin,tag=!stafftag] ~~~ tag @s remove MOD
+
+#stops cbe for Moderator
+execute @r[tag=Moderator,tag=!stafftag] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic → §¶§cFlagged §d"},{"selector":"@s"},{"text":"§¶§c for trying to get staff tag"}]}
+execute @a[tag=Moderator,tag=!stafftag] ~~~ tag @s remove Moderator
+
 #leaf blocks (yes i know lol, you can cbe with them)
 execute @r[scores={acmtoggle=1}] ~~~ clear @s leaves 64 0
 execute @r[scores={acmtoggle=1}] ~~~ clear @s leaves 64 1
@@ -68,9 +76,6 @@ execute @s[tag=!stafftag,scores={acmtoggle=1}] ~ ~ ~ fill ~8 ~5 ~8 ~-8 ~-5 ~-8 a
 execute @s[scores={acmtoggle=1}] ~~~ kill @e[type=item,name="bee nest"]
 execute @s[scores={acmtoggle=1}] ~~~ kill @e[type=item,name="beehive"]
 execute @s[scores={acmtoggle=1}] ~~~ kill @e[type=item,name="tile.movingblock.name"]
-
-#Last Resort Features
-execute @s[scores={acmtoggle=1}] ~~~ execute @s[scores={AMM=1}] ~~~ gamerule tntexplodes true
 
 #This hides this from the in-game function command directory
 execute @f ~~~ hide
