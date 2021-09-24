@@ -9,6 +9,7 @@ execute @s[scores={ibmtoggle=1}] ~~~ execute @s[scores={BNBQ=1}] ~~~ clear @s wr
 execute @s[scores={ibmtoggle=1}] ~~~ execute @s[scores={BNTN=1}] ~~~ clear @s tnt
 execute @s[scores={ibmtoggle=1}] ~~~ execute @s[scores={BNTN=1}] ~~~ kill @e[r=50,type=tnt]
 execute @s[scores={ibmtoggle=1}] ~~~ execute @s[scores={BNTD=1}] ~~~ clear @s trident
+execute @s[scores={ibmtoggle=1}] ~~~ execute @s[scores={BNB=1}] ~~~ clear @s bow
 
 
 #This file is called apon every 5 seconds from atomic/packages/autolagclear if the module is enabled

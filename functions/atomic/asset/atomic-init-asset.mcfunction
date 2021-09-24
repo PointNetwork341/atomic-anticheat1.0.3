@@ -254,6 +254,7 @@ scoreboard objectives add BNSB dummy BNSB
 scoreboard objectives add BNBQ dummy BNBQ
 scoreboard objectives add BNTN dummy BNTN
 scoreboard objectives add BNTD dummy BNTD
+scoreboard objectives add BNB dummy BNB
 
 #Default Itemban Toggles
 scoreboard players set @s BNA 0
@@ -261,6 +262,7 @@ scoreboard players set @s BNM 0
 scoreboard players set @s BNCB 0
 scoreboard players set @s BNSB 0
 scoreboard players set @s BNBQ 0
+scoreboard players set @s BNB 0
 scoreboard players set @s BNTN 0
 scoreboard players set @s BNTD 0
 

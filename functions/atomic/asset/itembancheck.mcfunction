@@ -17,6 +17,8 @@ execute @s[tag=stafftag,scores={BNTN=0}] ~~~ tellraw @s {"rawtext":[{"text":"§�
 execute @s[tag=stafftag,scores={BNTN=1}] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic §¶§b→§¶§bTNT §7[ §¶§cBANNED §7]"}]}
 execute @s[tag=stafftag,scores={BNTD=0}] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic §¶§b→§¶§bTrident §7[ §¶§2ALLOWED §7]"}]}
 execute @s[tag=stafftag,scores={BNTD=1}] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic §¶§b→§¶§bTrident §7[ §¶§cBANNED §7]"}]}
+execute @s[tag=stafftag,scores={BNB=0}] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic §¶§b→§¶§bBows §7[ §¶§2ALLOWED §7]"}]}
+execute @s[tag=stafftag,scores={BNB=1}] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic §¶§b→§¶§bBows §7[ §¶§cBANNED §7]"}]}
 
 scoreboard players set @s lstcmd 14
 #This hides this from the in-game function command directory
