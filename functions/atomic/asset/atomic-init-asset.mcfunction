@@ -187,6 +187,7 @@ scoreboard objectives add phasecount dummy phasecount
 scoreboard objectives add hometp dummy hometp
 scoreboard objectives add welcomed dummy welcomed
 scoreboard objectives add entitycount dummy entitycount
+scoreboard objectives add entitydummy dummy entitydummy
 
 
 #module scoreboards
