@@ -18,7 +18,7 @@ execute @s[scores={warnillegal=8}] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAt
 execute @s[scores={warnillegal=9}] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic → §6Unobtainable Items §bflagged §d"},{"selector":"@s"},{"text":" §¶§bfor having an illegal item  §7[§c9§7/§29§7]"}]}
 
 #base warns after attempts divisable by 3
-execute @s[scores={warnillegal=3}] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic → §bYou have §7[§c1§7/§23§7] §b Atomic warnings"}]}
+execute @s[scores={warnillegal=3}] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic → §bYou have §7[§c1§7/§23§7] §bAtomic warnings"}]}
 execute @s[scores={warnillegal=6}] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic → §bYou have been Atomic Warned. Your next warning will result in a Season Ban. §7[§c2§7/§23§7]"}]}
 
 #This hides this from the in-game function command directory

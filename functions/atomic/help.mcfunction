@@ -32,5 +32,3 @@ execute @s[tag=!stafftag] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic → 
 execute @s[tag=stafftag] ~~~ function atomic/asset/version
 execute @s[tag=stafftag] ~~~ function atomic/asset/discord
 execute @s[tag=stafftag] ~~~ function atomic/asset/createdby
-
-scoreboard players set @s lstcmd 13

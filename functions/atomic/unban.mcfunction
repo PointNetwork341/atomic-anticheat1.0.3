@@ -19,6 +19,5 @@ tag @s remove godmode
 clear @s
 
 
-scoreboard players set @s lstcmd 23
 
 kill @s

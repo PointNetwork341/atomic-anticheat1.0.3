@@ -5,7 +5,6 @@ execute @s[scores={ammtoggle=0}] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtom
 execute @s[scores={ammtoggle=0}] ~~~ scoreboard players set @s hometp 4
 execute @s[scores={ammtoggle=0}] ~~~ scoreboard players set @s hometimer 550
 execute @s[scores={ammtoggle=0}] ~~~ kill @e[type=item,name=spawn]
-execute @s[scores={ammtoggle=0}] ~~~ scoreboard players set @s lstcmd 8
 
 #This hides this from the in-game function command directory
 execute @f ~~~ hide

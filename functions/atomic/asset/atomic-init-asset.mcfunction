@@ -135,11 +135,6 @@ scoreboard objectives add X_Coord_D dummy
 scoreboard objectives add Y_Coord_D dummy
 scoreboard objectives add Z_Coord_D dummy
 
-#Last command used system
-scoreboard objectives add lstcmd dummy lstcmd
-#Default value for last command system
-scoreboard players set @s lstcmd 0
-
 #Freeze Player
 scoreboard objectives add fzplr dummy fzplr
 #Freeze Player default value

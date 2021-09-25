@@ -1,5 +1,5 @@
 scoreboard players reset @a randomspawn
-scoreboard players random @s randomspawn 10 340
+scoreboard players random @s randomspawn 10 450
 
 execute @s[scores={randomspawn=10..20}] ~~~ setworldspawn 450 85 -580
 execute @s[scores={randomspawn=20..30}] ~~~ setworldspawn -850 85 290
