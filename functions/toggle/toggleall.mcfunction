@@ -1,3 +1,11 @@
+execute @s[tag=stafftag] ~~~ scoreboard players add osmtoggledummy OSM 1
+execute @s[tag=stafftag] ~~~ scoreboard players operation @a OSM = osmtoggledummy OSM
+
+#turn on
+execute @s[tag=stafftag,scores={OSM=1}] ~~~ scoreboard players set osmtoggledummy osmtoggle 1
+execute @s[tag=stafftag,scores={OSM=1}] ~~~ scoreboard players operation @a osmtoggle = osmtoggledummy osmtoggle
+execute @s[tag=stafftag,scores={OSM=1}] ~~~ tellraw @a[tag=stafftag] {"rawtext":[{"text":"§¶§cAtomic §¶§b→ §6Anti-Oneshot §bhas been toggled §2ON §bby §d"},{"selector":"@s"}]}
+
 execute @s[tag=stafftag] ~~~ scoreboard players add acmtoggledummy ACM 1
 execute @s[tag=stafftag] ~~~ scoreboard players operation @a ACM = acmtoggledummy ACM
 
@@ -14,6 +22,14 @@ execute @s[tag=stafftag,scores={AFM=1}] ~~~ scoreboard players operation @a afmt
 execute @s[tag=stafftag,scores={AFM=1}] ~~~ tellraw @a[tag=stafftag] {"rawtext":[{"text":"§¶§cAtomic §¶§b→ §6Anti-Fly §bhas been toggled §2ON §bby §d"},{"selector":"@s"}]}
 execute @s[tag=stafftag] ~~~ scoreboard players add bbmtoggledummy BBM 1
 execute @s[tag=stafftag] ~~~ scoreboard players operation @a BBM = bbmtoggledummy BBM
+
+execute @s[tag=stafftag] ~~~ scoreboard players add efmtoggledummy EFM 1
+execute @s[tag=stafftag] ~~~ scoreboard players operation @a EFM = efmtoggledummy EFM
+
+#turn on
+execute @s[tag=stafftag,scores={EFM=1}] ~~~ scoreboard players set efmtoggledummy efmtoggle 1
+execute @s[tag=stafftag,scores={EFM=1}] ~~~ scoreboard players operation @a efmtoggle = efmtoggledummy efmtoggle
+execute @s[tag=stafftag,scores={EFM=1}] ~~~ tellraw @a[tag=stafftag] {"rawtext":[{"text":"§¶§cAtomic §¶§b→ §6Extra Features §bhave been toggled §2ON §bby §d"},{"selector":"@s"}]}
 
 #turn on
 execute @s[tag=stafftag,scores={BBM=1}] ~~~ scoreboard players set bbmtoggledummy bbmtoggle 1
@@ -43,6 +59,14 @@ execute @s[tag=stafftag,scores={LTM=1}] ~~~ tellraw @a[tag=stafftag] {"rawtext":
 execute @s[tag=stafftag] ~~~ scoreboard players add mdmtoggledummy MDM 1
 execute @s[tag=stafftag] ~~~ scoreboard players operation @a MDM = mdmtoggledummy MDM
 
+execute @s[tag=stafftag] ~~~ scoreboard players add hmmtoggledummy HMM 1
+execute @s[tag=stafftag] ~~~ scoreboard players operation @a HMM = hmmtoggledummy HMM
+
+#turn on
+execute @s[tag=stafftag,scores={HMM=1}] ~~~ scoreboard players set hmmtoggledummy hmmtoggle 1
+execute @s[tag=stafftag,scores={HMM=1}] ~~~ scoreboard players operation @a hmmtoggle = hmmtoggledummy hmmtoggle
+execute @s[tag=stafftag,scores={HMM=1}] ~~~ tellraw @a[tag=stafftag] {"rawtext":[{"text":"§¶§cAtomic §¶§b→ §6Hotbar Message §bhas been set to §2WITH-SCORE §bmode §bby §d"},{"selector":"@s"}]}
+
 #turn on
 execute @s[tag=stafftag,scores={MDM=1}] ~~~ scoreboard players set mdmtoggledummy mdmtoggle 1
 execute @s[tag=stafftag,scores={MDM=1}] ~~~ scoreboard players operation @a mdmtoggle = mdmtoggledummy mdmtoggle
@@ -54,6 +78,7 @@ execute @s[tag=stafftag] ~~~ scoreboard players operation @a NEM = nemtoggledumm
 execute @s[tag=stafftag,scores={NEM=1}] ~~~ scoreboard players set nemtoggledummy nemtoggle 1
 execute @s[tag=stafftag,scores={NEM=1}] ~~~ scoreboard players operation @a nemtoggle = nemtoggledummy nemtoggle
 execute @s[tag=stafftag,scores={NEM=1}] ~~~ tellraw @a[tag=stafftag] {"rawtext":[{"text":"§¶§cAtomic §¶§b→ §6No Echest §bhas been toggled §2ON §bby §d"},{"selector":"@s"}]}
+
 execute @s[tag=stafftag] ~~~ scoreboard players add nfmtoggledummy NFM 1
 execute @s[tag=stafftag] ~~~ scoreboard players operation @a NFM = nfmtoggledummy NFM
 
@@ -61,6 +86,7 @@ execute @s[tag=stafftag] ~~~ scoreboard players operation @a NFM = nfmtoggledumm
 execute @s[tag=stafftag,scores={NFM=1}] ~~~ scoreboard players set nfmtoggledummy nfmtoggle 1
 execute @s[tag=stafftag,scores={NFM=1}] ~~~ scoreboard players operation @a nfmtoggle = nfmtoggledummy nfmtoggle
 execute @s[tag=stafftag,scores={NFM=1}] ~~~ tellraw @a[tag=stafftag] {"rawtext":[{"text":"§¶§cAtomic §¶§b→ §6Anti-Frostwalker §bhas been toggled §2ON §bby §d"},{"selector":"@s"}]}
+
 execute @s[tag=ownertag] ~~~ scoreboard players add opamtoggledummy OPAM 1
 execute @s[tag=ownertag] ~~~ scoreboard players operation @a OPAM = opamtoggledummy OPAM
 
@@ -68,6 +94,7 @@ execute @s[tag=ownertag] ~~~ scoreboard players operation @a OPAM = opamtoggledu
 execute @s[tag=ownerstatus,scores={OPAM=1}] ~~~ scoreboard players set opamtoggledummy opamtoggle 1
 execute @s[tag=ownerstatus,scores={OPAM=1}] ~~~ scoreboard players operation @a opamtoggle = opamtoggledummy opamtoggle
 execute @s[tag=ownerstatus,scores={OPAM=1}] ~~~ tellraw @a[tag=stafftag] {"rawtext":[{"text":"§¶§cAtomic §¶§b→ §6Anti OP Abuse §bhas been toggled §2ON §bby §d"},{"selector":"@s"}]}
+
 execute @s[tag=stafftag] ~~~ scoreboard players add rsmtoggledummy RSM 1
 execute @s[tag=stafftag] ~~~ scoreboard players operation @a RSM = rsmtoggledummy RSM
 
@@ -75,6 +102,7 @@ execute @s[tag=stafftag] ~~~ scoreboard players operation @a RSM = rsmtoggledumm
 execute @s[tag=stafftag,scores={RSM=1}] ~~~ scoreboard players set rsmtoggledummy rsmtoggle 1
 execute @s[tag=stafftag,scores={RSM=1}] ~~~ scoreboard players operation @a rsmtoggle = rsmtoggledummy rsmtoggle
 execute @s[tag=stafftag,scores={RSM=1}] ~~~ tellraw @a[tag=stafftag] {"rawtext":[{"text":"§¶§cAtomic §¶§b→ §6Random Spawn §bhas been toggled §2ON §bby §d"},{"selector":"@s"}]}
+
 execute @s[tag=stafftag] ~~~ scoreboard players add tpmtoggledummy TPM 1
 execute @s[tag=stafftag] ~~~ scoreboard players operation @a TPM = tpmtoggledummy TPM
 
@@ -82,6 +110,7 @@ execute @s[tag=stafftag] ~~~ scoreboard players operation @a TPM = tpmtoggledumm
 execute @s[tag=stafftag,scores={TPM=1}] ~~~ scoreboard players set tpmtoggledummy tpmtoggle 1
 execute @s[tag=stafftag,scores={TPM=1}] ~~~ scoreboard players operation @a tpmtoggle = tpmtoggledummy tpmtoggle
 execute @s[tag=stafftag,scores={TPM=1}] ~~~ tellraw @a[tag=stafftag] {"rawtext":[{"text":"§¶§cAtomic §¶§b→ §6Time Played Tracker §bhas been toggled §2ON §bby §d"},{"selector":"@s"}]}
+
 execute @s[tag=stafftag] ~~~ scoreboard players add uoimtoggledummy UOIM 1
 execute @s[tag=stafftag] ~~~ scoreboard players operation @a UOIM = uoimtoggledummy UOIM
 
@@ -103,5 +132,3 @@ execute @s[tag=stafftag] ~~~ scoreboard players operation @a DAM = damtoggledumm
 execute @s[tag=stafftag,scores={DAM=1}] ~~~ scoreboard players set damtoggledummy damtoggle 1
 execute @s[tag=stafftag,scores={DAM=1}] ~~~ scoreboard players operation @a damtoggle = damtoggledummy damtoggle
 execute @s[tag=stafftag,scores={DAM=1}] ~~~ tellraw @a[tag=stafftag] {"rawtext":[{"text":"§¶§cAtomic §¶§b→ §6No Enchanted Armor §bhas been toggled §2ON §bby §d"},{"selector":"@s"}]}
-
-

@@ -10,7 +10,7 @@ execute @s[tag=!stafftag,scores={gmc_flag=3}] ~~~ tellraw @a {"rawtext":[{"text"
 execute @s[tag=!stafftag,scores={gmc_flag=4}] ~~~ tag @s add BanCreative
 
 #ban message
-execute @s[tag=!stafftag,tag=BanCreative,scores={gmc_flag=4}] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic → §d"},{"selector":"@s"},{"text":"§b's §¶§cgameplay has been restricted due to changing gamemodes"}]}
+execute @s[tag=!stafftag,tag=BanCreative,scores={gmc_flag=4}] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic → §d"},{"selector":"@s"},{"text":"§b's §¶§cgot banned for switching gamemodes"}]}
 
 #This hides this from the in-game function command directory
 execute @f ~~~ hide

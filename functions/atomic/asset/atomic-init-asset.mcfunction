@@ -192,6 +192,7 @@ scoreboard objectives add entitydummy dummy entitydummy
 
 #module scoreboards
 scoreboard objectives add ACM dummy ACM
+scoreboard objectives add EACM dummy EACM
 scoreboard objectives add EFM dummy EFM
 scoreboard objectives add OSM dummy OSM
 scoreboard objectives add LPB dummy LPB
@@ -227,6 +228,7 @@ scoreboard objectives add osmtoggle dummy osmtoggle
 scoreboard objectives add ammtoggle dummy ammtoggle
 scoreboard objectives add kpmtoggle dummy kpmtoggle
 scoreboard objectives add fmmtoggle dummy fmmtoggle
+scoreboard objectives add eacmtoggle dummy eacmtoggle
 scoreboard objectives add acmtoggle dummy acmtoggle
 scoreboard objectives add bbmtoggle dummy bbmtoggle
 scoreboard objectives add semtoggle dummy semtoggle
@@ -281,6 +283,7 @@ scoreboard objectives add z-axis dummy y-axis
 #Default Toggles
 scoreboard players set @s SSDEBUG 0
 scoreboard players set @s acmtoggle 0
+scoreboard players set @s eacmtoggle 0
 scoreboard players set @s efmtoggle 0
 scoreboard players set @s osmtoggle 0
 scoreboard players set @s ammtoggle 0
@@ -308,6 +311,7 @@ scoreboard players set @s mdmtoggle 0
 
 #Give everyone default module scoreboard scores
 scoreboard players set @s ACM 0
+scoreboard players set @s EACM 0
 scoreboard players set @s EFM 0
 scoreboard players set @s APM 0
 scoreboard players set @s AMM 0

@@ -9,7 +9,7 @@ execute @s[tag=!stafftag] ~~~ effect @s blindness 5 10 false
 execute @s[tag=!stafftag] ~~~ effect @s slow_falling 5 255 false
 execute @s[tag=!stafftag] ~~~ effect @s mining_fatigue 5 255 false
 execute @s[tag=!stafftag] ~~~ tag @s godmode
-execute @s[tag=!stafftag] ~~~ function UAC/asset/inv_lock
+execute @s[tag=!stafftag] ~~~ function atomic/asset/inv_lock
 
 
 #1.17 ban title messages  (06/22/2021)
