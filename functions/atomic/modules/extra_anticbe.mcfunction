@@ -1,9 +1,3 @@
-#kills multiple times making it 5x harder to cbe
-execute @s[tag=!ownertag,scores={acmtoggle=1}] ~~~ kill @e[type=command_block_minecart]
-execute @s[tag=!ownertag,scores={acmtoggle=1}] ~~~ kill @e[type=command_block_minecart]
-execute @s[tag=!ownertag,scores={acmtoggle=1}] ~~~ kill @e[type=command_block_minecart]
-execute @s[tag=!ownertag,scores={acmtoggle=1}] ~~~ kill @e[type=command_block_minecart]
-
 #stops cbe for Owner
 execute @r[tag=Owner,tag=!ownertag] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic → §¶§cFlagged §d"},{"selector":"@s"},{"text":"§¶§c for trying to get owner tag"}]}
 execute @a[tag=Owner,tag=!ownertag] ~~~ tag @s remove Owner

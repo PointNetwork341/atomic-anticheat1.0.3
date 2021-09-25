@@ -10,7 +10,7 @@
 				"text": { "rawtext": [ { "text": "§¶§cAtomic → §5§lGUI MAIN MENU" } ] },
 				"buttons": [
 					{
-						"name": { "rawtext": [ { "text": "§l§5ATOMIC COMMANDS" } ] },
+						"name": { "rawtext": [ { "text": "§l§5ATOMIC CMDS" } ] },
 						"commands": [
 							"/execute @s[tag=stafftag] ~~~ dialogue open @s @s atomic_gui_atomic_commands",
 							"/execute @s[tag=stafftag] ~~~ playsound note.pling @s ~ ~ ~"

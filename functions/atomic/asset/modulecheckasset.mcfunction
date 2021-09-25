@@ -20,6 +20,9 @@ execute @s[tag=stafftag,scores={OSM=0}] ~~~ tellraw @s {"rawtext":[{"text":"§¶
 execute @s[tag=stafftag,scores={EFM=1}] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic §¶§b→§¶§bExtra Features §7[ §¶§2ENABLED §7]"}]}
 execute @s[tag=stafftag,scores={EFM=0}] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic §¶§b→§¶§bExtra Features §7[ §¶§cDISABLED §7]"}]}
 
+execute @s[tag=stafftag,scores={EACM=1}] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic §¶§b→§¶§bExtra Anti-CBE §7[ §¶§2ENABLED §7]"}]}
+execute @s[tag=stafftag,scores={EACM=0}] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic §¶§b→§¶§bExtra Anti-CBE §7[ §¶§cDISABLED §7]"}]}
+
 execute @s[tag=stafftag,scores={ICM=1}] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic §¶§b→§¶§bItem Commands §7[ §¶§2ENABLED §7]"}]}
 execute @s[tag=stafftag,scores={ICM=0}] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic §¶§b→§¶§bItem Commands §7[ §¶§cDISABLED §7]"}]}
 

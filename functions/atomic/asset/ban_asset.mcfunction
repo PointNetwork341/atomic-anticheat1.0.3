@@ -1,6 +1,6 @@
 //This is not meant to be seen
 
-#Prohibit further gameplay from player {you got better ideas please add}
+#Prohibit further gameplay from player
 execute @s[tag=!stafftag] ~~~ tp @s 0 1000 0
 execute @s[tag=!stafftag] ~~~ effect @s strength 5 255 false
 execute @s[tag=!stafftag] ~~~ effect @s slowness 5 255 false

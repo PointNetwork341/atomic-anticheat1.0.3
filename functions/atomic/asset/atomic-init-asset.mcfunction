@@ -130,10 +130,6 @@ scoreboard players set @s Deathef 1
 scoreboard players set @s dethtoggle 1
 scoreboard players operation @s Deathef = BDXdummy Deathef
 scoreboard players operation @s dethtoggle = dethtoggledummy dethtoggle
-#Last command used system
-scoreboard objectives add lstcmd dummy lstcmd
-#Default value for last command system
-scoreboard players set @s lstcmd 0
 
 #Freeze Player
 scoreboard objectives add fzplr dummy fzplr
@@ -258,6 +254,8 @@ scoreboard objectives add BNBQ dummy BNBQ
 scoreboard objectives add BNTN dummy BNTN
 scoreboard objectives add BNTD dummy BNTD
 scoreboard objectives add BNB dummy BNB
+scoreboard objectives add BNNA dummy BNNA
+scoreboard objectives add BNBA dummy BNBA
 
 #Default Itemban Toggles
 scoreboard players set @s BNA 0
@@ -268,6 +266,9 @@ scoreboard players set @s BNBQ 0
 scoreboard players set @s BNB 0
 scoreboard players set @s BNTN 0
 scoreboard players set @s BNTD 0
+scoreboard players set @s BNNA 0
+scoreboard players set @s BNBA 0
+
 
 #Fake Staff Protection
 scoreboard objectives add 2DI3N dummy 203knK

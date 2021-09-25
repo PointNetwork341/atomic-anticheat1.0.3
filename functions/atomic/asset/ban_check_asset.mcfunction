@@ -1,4 +1,4 @@
-#ban check for stats command
+#ban check for stats
 execute @s[scores={BanCBE=1..9}] ~~~ tellraw @a[tag=stafftag] {"rawtext":[{"text":"§¶§cAtomic → §d"},{"selector":"@s"},{"text":"§b's §¶§cgot banned for CBE Exploits"}]}
 execute @s[scores={BanWarn=1..9}] ~~~ tellraw @a[tag=stafftag] {"rawtext":[{"text":"§¶§cAtomic → §d"},{"selector":"@s"},{"text":"§b's §¶§cgot banned for having 3 Warnings"}]}
 execute @s[scores={PermBan=1..9}] ~~~ tellraw @a[tag=stafftag] {"rawtext":[{"text":"§¶§cAtomic → §d"},{"selector":"@s"},{"text":"§b's §¶§cgot banned for being Globally Banned"}]}
