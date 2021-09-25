@@ -34,20 +34,14 @@ execute @s[scores={randomspawn=300..310}] ~~~ setworldspawn 188 85 -5
 execute @s[scores={randomspawn=310..320}] ~~~ setworldspawn 18 85 -5
 execute @s[scores={randomspawn=320..330}] ~~~ setworldspawn -19 85 -1
 execute @s[scores={randomspawn=330..340}] ~~~ setworldspawn 8 85 -1
-execute @s[scores={randomspawn=270..280}] ~~~ setworldspawn 0 85 0
-execute @s[scores={randomspawn=280..290}] ~~~ setworldspawn -1000 85 -1000
-execute @s[scores={randomspawn=290..300}] ~~~ setworldspawn 25 85 1900
-execute @s[scores={randomspawn=300..310}] ~~~ setworldspawn -80 85 10
-execute @s[scores={randomspawn=310..320}] ~~~ setworldspawn 400 85 -1000
-execute @s[scores={randomspawn=320..330}] ~~~ setworldspawn 50 85 -50
+execute @s[scores={randomspawn=350..360}] ~~~ setworldspawn 0 85 0
+execute @s[scores={randomspawn=370..380}] ~~~ setworldspawn -1000 85 -1000
+execute @s[scores={randomspawn=380..390}] ~~~ setworldspawn 25 85 1900
+execute @s[scores={randomspawn=400..410}] ~~~ setworldspawn -80 85 10
+execute @s[scores={randomspawn=420..430}] ~~~ setworldspawn 400 85 -1000
+execute @s[scores={randomspawn=440..450}] ~~~ setworldspawn 50 85 -50
 
 #set x axis debug coords
-execute @s[scores={randomspawn=10..20}] ~~~ scoreboard players set @s x-axis 0
-execute @s[scores={randomspawn=20..30}] ~~~ scoreboard players set @s x-axis -1000
-execute @s[scores={randomspawn=30..40}] ~~~ scoreboard players set @s x-axis 25
-execute @s[scores={randomspawn=40..50}] ~~~ scoreboard players set @s x-axis -80
-execute @s[scores={randomspawn=50..60}] ~~~ scoreboard players set @s x-axis 400
-execute @s[scores={randomspawn=50..60}] ~~~ scoreboard players set @s x-axis 50
 execute @s[scores={randomspawn=10..20}] ~~~ scoreboard players set @s x-axis 450
 execute @s[scores={randomspawn=20..30}] ~~~ scoreboard players set @s x-axis -850
 execute @s[scores={randomspawn=30..40}] ~~~ scoreboard players set @s x-axis 740
@@ -81,14 +75,14 @@ execute @s[scores={randomspawn=300..310}] ~~~ scoreboard players set @s x-axis 1
 execute @s[scores={randomspawn=310..320}] ~~~ scoreboard players set @s x-axis 18
 execute @s[scores={randomspawn=320..330}] ~~~ scoreboard players set @s x-axis -19
 execute @s[scores={randomspawn=330..340}] ~~~ scoreboard players set @s x-axis 8
+execute @s[scores={randomspawn=350..360}] ~~~ scoreboard players set @s x-axis 0
+execute @s[scores={randomspawn=370..380}] ~~~ scoreboard players set @s x-axis -1000
+execute @s[scores={randomspawn=380..390}] ~~~ scoreboard players set @s x-axis 25
+execute @s[scores={randomspawn=400..410}] ~~~ scoreboard players set @s x-axis -80
+execute @s[scores={randomspawn=420..430}] ~~~ scoreboard players set @s x-axis 400
+execute @s[scores={randomspawn=440..450}] ~~~ scoreboard players set @s x-axis 50
 
 #set z axis debug coords
-execute @s[scores={randomspawn=10..20}] ~~~ scoreboard players set @s z-axis 0
-execute @s[scores={randomspawn=20..30}] ~~~ scoreboard players set @s z-axis -1000
-execute @s[scores={randomspawn=30..40}] ~~~ scoreboard players set @s z-axis 1900
-execute @s[scores={randomspawn=40..50}] ~~~ scoreboard players set @s z-axis 10
-execute @s[scores={randomspawn=50..60}] ~~~ scoreboard players set @s z-axis -1000
-execute @s[scores={randomspawn=60..70}] ~~~ scoreboard players set @s z-axis -50
 execute @s[scores={randomspawn=10..20}] ~~~ scoreboard players set @s z-axis -580
 execute @s[scores={randomspawn=20..30}] ~~~ scoreboard players set @s z-axis 290
 execute @s[scores={randomspawn=30..40}] ~~~ scoreboard players set @s z-axis 390
@@ -122,6 +116,12 @@ execute @s[scores={randomspawn=300..310}] ~~~ scoreboard players set @s z-axis -
 execute @s[scores={randomspawn=310..320}] ~~~ scoreboard players set @s z-axis -5
 execute @s[scores={randomspawn=320..330}] ~~~ scoreboard players set @s z-axis -1
 execute @s[scores={randomspawn=330..340}] ~~~ scoreboard players set @s z-axis -1
+execute @s[scores={randomspawn=350..360}] ~~~ scoreboard players set @s z-axis 0
+execute @s[scores={randomspawn=370..380}] ~~~ scoreboard players set @s z-axis -1000
+execute @s[scores={randomspawn=380..390}] ~~~ scoreboard players set @s z-axis 1900
+execute @s[scores={randomspawn=400..410}] ~~~ scoreboard players set @s z-axis 10
+execute @s[scores={randomspawn=420..430}] ~~~ scoreboard players set @s z-axis -1000
+execute @s[scores={randomspawn=440..450}] ~~~ scoreboard players set @s z-axis -50
 
 #This hides this from the in-game function command directory
 execute @f ~~~ hide

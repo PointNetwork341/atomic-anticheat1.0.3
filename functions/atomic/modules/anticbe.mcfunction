@@ -3,6 +3,12 @@ execute @s[tag=!ownertag,scores={acmtoggle=1}] ~~~ kill @e[type=command_block_mi
 execute @s[tag=!ownertag,scores={acmtoggle=1}] ~~~ kill @e[type=command_block_minecart]
 execute @s[tag=!ownertag,scores={acmtoggle=1}] ~~~ kill @e[type=command_block_minecart]
 execute @s[tag=!ownertag,scores={acmtoggle=1}] ~~~ kill @e[type=command_block_minecart]
+execute @s ~~~ clear @s beehive
+execute @s ~~~ clear @s bee_nest
+execute @s ~~~ clear @s beehive
+execute @s ~~~ clear @s bee_nest
+execute @s ~~~ clear @s beehive
+execute @s ~~~ clear @s bee_nest
 
 #general anti-cbe
 execute @s[scores={acmtoggle=1}] ~~~ kill @e[type=command_block_minecart]

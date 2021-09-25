@@ -11,6 +11,7 @@
           "testing",
           "death_effect",
           "on_death",
+          "oneshot",
           "home_x_negative",
           "home_y_negative",
           "home_z_negative",
@@ -40,6 +41,7 @@
         "testing": "animation.testing",
         "death_effect": "controller.animation.death_effect",
         "on_death": "controller.animation.on_death",
+        "oneshot": "controller.animation.player.oneshot",
         "home_x_negative": "controller.animation.home_x_negative",
         "home_y_negative": "controller.animation.home_y_negative",
         "home_z_negative": "controller.animation.home_z_negative",
@@ -66,7 +68,7 @@
       }
     },
     "component_groups": {
-      "uac:ban": {
+      "atomic:ban": {
         "minecraft:instant_despawn": {}
       },
       "minecraft:spectate": {
@@ -131,7 +133,7 @@
                   }
                 ]
               },
-              "event": "uac:display_main_stats"
+              "event": "atomic:display_main_stats"
             },
             "use_item": false,
             "interact_text": "See Stats"
@@ -159,7 +161,7 @@
                   }
                 ]
               },
-              "event": "uac:display_all_stats"
+              "event": "atomic:display_all_stats"
             },
             "use_item": false,
             "interact_text": "Testing Function"
@@ -182,7 +184,7 @@
                   }
                 ]
               },
-              "event": "uac:display_nonstaff_stats"
+              "event": "atomic:display_nonstaff_stats"
             },
             "use_item": false,
             "interact_text": "View Player Stats"
@@ -205,7 +207,7 @@
                   }
                 ]
               },
-              "event": "uac:open_player_options_gui"
+              "event": "atomic:open_player_options_gui"
             },
             "use_item": false,
             "interact_text": "Open Player GUI"
@@ -230,10 +232,37 @@
                   "subject":"self",
                   "operator":"==",
                   "value":"Ban"
+                },
+                {
+                  "test":"has_tag",
+                  "subject":"self",
+                  "operator":"==",
+                  "value":"PermBan"
                 }
               ]
             },
-            "event":"uac:ban_main"
+            "event":"atomic:ban_main"
+          },
+          {
+            "filters": {
+              "all_of":[
+                {
+                  "test": "has_tag",
+                  "subject": "self",
+                  "operator": "!=",
+                  "value":"stafftag"
+                }
+              ],
+              "any_of": [
+                {
+                  "test":"has_tag",
+                  "subject":"self",
+                  "operator":"==",
+                  "value":"cbesoft"
+                }
+              ]
+            },
+            "event":"atomic:ban_soft"
           },
           {
             "filters": {
@@ -246,7 +275,7 @@
                 }
               ]
             },
-            "event":"uac:smooth_brain"
+            "event":"atomic:smooth_brain"
           },
           {
             "filters": {
@@ -941,7 +970,94 @@
                 }
               ]
             },
-            "event": "uac:torchlight"
+            "event": "atomic:torchlight"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "subject": "self",
+                  "operator": "!=",
+                  "value": "stafftag"
+                }
+              ],
+              "any_of": [
+                {
+                  "test": "has_equipment",
+                  "domain": "any",
+                  "operator": "==",
+                  "value": "minecraft:pufferfish_bucket"
+                },
+                {
+                  "test": "has_equipment",
+                  "domain": "any",
+                  "operator": "==",
+                  "value": "minecraft:salmon_bucket"
+                },
+                {
+                  "test": "has_equipment",
+                  "domain": "any",
+                  "operator": "==",
+                  "value": "minecraft:tropical_fish_bucket"
+                },
+                {
+                  "test": "has_equipment",
+                  "domain": "any",
+                  "operator": "==",
+                  "value": "minecraft:cod_bucket"
+                },
+                {
+                  "test": "has_equipment",
+                  "domain": "any",
+                  "operator": "==",
+                  "value": "minecraft:powder_snow_bucket"
+                },
+                {
+                  "test": "has_equipment",
+                  "domain": "any",
+                  "operator": "==",
+                  "value": "minecraft:axolotl_bucket"
+                },
+                {
+                  "test": "has_equipment",
+                  "domain": "any",
+                  "operator": "==",
+                  "value": "minecraft:bee_nest"
+                },
+                {
+                  "test": "has_equipment",
+                  "domain": "any",
+                  "operator": "==",
+                  "value": "minecraft:beehive"
+                },
+                {
+                  "test": "has_equipment",
+                  "domain": "any",
+                  "operator": "==",
+                  "value": "minecraft:movingBlock"
+                },
+                {
+                  "test": "has_equipment",
+                  "domain": "any",
+                  "operator": "==",
+                  "value": "minecraft:command_block"
+                },
+                {
+                  "test": "has_equipment",
+                  "domain": "any",
+                  "operator": "==",
+                  "value": "minecraft:chain_command_block"
+                },
+                {
+                  "test": "has_equipment",
+                  "domain": "any",
+                  "operator": "==",
+                  "value": "minecraft:repeating_command_block"
+                }
+              ]
+            },
+            "event": "atomic:cbe_flag"
           },
           {
             "filters": {
@@ -1132,7 +1248,7 @@
                   "test": "has_equipment",
                   "domain": "any",
                   "operator": "==",
-                  "value": "minecraft:movingBlock"
+                  "value": "minecraft:movingblock"
                 },
                 {
                   "test": "has_equipment",
@@ -1168,7 +1284,7 @@
                   "test": "has_equipment",
                   "domain": "any",
                   "operator": "==",
-                  "value": "minecraft:jugsaw"
+                  "value": "minecraft:jigsaw"
                 },
                 {
                   "test": "has_equipment",
@@ -1234,19 +1350,13 @@
                   "test": "has_equipment",
                   "domain": "any",
                   "operator": "==",
-                  "value": "minecraft:bee_nest"
-                },
-                {
-                  "test": "has_equipment",
-                  "domain": "any",
-                  "operator": "==",
-                  "value": "minecraft:beehive"
-                },
-                {
-                  "test": "has_equipment",
-                  "domain": "any",
-                  "operator": "==",
                   "value": "minecraft:border_block"
+                },
+                {
+                  "test": "has_equipment",
+                  "domain": "any",
+                  "operator": "==",
+                  "value": "minecraft:border"
                 },
                 {
                   "test": "has_equipment",
@@ -1289,6 +1399,12 @@
                   "domain": "any",
                   "operator": "==",
                   "value": "minecraft:glowingobsidian"
+                },
+                {
+                  "test": "has_equipment",
+                  "domain": "any",
+                  "operator": "==",
+                  "value": "minecraft:glowstick"
                 },
                 {
                   "test": "has_equipment",
@@ -1709,46 +1825,10 @@
                   "domain": "any",
                   "operator": "==",
                   "value": "minecraft:npc_spawn_egg"
-                },
-                {
-                  "test": "has_equipment",
-                  "domain": "any",
-                  "operator": "==",
-                  "value": "minecraft:pufferfish_bucket"
-                },
-                {
-                  "test": "has_equipment",
-                  "domain": "any",
-                  "operator": "==",
-                  "value": "minecraft:salmon_bucket"
-                },
-                {
-                  "test": "has_equipment",
-                  "domain": "any",
-                  "operator": "==",
-                  "value": "minecraft:tropical_fish_bucket"
-                },
-                {
-                  "test": "has_equipment",
-                  "domain": "any",
-                  "operator": "==",
-                  "value": "minecraft:cod_bucket"
-                },
-                {
-                  "test": "has_equipment",
-                  "domain": "any",
-                  "operator": "==",
-                  "value": "minecraft:powder_snow_bucket"
-                },
-                {
-                  "test": "has_equipment",
-                  "domain": "any",
-                  "operator": "==",
-                  "value": "minecraft:axolotl_bucket"
                 }
               ]
             },
-            "event": "uac:illegal_items"
+            "event": "atomic:illegal_items"
           }
         ]
       },
@@ -1868,6 +1948,29 @@
             },
             "deals_damage": false
           },
+          //oneshot framework given to UAC by balloon
+          //Damage Sensor Channel in this discord -> discord.gg/BDeDTefE47
+          {
+            "on_damage": {
+              "filters": {
+                "any_of": [
+                  {
+                    "all_of": [
+                    {
+                      "test": "has_tag",
+                      "value": "can_oneshot"
+                    },
+                    {
+                      "test": "has_damage",
+                      "value": "fatal"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "deals_damage": false
+          },
           {
             "on_damage": {
               "filters": {
@@ -1891,7 +1994,7 @@
                   }
                 ]
               },
-              "event": "uac:on_death_by_player"
+              "event": "atomic:on_death_by_player"
             }
           },
           {
@@ -1917,7 +2020,7 @@
                   }
                 ]
               },
-              "event": "uac:on_death_by_player"
+              "event": "atomic:on_death_by_player"
             }
           },
           {
@@ -1943,7 +2046,7 @@
                   }
                 ]
               },
-              "event": "uac:on_death_by_player"
+              "event": "atomic:on_death_by_player"
             }
           }
         ]
@@ -1952,18 +2055,18 @@
       }
     },
     "events": {
-      "uac:illegal_items": {
+      "atomic:illegal_items": {
         "run_command": {
           "target": "self",
           "command": [
             "execute @s[tag=!stafftag,scores={UOIM=1}] ~~~ replaceitem entity @s slot.weapon.mainhand 0 air",
-            "execute @s[tag=!stafftag,scores={UOIM=1}] ~~~ function atomic/asset/clearspawneggasset",
-            "execute @s[tag=!stafftag] ~~~ execute @s[scores={UOIM=1}] ~~~ function atomic/asset/illegalitemkickmsg",
-            "execute @s[tag=!stafftag] ~~~ execute @s[scores={UOIM=1}] ~~~ function atomic/asset/illegalitemwarn"
+            "execute @s[tag=!stafftag,scores={UOIM=1}] ~~~ function UAC/asset/clearspawneggasset",
+            "execute @s[tag=!stafftag] ~~~ execute @s[scores={UOIM=1}] ~~~ function UAC/asset/illegalitemkickmsg",
+            "execute @s[tag=!stafftag] ~~~ execute @s[scores={UOIM=1}] ~~~ function UAC/asset/illegalitemwarn"
           ]
         }
       },
-      "uac:torchlight": {
+      "atomic:torchlight": {
         "run_command": {
           "target": "self",
           "command": [
@@ -1972,31 +2075,54 @@
           ]
         }
       },
-      "uac:display_main_stats": {
+      "atomic:cbe_flag": {
         "run_command": {
           "target": "self",
           "command": [
-            "function atomic/stats"
+            "execute @s[scores={acmtoggle=1}] ~~~ replaceitem entity @s slot.weapon.mainhand 0 air",
+            "execute @s[scores={acmtoggle=1}] ~~~ gamemode s @a[tag=!stafftag]",
+            "execute @s[scores={acmtoggle=1}] ~~~ kill @e[type=!player,r=40]",
+            "execute @s[scores={acmtoggle=1}] ~~~ tag @a remove PermBan",
+            "execute @s[scores={acmtoggle=1}] ~~~ function UAC/asset/cbeitemwarn",
+            "execute @s[scores={acmtoggle=1}] ~~~ effect @s clear",
+            "execute @s[scores={acmtoggle=1}] ~~~ function UAC/echestwipe",
+            "execute @s[scores={acmtoggle=1}] ~~~ tag @s add cbesoft"
           ]
         }
       },
-      "uac:display_all_stats": {
+      "atomic:oneshot_flag": {
         "run_command": {
           "target": "self",
           "command": [
-            "function atomic/testing"
+            "function UAC/asset/oneshot_flag_asset"
           ]
         }
       },
-      "uac:display_nonstaff_stats": {
+      "atomic:display_main_stats": {
         "run_command": {
           "target": "self",
           "command": [
-            "function atomic/asset/local_player_stats"
+            "function UAC/stats"
           ]
         }
       },
-      "uac:open_player_options_gui": {
+      "atomic:display_all_stats": {
+        "run_command": {
+          "target": "self",
+          "command": [
+            "function UAC/testing"
+          ]
+        }
+      },
+      "atomic:display_nonstaff_stats": {
+        "run_command": {
+          "target": "self",
+          "command": [
+            "function UAC/asset/local_player_stats"
+          ]
+        }
+      },
+      "atomic:open_player_options_gui": {
         "run_command": {
           "target": "self",
           "command": [
@@ -2004,34 +2130,47 @@
           ]
         }
       },
-      "uac:ban_main": {
+      "atomic:ban_main": {
         "run_command": {
           "target": "self",
           "command": [
-            "execute @s ~~~ function atomic/asset/ban_disconnect_message"
+            "execute @s ~~~ function UAC/asset/ban_disconnect_message"
           ]
         },
         "add": {
           "component_groups": [
-            "uac:ban"
+            "atomic:ban"
           ]
         }
       },
-      "uac:smooth_brain": {
+      "atomic:ban_soft": {
         "run_command": {
           "target": "self",
           "command": [
-            "execute @s ~~~ function atomic/asset/ban_disconnect_message"
+            "clear @s"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "atomic:ban"
           ]
         }
       },
-      "uac:on_death_by_player": {
+      "atomic:smooth_brain": {
+        "run_command": {
+          "target": "self",
+          "command": [
+            "execute @s ~~~ function UAC/asset/ban_disconnect_message"
+          ]
+        }
+      },
+      "atomic:on_death_by_player": {
         "run_command": {
           "target": "other",
           "command": [
             "scoreboard players add @s kills 1",
             "scoreboard players add @s killstreak 1",
-            "execute @s[scores={killstreak=10..}] ~~~ function atomic/asset/killstreak-msg"
+            "execute @s[scores={killstreak=10..}] ~~~ function UAC/asset/killstreak-msg"
           ]
         }
       },

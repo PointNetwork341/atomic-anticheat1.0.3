@@ -356,6 +356,7 @@ gamerule functioncommandlimit 10000
 gamerule commandblocksenabled true
 gamerule commandblockoutput false
 gamerule showbordereffect false
+gamerule doinsomnia false
 execute @e[scores={KPM=1}] ~~~ gamerule drowningdamage false
 scoreboard players set @s hometp 3
 scoreboard players set @s opabusemodule 2

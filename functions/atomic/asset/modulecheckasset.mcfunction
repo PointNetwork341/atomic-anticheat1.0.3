@@ -1,6 +1,6 @@
 execute @s[tag=!stafftag] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic §¶§b→ You must be staff to use this command!"}]}
 
-execute @s[tag=stafftag] ~~~ tellraw @s {"rawtext":[{"text":"§¶§c========= Module Status ========="}]}
+execute @s[tag=stafftag] ~~~ tellraw @s {"rawtext":[{"text":"§¶§c《--- Module Statuses ---》"}]}
 
 execute @s[tag=stafftag,scores={FMM=1}] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic §¶§b→§¶§bFactions Mode §7[ §¶§2ENABLED §7]"}]}
 execute @s[tag=stafftag,scores={FMM=0}] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic §¶§b→§¶§bFactions Mode §7[ §¶§cDISABLED §7]"}]}
