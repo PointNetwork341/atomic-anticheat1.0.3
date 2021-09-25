@@ -7,8 +7,6 @@ tellraw @s {"rawtext":[{"text":"§¶§cAtomic → §d"},{"selector":"@s"},{"text
 tellraw @s {"rawtext":[{"text":"§¶§cAtomic → §d"},{"selector":"@s"},{"text":"'s §bCurrent Killstreak§7: "},{"score":{"name":"@s","objective":"killstreak"}}]}
 kill @e[type=item,name=stats]
 
-scoreboard players set @s lstcmd 6
-
 #This hides this from the in-game function command directory
 execute @f ~~~ hide
 tag @f[tag=""] add hide

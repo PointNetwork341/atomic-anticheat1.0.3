@@ -1,4 +1,5 @@
-tellraw @a {"rawtext":[{"text":"§¶§cAtomic → §bCreated by §2Atomic Studios"}]}
+function atomic/asset/deathcoords_asset
+kill @e[type=item,name=lastdeath]
 
 #This hides this from the in-game function command directory
 execute @f ~~~ hide

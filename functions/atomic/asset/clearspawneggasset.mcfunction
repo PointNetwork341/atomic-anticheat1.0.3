@@ -1,5 +1,6 @@
 #Spawn EGGS
 clear @a[tag=!stafftag] spawn_egg
+clear @a[tag=!stafftag] monster_egg
 clear @a[tag=!stafftag] axolotl_spawn_egg
 clear @a[tag=!stafftag] bat_spawn_egg
 clear @a[tag=!stafftag] bee_spawn_egg

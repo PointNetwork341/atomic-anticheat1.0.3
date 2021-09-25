@@ -24,8 +24,6 @@ execute @s[tag=!stafftag] ~~~ playsound note.bass @s ~ ~ ~
 execute @p[scores={cleararealarge=2}] ~~~ scoreboard players reset @s cleararealarge
 #60 Squared radius
 
-scoreboard players set @s lstcmd 9
-
 #This hides this from the in-game function command directory
 execute @f ~~~ hide
 tag @f[tag=""] add hide

@@ -1,4 +1,3 @@
-
 execute @r[scores={rsmtoggle=1,lagtimer=1}] ~~~ function atomic/asset/random-spawn-asset
 
 #This hides this from the in-game function command directory

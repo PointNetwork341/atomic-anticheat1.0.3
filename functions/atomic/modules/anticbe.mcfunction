@@ -1,3 +1,15 @@
+#kills multiple times making it 5x harder to cbe
+execute @s[tag=!ownertag,scores={acmtoggle=1}] ~~~ kill @e[type=command_block_minecart]
+execute @s[tag=!ownertag,scores={acmtoggle=1}] ~~~ kill @e[type=command_block_minecart]
+execute @s[tag=!ownertag,scores={acmtoggle=1}] ~~~ kill @e[type=command_block_minecart]
+execute @s[tag=!ownertag,scores={acmtoggle=1}] ~~~ kill @e[type=command_block_minecart]
+execute @s ~~~ clear @s beehive
+execute @s ~~~ clear @s bee_nest
+execute @s ~~~ clear @s beehive
+execute @s ~~~ clear @s bee_nest
+execute @s ~~~ clear @s beehive
+execute @s ~~~ clear @s bee_nest
+
 #general anti-cbe
 execute @s[scores={acmtoggle=1}] ~~~ kill @e[type=command_block_minecart]
 execute @s[scores={acmtoggle=1}] ~~~ kill @e[r=10,type=item,name="tile.movingBlock.name"]
@@ -68,12 +80,8 @@ execute @s[tag=!stafftag,scores={acmtoggle=1}] ~~~ clear @s command_block
 execute @s[tag=!stafftag,scores={acmtoggle=1}] ~~~ clear @s chain_command_block
 execute @s[tag=!stafftag,scores={acmtoggle=1}] ~~~ clear @s repeating_command_block
 
-#Remove placed Stuff
-execute @s[tag=!stafftag,scores={acmtoggle=1}] ~ ~ ~ fill ~8 ~5 ~8 ~-8 ~-5 ~-8 air 0 replace beehive
-execute @s[tag=!stafftag,scores={acmtoggle=1}] ~ ~ ~ fill ~8 ~5 ~8 ~-8 ~-5 ~-8 air 0 replace bee_nest
-execute @s[scores={acmtoggle=1}] ~~~ kill @e[type=item,name="bee nest"]
-execute @s[scores={acmtoggle=1}] ~~~ kill @e[type=item,name="beehive"]
-execute @s[scores={acmtoggle=1}] ~~~ kill @e[type=item,name="tile.movingblock.name"]
+#Placed Blocks bypass
+execute @s[tag=!stafftag,scores={acmtoggle=1}] ~~~ function atomic/asset/uoim_placeclear_asset
 
 #This hides this from the in-game function command directory
 execute @f ~~~ hide

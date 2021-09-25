@@ -58,7 +58,7 @@ scoreboard objectives add BanFly dummy BanFly
 scoreboard objectives add BanPhase dummy BanPhase
 scoreboard objectives add BanWarn dummy BanWarn
 
-#ownertag checks
+#ownerstatus checks
 scoreboard objectives add SSDEBUG2 dummy SSDEBUG2
 scoreboard objectives add ds9209D2n dummy ds9209D2n
 scoreboard objectives add 2kN0nK3Kn dummy 2kN0nK3Kn
@@ -130,10 +130,10 @@ scoreboard players set @s Deathef 1
 scoreboard players set @s dethtoggle 1
 scoreboard players operation @s Deathef = BDXdummy Deathef
 scoreboard players operation @s dethtoggle = dethtoggledummy dethtoggle
-#Last command used system
-scoreboard objectives add lstcmd dummy lstcmd
-#Default value for last command system
-scoreboard players set @s lstcmd 0
+#Death coord values
+scoreboard objectives add X_Coord_D dummy
+scoreboard objectives add Y_Coord_D dummy
+scoreboard objectives add Z_Coord_D dummy
 
 #Freeze Player
 scoreboard objectives add fzplr dummy fzplr
@@ -144,7 +144,6 @@ scoreboard players set @s fzplr 0
 scoreboard objectives add pvpdis dummy pvpdis
 #PvP Disable default value
 scoreboard players set @s pvpdis 0
-
 
 #WB initial_state
 scoreboard objectives add Border_Coord_X dummy Border_Coord_X
@@ -165,9 +164,10 @@ scoreboard players set @s feeten 0
 #This adds all the scoreboard stuff we need
 scoreboard objectives add warn dummy warn
 scoreboard objectives add warnillegal dummy warnillegal
-scoreboard objectives add staff dummy §¶§bStaff
+scoreboard objectives add warncbe dummy
 scoreboard objectives add lagtimer dummy lagtimer
 scoreboard objectives add hometimer dummy hometimer
+scoreboard objectives add rulestimer dummy rulestimer
 scoreboard objectives add timeplayedtick dummy timeplayedtick
 scoreboard objectives add timeplayedsec dummy timeplayedsec
 scoreboard objectives add timeplayedmin dummy timeplayedmin
@@ -187,11 +187,12 @@ scoreboard objectives add phasecount dummy phasecount
 scoreboard objectives add hometp dummy hometp
 scoreboard objectives add welcomed dummy welcomed
 scoreboard objectives add entitycount dummy entitycount
-scoreboard objectives add entitydummy dummy entitydummy
+scoreboard objectives add playercount dummy
 
 
 #module scoreboards
 scoreboard objectives add ACM dummy ACM
+scoreboard objectives add EACM dummy EACM
 scoreboard objectives add EFM dummy EFM
 scoreboard objectives add OSM dummy OSM
 scoreboard objectives add LPB dummy LPB
@@ -227,6 +228,7 @@ scoreboard objectives add osmtoggle dummy osmtoggle
 scoreboard objectives add ammtoggle dummy ammtoggle
 scoreboard objectives add kpmtoggle dummy kpmtoggle
 scoreboard objectives add fmmtoggle dummy fmmtoggle
+scoreboard objectives add eacmtoggle dummy eacmtoggle
 scoreboard objectives add acmtoggle dummy acmtoggle
 scoreboard objectives add bbmtoggle dummy bbmtoggle
 scoreboard objectives add semtoggle dummy semtoggle
@@ -256,6 +258,8 @@ scoreboard objectives add BNBQ dummy BNBQ
 scoreboard objectives add BNTN dummy BNTN
 scoreboard objectives add BNTD dummy BNTD
 scoreboard objectives add BNB dummy BNB
+scoreboard objectives add BNNA dummy BNNA
+scoreboard objectives add BNBA dummy BNBA
 
 #Default Itemban Toggles
 scoreboard players set @s BNA 0
@@ -266,6 +270,8 @@ scoreboard players set @s BNBQ 0
 scoreboard players set @s BNB 0
 scoreboard players set @s BNTN 0
 scoreboard players set @s BNTD 0
+scoreboard players set @s BNNA 0
+scoreboard players set @s BNBA 0
 
 #Fake Staff Protection
 scoreboard objectives add 2DI3N dummy 203knK
@@ -281,6 +287,7 @@ scoreboard objectives add z-axis dummy y-axis
 #Default Toggles
 scoreboard players set @s SSDEBUG 0
 scoreboard players set @s acmtoggle 0
+scoreboard players set @s eacmtoggle 0
 scoreboard players set @s efmtoggle 0
 scoreboard players set @s osmtoggle 0
 scoreboard players set @s ammtoggle 0
@@ -308,12 +315,8 @@ scoreboard players set @s mdmtoggle 0
 
 #Give everyone default module scoreboard scores
 scoreboard players set @s ACM 0
+scoreboard players set @s EACM 0
 scoreboard players set @s EFM 0
-scoreboard players set @s APM 0
-scoreboard players set @s AMM 0
-scoreboard players set @s KPM 0
-scoreboard players set @s FMM 0
-scoreboard players set @s OSM 0
 scoreboard players set @s AFM 0
 scoreboard players set @s APM 0
 scoreboard players set @s BBM 0
@@ -326,14 +329,19 @@ scoreboard players set @s NEM 0
 scoreboard players set @s NFM 0
 scoreboard players set @s OPAM 0
 scoreboard players set @s RSM 0
+scoreboard players set @s RTM 0
 scoreboard players set @s SSM 0
 scoreboard players set @s TPM 0
 scoreboard players set @s WBM 0
 scoreboard players set @s UOIM 0
 scoreboard players set @s IBM 0
 scoreboard players set @s DAM 0
-scoreboard players set @s TAM 0
 scoreboard players set @s MDM 0
+scoreboard players set @s OSM 0
+scoreboard players set @s AMM 0
+scoreboard players set @s KPM 0
+scoreboard players set @s FMM 0
+scoreboard players set @s TAM 0
 
 #Staff Protection
 scoreboard players set @s[tag=!stafftag] 2DI3N 0
@@ -350,6 +358,9 @@ scoreboard players set @s 2KK001 0
 gamerule functioncommandlimit 10000
 gamerule commandblocksenabled true
 gamerule commandblockoutput false
+gamerule showbordereffect false
+gamerule doinsomnia false
+execute @e[scores={kpmtoggle=1}] ~~~ gamerule drowningdamage false
 scoreboard players set @s hometp 3
 scoreboard players set @s opabusemodule 2
 scoreboard players set @s welcomed 1

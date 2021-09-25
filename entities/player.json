@@ -11,6 +11,7 @@
           "testing",
           "death_effect",
           "on_death",
+          "oneshot",
           "home_x_negative",
           "home_y_negative",
           "home_z_negative",
@@ -40,6 +41,7 @@
         "testing": "animation.testing",
         "death_effect": "controller.animation.death_effect",
         "on_death": "controller.animation.on_death",
+        "oneshot": "controller.animation.player.oneshot",
         "home_x_negative": "controller.animation.home_x_negative",
         "home_y_negative": "controller.animation.home_y_negative",
         "home_z_negative": "controller.animation.home_z_negative",
@@ -230,10 +232,37 @@
                   "subject":"self",
                   "operator":"==",
                   "value":"Ban"
+                },
+                {
+                  "test":"has_tag",
+                  "subject":"self",
+                  "operator":"==",
+                  "value":"PermBan"
                 }
               ]
             },
             "event":"atomic:ban_main"
+          },
+          {
+            "filters": {
+              "all_of":[
+                {
+                  "test": "has_tag",
+                  "subject": "self",
+                  "operator": "!=",
+                  "value":"stafftag"
+                }
+              ],
+              "any_of": [
+                {
+                  "test":"has_tag",
+                  "subject":"self",
+                  "operator":"==",
+                  "value":"cbesoft"
+                }
+              ]
+            },
+            "event":"atomic:ban_soft"
           },
           {
             "filters": {
@@ -958,6 +987,93 @@
                   "test": "has_equipment",
                   "domain": "any",
                   "operator": "==",
+                  "value": "minecraft:pufferfish_bucket"
+                },
+                {
+                  "test": "has_equipment",
+                  "domain": "any",
+                  "operator": "==",
+                  "value": "minecraft:salmon_bucket"
+                },
+                {
+                  "test": "has_equipment",
+                  "domain": "any",
+                  "operator": "==",
+                  "value": "minecraft:tropical_fish_bucket"
+                },
+                {
+                  "test": "has_equipment",
+                  "domain": "any",
+                  "operator": "==",
+                  "value": "minecraft:cod_bucket"
+                },
+                {
+                  "test": "has_equipment",
+                  "domain": "any",
+                  "operator": "==",
+                  "value": "minecraft:powder_snow_bucket"
+                },
+                {
+                  "test": "has_equipment",
+                  "domain": "any",
+                  "operator": "==",
+                  "value": "minecraft:axolotl_bucket"
+                },
+                {
+                  "test": "has_equipment",
+                  "domain": "any",
+                  "operator": "==",
+                  "value": "minecraft:bee_nest"
+                },
+                {
+                  "test": "has_equipment",
+                  "domain": "any",
+                  "operator": "==",
+                  "value": "minecraft:beehive"
+                },
+                {
+                  "test": "has_equipment",
+                  "domain": "any",
+                  "operator": "==",
+                  "value": "minecraft:movingBlock"
+                },
+                {
+                  "test": "has_equipment",
+                  "domain": "any",
+                  "operator": "==",
+                  "value": "minecraft:command_block"
+                },
+                {
+                  "test": "has_equipment",
+                  "domain": "any",
+                  "operator": "==",
+                  "value": "minecraft:chain_command_block"
+                },
+                {
+                  "test": "has_equipment",
+                  "domain": "any",
+                  "operator": "==",
+                  "value": "minecraft:repeating_command_block"
+                }
+              ]
+            },
+            "event": "atomic:cbe_flag"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "subject": "self",
+                  "operator": "!=",
+                  "value": "stafftag"
+                }
+              ],
+              "any_of": [
+                {
+                  "test": "has_equipment",
+                  "domain": "any",
+                  "operator": "==",
                   "value": "minecraft:pumpkin_stem"
                 },
                 {
@@ -1132,7 +1248,7 @@
                   "test": "has_equipment",
                   "domain": "any",
                   "operator": "==",
-                  "value": "minecraft:movingBlock"
+                  "value": "minecraft:movingblock"
                 },
                 {
                   "test": "has_equipment",
@@ -1168,7 +1284,7 @@
                   "test": "has_equipment",
                   "domain": "any",
                   "operator": "==",
-                  "value": "minecraft:jugsaw"
+                  "value": "minecraft:jigsaw"
                 },
                 {
                   "test": "has_equipment",
@@ -1234,19 +1350,13 @@
                   "test": "has_equipment",
                   "domain": "any",
                   "operator": "==",
-                  "value": "minecraft:bee_nest"
-                },
-                {
-                  "test": "has_equipment",
-                  "domain": "any",
-                  "operator": "==",
-                  "value": "minecraft:beehive"
-                },
-                {
-                  "test": "has_equipment",
-                  "domain": "any",
-                  "operator": "==",
                   "value": "minecraft:border_block"
+                },
+                {
+                  "test": "has_equipment",
+                  "domain": "any",
+                  "operator": "==",
+                  "value": "minecraft:border"
                 },
                 {
                   "test": "has_equipment",
@@ -1289,6 +1399,12 @@
                   "domain": "any",
                   "operator": "==",
                   "value": "minecraft:glowingobsidian"
+                },
+                {
+                  "test": "has_equipment",
+                  "domain": "any",
+                  "operator": "==",
+                  "value": "minecraft:glowstick"
                 },
                 {
                   "test": "has_equipment",
@@ -1709,42 +1825,6 @@
                   "domain": "any",
                   "operator": "==",
                   "value": "minecraft:npc_spawn_egg"
-                },
-                {
-                  "test": "has_equipment",
-                  "domain": "any",
-                  "operator": "==",
-                  "value": "minecraft:pufferfish_bucket"
-                },
-                {
-                  "test": "has_equipment",
-                  "domain": "any",
-                  "operator": "==",
-                  "value": "minecraft:salmon_bucket"
-                },
-                {
-                  "test": "has_equipment",
-                  "domain": "any",
-                  "operator": "==",
-                  "value": "minecraft:tropical_fish_bucket"
-                },
-                {
-                  "test": "has_equipment",
-                  "domain": "any",
-                  "operator": "==",
-                  "value": "minecraft:cod_bucket"
-                },
-                {
-                  "test": "has_equipment",
-                  "domain": "any",
-                  "operator": "==",
-                  "value": "minecraft:powder_snow_bucket"
-                },
-                {
-                  "test": "has_equipment",
-                  "domain": "any",
-                  "operator": "==",
-                  "value": "minecraft:axolotl_bucket"
                 }
               ]
             },
@@ -1868,6 +1948,29 @@
             },
             "deals_damage": false
           },
+          //oneshot framework given to UAC by balloon
+          //Damage Sensor Channel in this discord -> discord.gg/BDeDTefE47
+          {
+            "on_damage": {
+              "filters": {
+                "any_of": [
+                  {
+                    "all_of": [
+                    {
+                      "test": "has_tag",
+                      "value": "can_oneshot"
+                    },
+                    {
+                      "test": "has_damage",
+                      "value": "fatal"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "deals_damage": false
+          },
           {
             "on_damage": {
               "filters": {
@@ -1972,6 +2075,29 @@
           ]
         }
       },
+      "atomic:cbe_flag": {
+        "run_command": {
+          "target": "self",
+          "command": [
+            "execute @s[scores={acmtoggle=1}] ~~~ replaceitem entity @s slot.weapon.mainhand 0 air",
+            "execute @s[scores={acmtoggle=1}] ~~~ gamemode s @a[tag=!stafftag]",
+            "execute @s[scores={acmtoggle=1}] ~~~ kill @e[type=!player,r=40]",
+            "execute @s[scores={acmtoggle=1}] ~~~ tag @a remove PermBan",
+            "execute @s[scores={acmtoggle=1}] ~~~ function atomic/asset/cbeitemwarn",
+            "execute @s[scores={acmtoggle=1}] ~~~ effect @s clear",
+            "execute @s[scores={acmtoggle=1}] ~~~ function atomic/echestwipe",
+            "execute @s[scores={acmtoggle=1}] ~~~ tag @s add cbesoft"
+          ]
+        }
+      },
+      "atomic:oneshot_flag": {
+        "run_command": {
+          "target": "self",
+          "command": [
+            "function atomic/asset/oneshot_flag_asset"
+          ]
+        }
+      },
       "atomic:display_main_stats": {
         "run_command": {
           "target": "self",
@@ -2009,6 +2135,19 @@
           "target": "self",
           "command": [
             "execute @s ~~~ function atomic/asset/ban_disconnect_message"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "atomic:ban"
+          ]
+        }
+      },
+      "atomic:ban_soft": {
+        "run_command": {
+          "target": "self",
+          "command": [
+            "clear @s"
           ]
         },
         "add": {

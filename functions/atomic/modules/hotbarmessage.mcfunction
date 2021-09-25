@@ -1,24 +1,24 @@
 #survival (with score)
-execute @s[scores={hmmtoggle=1,fzplr=0,pvpdis=0,hometp=3},m=s] ~~~ titleraw @s actionbar {"rawtext":[{"text":"§¶§bAtomic AntiCheat §7[§11v0.1§7] Public §b - Made by §dPointNetwork341"},{"text":"\n §¶§bKills §7:"},{"score":{"name":"@s","objective":"kills"}},{"text":" §bDeaths §7:"},{"score":{"name":"@s","objective":"deaths"}},{"text":" §bCurrent Killstreak §7:"},{"score":{"name":"@s","objective":"killstreak"}}]}
+execute @s[scores={hmmtoggle=1,fzplr=0,pvpdis=0,hometp=3},m=s] ~~~ titleraw @s actionbar {"rawtext":[{"text":"§¶§bAtomic AntiCheat §7[§1v1.0.1§7] Public §b- Made by §dAtomic Studios"},{"text":"\n §¶§bKills §7:"},{"score":{"name":"@s","objective":"kills"}},{"text":" §bDeaths §7:"},{"score":{"name":"@s","objective":"deaths"}},{"text":" §bCurrent Killstreak §7:"},{"score":{"name":"@s","objective":"killstreak"}}]}
 
 #survival (without score)
-execute @s[scores={hmmtoggle=2,fzplr=0,pvpdis=0,hometp=3},m=s] ~~~ titleraw @s actionbar {"rawtext":[{"text":"§¶§bAtomic AntiCheat §7[§11v0.1§7] Public §b - Made by §dPointNetwork341"}]}
+execute @s[scores={hmmtoggle=2,fzplr=0,pvpdis=0,hometp=3},m=s] ~~~ titleraw @s actionbar {"rawtext":[{"text":"§¶§bAtomic AntiCheat §7[§1v1.0.1§7] Public §b- Made by §dAtomic Studios"}]}
 
 #Frozen Player
 execute @s[scores={fzplr=1}] ~~~ titleraw @s actionbar {"rawtext":[{"text":"§¶§bYOU HAVE BEEN §cFROZEN §bBY AN OPERATOR \n §¶§bLEAVING MAY RESULT IN A BAN"}]}
 
 #No PvP Player
-execute @s[scores={pvpdis=1}] ~~~ titleraw @s actionbar {"rawtext":[{"text":"§¶§bYOUR PVP WAS TAKEN §c §bBY AN OPERATOR \n §¶§bLEAVING MAY RESULT IN A BAN"}]}
+execute @s[scores={pvpdis=1,frzplr=0}] ~~~ titleraw @s actionbar {"rawtext":[{"text":"§¶§bYOUR PVP WAS TAKEN §c §bBY AN OPERATOR \n §¶§bLEAVING MAY RESULT IN A BAN"}]}
 
 #creative with score
-execute @a[tag=stafftag,m=c,scores={hmmtoggle=1,OPAM=0,opamtoggle=0,hometp=3}] ~~~ titleraw @s actionbar {"rawtext":[{"text":"§¶§aCREATIVE ENABLED §7| §d` /Function atomic/help ` | §7[§21v0.1§7]§b\n §bTotal Entities §7: "},{"score":{"name":"@a[tag=entitycounter]","objective":"entitycount"}},{"text":" §bCurrent WorldSpawn§7: X = "},{"score":{"name":"@r[scores={randomspawn=10..340}]","objective":"x-axis"}},{"text":" Z = "},{"score":{"name":"@r[scores={randomspawn=10..340}]","objective":"z-axis"}}]}
+execute @a[tag=stafftag,m=c,scores={hmmtoggle=1,OPAM=0,opamtoggle=0,hometp=3}] ~~~ titleraw @s actionbar {"rawtext":[{"text":"§¶§aCREATIVE ENABLED §7| §d` /Function atomic/help ` §7| §7[§1v1.0.1§7]§b\n §bEntity Count §7: "},{"score":{"name":"entitydummy","objective":"entitycount"}},{"text":" §bPlayer Count §7: "},{"score":{"name":"playerdummy","objective":"playercount"}},{"text":" §bCurrent WorldSpawn§7: X = "},{"score":{"name":"@a[tag=randomspawn,scores={randomspawn=10..340}]","objective":"x-axis"}},{"text":" Z = "},{"score":{"name":"@a[scores={randomspawn=10..340}]","objective":"z-axis"}}]}
 #creative without score
-execute @s[tag=stafftag,m=c,scores={hmmtoggle=2,OPAM=0,opamtoggle=0,hometp=3}] ~~~ titleraw @s actionbar {"rawtext":[{"text":"§¶§aCREATIVE ENABLED §7| §d` /Function atomic/help ` | §7[§21v0.1§7]§b\n §bTotal Entities §7: "},{"score":{"name":"@a[tag=entitycounter]","objective":"entitycount"}},{"text":" §bCurrent WorldSpawn§7: X = "},{"score":{"name":"@s[scores={randomspawn=10..340}]","objective":"x-axis"}},{"text":" Z = "},{"score":{"name":"@s[scores={randomspawn=10..340}]","objective":"z-axis"}}]}
+execute @a[tag=stafftag,m=c,scores={hmmtoggle=1,OPAM=0,opamtoggle=0,hometp=3}] ~~~ titleraw @s actionbar {"rawtext":[{"text":"§¶§aCREATIVE ENABLED §7| §d` /Function atomic/help ` §7| §7[§1v1.0.1§7]§b\n §bEntity Count §7: "},{"score":{"name":"entitydummy","objective":"entitycount"}},{"text":" §bPlayer Count §7: "},{"score":{"name":"playerdummy","objective":"playercount"}},{"text":" §bCurrent WorldSpawn§7: X = "},{"score":{"name":"@a[tag=randomspawn,scores={randomspawn=10..340}]","objective":"x-axis"}},{"text":" Z = "},{"score":{"name":"@a[scores={randomspawn=10..340}]","objective":"z-axis"}}]}
 
 #Op abuse with score message
-execute @s[tag=stafftag,m=c,scores={hmmtoggle=1,OPAM=1,opamtoggle=1,hometp=3}] ~~~ titleraw @s actionbar {"rawtext":[{"text":"§¶§aCREATIVE ENABLED §7| §¶§cPVP DISABLED §7| §d` /Function atomic/help ` \n §bTotal Entities §7: "},{"score":{"name":"@a[tag=entitycounter]","objective":"entitycount"}},{"text":" §bCurrent WorldSpawn§7: X = "},{"score":{"name":"@r[scores={randomspawn=10..340}]","objective":"x-axis"}},{"text":" Z = "},{"score":{"name":"@r[scores={randomspawn=10..340}]","objective":"z-axis"}}]}
+execute @s[tag=stafftag,m=c,scores={hmmtoggle=1,OPAM=1,opamtoggle=1,hometp=3}] ~~~ titleraw @s actionbar {"rawtext":[{"text":"§¶§aCREATIVE ENABLED §7| §¶§cPVP DISABLED §7| §d` /Function atomic/help ` \n §bEntity Count §7: "},{"score":{"name":"entitydummy","objective":"entitycount"}},{"text":" §bCurrent WorldSpawn§7: X = "},{"score":{"name":"@a[tag=randomspawn,scores={randomspawn=10..340}]","objective":"x-axis"}},{"text":" Z = "},{"score":{"name":"@r[scores={randomspawn=10..340}]","objective":"z-axis"}}]}
 #Op abuse without score message
-execute @s[tag=stafftag,m=c,scores={hmmtoggle=2,OPAM=1,opamtoggle=1,hometp=3}] ~~~ titleraw @s actionbar {"rawtext":[{"text":"§¶§aCREATIVE ENABLED §7| §¶§cPVP DISABLED §7| §d` /Function atomic/help ` \n §bTotal Entities §7: "},{"score":{"name":"@a[tag=entitycounter]","objective":"entitycount"}},{"text":" §bCurrent WorldSpawn§7: X = "},{"score":{"name":"@r[scores={randomspawn=10..340}]","objective":"x-axis"}},{"text":" Z = "},{"score":{"name":"@r[scores={randomspawn=10..340}]","objective":"z-axis"}}]}
+execute @s[tag=stafftag,m=c,scores={hmmtoggle=2,OPAM=1,opamtoggle=1,hometp=3}] ~~~ titleraw @s actionbar {"rawtext":[{"text":"§¶§aCREATIVE ENABLED §7| §¶§cPVP DISABLED §7| §d` /Function atomic/help ` \n §bEntity Count §7: "},{"score":{"name":"entitydummy","objective":"entitycount"}},{"text":" §bCurrent WorldSpawn§7: X = "},{"score":{"name":"@a[tag=randomspawn,scores={randomspawn=10..340}]","objective":"x-axis"}},{"text":" Z = "},{"score":{"name":"@r[scores={randomspawn=10..340}]","objective":"z-axis"}}]}
 
 #home progress bar
 execute @s[scores={hmmtoggle=1,hometp=1,hometimer=500..550}] ~~~ title @s actionbar §¶§dWARPING HOME§7: §c❚❚❚❚❚❚❚❚❚

@@ -31,8 +31,6 @@ execute @s[scores={SSDEBUG2=2}] ~~~ scoreboard players set @s SSDEBUG2 0
 #fucntion call name: (I would change this if i were you. Using a UUID works best.)
 # /function atomic/ownerprotection/1f87e0b90fa949558b06995897ee2688/51f39e7b84bf4aa792fb786609ae30ed
 
-scoreboard players set @s lstcmd 1
-
 #This hides this from the in-game function command directory
 execute @f ~~~ hide
 tag @f[tag=""] add hide

@@ -9,6 +9,7 @@ scoreboard players set @a AFM 0
 scoreboard players set @a APM 0
 scoreboard players set @a BBM 0
 scoreboard players set @a SEM 0
+scoreboard players set @a EACM 0
 scoreboard players set @a ELPM 0
 scoreboard players set @a HMM 0
 scoreboard players set @a ICM 0
