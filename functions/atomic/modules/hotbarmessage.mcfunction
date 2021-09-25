@@ -1,8 +1,8 @@
 #survival (with score)
-execute @s[scores={hmmtoggle=1,fzplr=0,pvpdis=0,hometp=3},m=s] ~~~ titleraw @s actionbar {"rawtext":[{"text":"§¶§bAtomic AntiCheat §7[§1v1.0.1§7] Public §b - Made by §dAtomic Studios"},{"text":"\n §¶§bKills §7:"},{"score":{"name":"@s","objective":"kills"}},{"text":" §bDeaths §7:"},{"score":{"name":"@s","objective":"deaths"}},{"text":" §bCurrent Killstreak §7:"},{"score":{"name":"@s","objective":"killstreak"}}]}
+execute @s[scores={hmmtoggle=1,fzplr=0,pvpdis=0,hometp=3},m=s] ~~~ titleraw @s actionbar {"rawtext":[{"text":"§¶§bAtomic AntiCheat §7[§1v1.0.1§7] Public §b- Made by §dAtomic Studios"},{"text":"\n §¶§bKills §7:"},{"score":{"name":"@s","objective":"kills"}},{"text":" §bDeaths §7:"},{"score":{"name":"@s","objective":"deaths"}},{"text":" §bCurrent Killstreak §7:"},{"score":{"name":"@s","objective":"killstreak"}}]}
 
 #survival (without score)
-execute @s[scores={hmmtoggle=2,fzplr=0,pvpdis=0,hometp=3},m=s] ~~~ titleraw @s actionbar {"rawtext":[{"text":"§¶§bAtomic AntiCheat §7[§1v1.0.1§7] Public §b - Made by §dAtomic Studios"}]}
+execute @s[scores={hmmtoggle=2,fzplr=0,pvpdis=0,hometp=3},m=s] ~~~ titleraw @s actionbar {"rawtext":[{"text":"§¶§bAtomic AntiCheat §7[§1v1.0.1§7] Public §b- Made by §dAtomic Studios"}]}
 
 #Frozen Player
 execute @s[scores={fzplr=1}] ~~~ titleraw @s actionbar {"rawtext":[{"text":"§¶§bYOU HAVE BEEN §cFROZEN §bBY AN OPERATOR \n §¶§bLEAVING MAY RESULT IN A BAN"}]}
