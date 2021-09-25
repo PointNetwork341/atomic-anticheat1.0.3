@@ -1,11 +1,3 @@
-#Clear items
-clear @s[tag=!stafftag,scores={uoimtoggle=1}] bedrock
-clear @s[scores={uoimtoggle=1}] beehive
-clear @s[scores={uoimtoggle=1}] bee_nest
-clear @s[tag=!stafftag,scores={uoimtoggle=1}] barrier
-clear @s[tag=!stafftag,scores={uoimtoggle=1}] end_portal_frame
-clear @s[tag=!stafftag,scores={uoimtoggle=1}] mob_spawner
-
 #Dropped Items bypass
 execute @s[tag=!stafftag,scores={uoimtoggle=1}] ~~~ function atomic/asset/uoim_dropclear_asset
 

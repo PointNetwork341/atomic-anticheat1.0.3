@@ -1041,7 +1041,13 @@
                   "test": "has_equipment",
                   "domain": "any",
                   "operator": "==",
-                  "value": "minecraft:command_block"
+                  "value": "minecraft:command_block"\
+                },
+                {
+                  "test": "has_equipment",
+                  "domain": "any",
+                  "operator": "==",
+                  "value": "minecraft:command_block_minecart"
                 },
                 {
                   "test": "has_equipment",
