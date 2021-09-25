@@ -7,7 +7,10 @@ clear @s[tag=!stafftag,scores={uoimtoggle=1}] end_portal_frame
 clear @s[tag=!stafftag,scores={uoimtoggle=1}] mob_spawner
 
 #Dropped Items bypass
-execute @s[tag=!stafftag,scores={uoimtoggle=1}] ~~~ function UAC/asset/uoim_dropclear_asset
+execute @s[tag=!stafftag,scores={uoimtoggle=1}] ~~~ function atomic/asset/uoim_dropclear_asset
+
+#Spawn Eggs
+execute @s[tag=!stafftag,scores={uoimtoggle=1}] ~~~ function atomic/asset/clearspawneggasset
 
 #Placed Items bypass
 execute @s[tag=!stafftag,scores={uoimtoggle=1}] ~ ~ ~ fill ~8 ~5 ~8 ~-8 ~-5 ~-8 air 0 replace barrier

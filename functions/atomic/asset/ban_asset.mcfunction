@@ -13,14 +13,14 @@ execute @s[tag=!stafftag] ~~~ function UAC/asset/inv_lock
 
 
 #1.17 ban title messages  (06/22/2021)
-execute @s[tag=!stafftag] ~~~ title @s[tag=PermBan] title §¶§cAtomic → You are Atomic Global Banned!
-execute @s[tag=!stafftag] ~~~ title @s[tag=BanCreative] title §¶§cAtomic → Flagged For Creative Mode
-execute @s[scores={acmtoggle=1}] ~~~ execute @s[tag=!stafftag] ~~~ title @s[tag=BanCBE] title §¶§cAtomic → Flagged for CBE
-execute @s[tag=!stafftag] ~~~ title @s[tag=Ban] title §¶§cAtomic → Banned By An Operator
-execute @s[scores={UOIM=1}] ~~~ execute @s[tag=!stafftag] ~~~ title @s[tag=illegalitemban] title §¶§cAtomic → Flagged for Illegal Items
-execute @s[scores={afmtoggle=1}] ~~~ execute @s[tag=!stafftag] ~~~ title @s[tag=BanFly] title §¶§cAtomic → Flagged for Fly Hacks
-execute @s[scores={apmtoggle=1}] ~~~ execute @s[tag=!stafftag] ~~~ title @s[tag=BanPhase] title §¶§cAtomic → Flagged for No Clip
-execute @s[tag=!stafftag] ~~~ title @s[scores={warn=3}] title §¶§cAtomic → Third Warning Reached
+execute @s[tag=!stafftag] ~~~ title @s[tag=PermBan] title §¶§cAtomic → Banned | Globally
+execute @s[tag=!stafftag] ~~~ title @s[tag=BanCreative] title §¶§cAtomic → Banned | Creative Mode
+execute @s[scores={acmtoggle=1}] ~~~ execute @s[tag=!stafftag] ~~~ title @s[tag=BanCBE] title §¶§cAtomic → Banned | CBE
+execute @s[tag=!stafftag] ~~~ title @s[tag=Ban] title §¶§cAtomic → Banned | Manually
+execute @s[scores={UOIM=1}] ~~~ execute @s[tag=!stafftag] ~~~ title @s[tag=illegalitemban] title §¶§cAtomic → Banned | Illegals
+execute @s[scores={afmtoggle=1}] ~~~ execute @s[tag=!stafftag] ~~~ title @s[tag=BanFly] title §¶§cAtomic → Banned | Hacks
+execute @s[scores={apmtoggle=1}] ~~~ execute @s[tag=!stafftag] ~~~ title @s[tag=BanPhase] title §¶§cAtomic → Banned | Phase
+execute @s[tag=!stafftag] ~~~ title @s[scores={warn=3}] title §¶§cAtomic → Banned | 3 Warns
 
 #Stops False Bans
 execute @s[tag=!stafftag] ~~~ execute @s[scores={acmtoggle=0,BanCBE=1}] ~~~ tag @s remove BanCBE
@@ -50,13 +50,13 @@ execute @s[tag=!stafftag,tag=BanPhase] ~~~ scoreboard players add @s BanPhase 1
 execute @s[tag=!stafftag,scores={warn=3}] ~~~ scoreboard players add @s BanWarn 1
 
 #1.17 ban chat messages  (06/22/2021)
-execute @s[scores={BanCBE=1}] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic → §d"},{"selector":"@s"},{"text":"§b's §¶§cgameplay has been restricted due to CBE exploits"}]}
-execute @s[scores={BanWarn=1}] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic → §d"},{"selector":"@s"},{"text":"§b's §¶§cgameplay has been restricted due to Reaching 3 Warnings"}]}
-execute @s[scores={PermBan=1}] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic → §d"},{"selector":"@s"},{"text":" §¶§cis Atomic Global Banned"}]}
-execute @s[scores={Ban=1}] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic → §d"},{"selector":"@s"},{"text":" §¶§cWas Banned by a Operator"}]}
-execute @s[scores={IIB=1}] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic → §d"},{"selector":"@s"},{"text":"§b's §¶§cgameplay has been restricted due to Illegal Items"}]}
-execute @s[scores={BanFly=1}] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic → §d"},{"selector":"@s"},{"text":"§b's §¶§cgameplay has been restricted due to Fly Hacks"}]}
-execute @s[scores={BanPhase=1}] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic → §d"},{"selector":"@s"},{"text":"§b's §¶§cgameplay has been restricted due to Phase Hacks"}]}
+execute @s[scores={BanCBE=1}] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic → §d"},{"selector":"@s"},{"text":"§b's §¶§cgot banned for CBE Exploits"}]}
+execute @s[scores={BanWarn=1}] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic → §d"},{"selector":"@s"},{"text":"§b's §¶§cgot banned for having 3 Warnings"}]}
+execute @s[scores={PermBan=1}] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic → §d"},{"selector":"@s"},{"text":" §¶§cogt banned for being Globally Banned"}]}
+execute @s[scores={Ban=1}] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic → §d"},{"selector":"@s"},{"text":" §¶§cgot banned by an Operator"}]}
+execute @s[scores={IIB=1}] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic → §d"},{"selector":"@s"},{"text":"§b's §¶§cgot banned for Illegal Items"}]}
+execute @s[scores={BanFly=1}] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic → §d"},{"selector":"@s"},{"text":"§b's §¶§cgot banned for Fly Hacks"}]}
+execute @s[scores={BanPhase=1}] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic → §d"},{"selector":"@s"},{"text":"§b's §¶§cgot banned for Phase."}]}
 
 #Prevents overflow from ban checks
 execute @s[scores={PermBan=4}] ~~~ scoreboard players set @s PermBan 3
