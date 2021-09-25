@@ -66,7 +66,7 @@
       }
     },
     "component_groups": {
-      "atomic:ban": {
+      "uac:ban": {
         "minecraft:instant_despawn": {}
       },
       "minecraft:spectate": {
@@ -131,7 +131,7 @@
                   }
                 ]
               },
-              "event": "atomic:display_main_stats"
+              "event": "uac:display_main_stats"
             },
             "use_item": false,
             "interact_text": "See Stats"
@@ -159,7 +159,7 @@
                   }
                 ]
               },
-              "event": "atomic:display_all_stats"
+              "event": "uac:display_all_stats"
             },
             "use_item": false,
             "interact_text": "Testing Function"
@@ -182,7 +182,7 @@
                   }
                 ]
               },
-              "event": "atomic:display_nonstaff_stats"
+              "event": "uac:display_nonstaff_stats"
             },
             "use_item": false,
             "interact_text": "View Player Stats"
@@ -205,7 +205,7 @@
                   }
                 ]
               },
-              "event": "atomic:open_player_options_gui"
+              "event": "uac:open_player_options_gui"
             },
             "use_item": false,
             "interact_text": "Open Player GUI"
@@ -233,7 +233,7 @@
                 }
               ]
             },
-            "event":"atomic:ban_main"
+            "event":"uac:ban_main"
           },
           {
             "filters": {
@@ -246,7 +246,7 @@
                 }
               ]
             },
-            "event":"atomic:smooth_brain"
+            "event":"uac:smooth_brain"
           },
           {
             "filters": {
@@ -941,7 +941,7 @@
                 }
               ]
             },
-            "event": "atomic:torchlight"
+            "event": "uac:torchlight"
           },
           {
             "filters": {
@@ -1748,7 +1748,7 @@
                 }
               ]
             },
-            "event": "atomic:illegal_items"
+            "event": "uac:illegal_items"
           }
         ]
       },
@@ -1891,7 +1891,7 @@
                   }
                 ]
               },
-              "event": "atomic:on_death_by_player"
+              "event": "uac:on_death_by_player"
             }
           },
           {
@@ -1917,7 +1917,7 @@
                   }
                 ]
               },
-              "event": "atomic:on_death_by_player"
+              "event": "uac:on_death_by_player"
             }
           },
           {
@@ -1943,7 +1943,7 @@
                   }
                 ]
               },
-              "event": "atomic:on_death_by_player"
+              "event": "uac:on_death_by_player"
             }
           }
         ]
@@ -1952,7 +1952,7 @@
       }
     },
     "events": {
-      "atomic:illegal_items": {
+      "uac:illegal_items": {
         "run_command": {
           "target": "self",
           "command": [
@@ -1963,7 +1963,7 @@
           ]
         }
       },
-      "atomic:torchlight": {
+      "uac:torchlight": {
         "run_command": {
           "target": "self",
           "command": [
@@ -1972,7 +1972,7 @@
           ]
         }
       },
-      "atomic:display_main_stats": {
+      "uac:display_main_stats": {
         "run_command": {
           "target": "self",
           "command": [
@@ -1980,7 +1980,7 @@
           ]
         }
       },
-      "atomic:display_all_stats": {
+      "uac:display_all_stats": {
         "run_command": {
           "target": "self",
           "command": [
@@ -1988,7 +1988,7 @@
           ]
         }
       },
-      "atomic:display_nonstaff_stats": {
+      "uac:display_nonstaff_stats": {
         "run_command": {
           "target": "self",
           "command": [
@@ -1996,7 +1996,7 @@
           ]
         }
       },
-      "atomic:open_player_options_gui": {
+      "uac:open_player_options_gui": {
         "run_command": {
           "target": "self",
           "command": [
@@ -2004,7 +2004,7 @@
           ]
         }
       },
-      "atomic:ban_main": {
+      "uac:ban_main": {
         "run_command": {
           "target": "self",
           "command": [
@@ -2013,11 +2013,11 @@
         },
         "add": {
           "component_groups": [
-            "atomic:ban"
+            "uac:ban"
           ]
         }
       },
-      "atomic:smooth_brain": {
+      "uac:smooth_brain": {
         "run_command": {
           "target": "self",
           "command": [
@@ -2025,7 +2025,7 @@
           ]
         }
       },
-      "atomic:on_death_by_player": {
+      "uac:on_death_by_player": {
         "run_command": {
           "target": "other",
           "command": [
