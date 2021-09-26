@@ -3,7 +3,7 @@ gamerule doentitydrops false
 difficulty peaceful
 kill @e[type=arrow]
 kill @e[type=polar_bear]
-kill @e[type=minecraft:evoker]
+kill @e[type=evoker]
 kill @e[type=minecraft:area_effect_cloud]
 kill @e[type=minecraft:fox]
 kill @e[type=minecraft:vex]
