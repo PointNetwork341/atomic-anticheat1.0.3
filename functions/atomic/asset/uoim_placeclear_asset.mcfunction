@@ -15,9 +15,6 @@ fill ~~-5~ ~15~15~15 air 0 replace fire
 fill ~~-5~ ~15~15~15 air 0 replace soul_fire
 execute @s[tag=!stafftag,scores={acmtoggle=1}] ~~~ fill ~~-5~ ~15~15~15 air 0 replace beehive
 execute @s[tag=!stafftag,scores={acmtoggle=1}] ~~~ fill ~~-5~ ~15~15~15 air 0 replace bee_nest
-clear @s[tag=!stafftag,scores={uoimtoggle=1}] barrier
-clear @s[tag=!stafftag,scores={uoimtoggle=1}] end_portal_frame
-clear @s[tag=!stafftag,scores={uoimtoggle=1}] mob_spawner
 
 
 #This hides this from the in-game function command directory
