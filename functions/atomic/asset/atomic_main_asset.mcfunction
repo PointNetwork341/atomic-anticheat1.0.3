@@ -52,7 +52,7 @@ scoreboard players set @s nethhelm 0
 #Ban Checks
 scoreboard objectives add PermBan dummy PermBan
 scoreboard objectives add BanCBE dummy BanCBE
-scoreboard objectives add BanGeneralHacks dummy BanGeneralHacks
+scoreboard objectives add BanAirJump dummy BanAirJump
 scoreboard objectives add Ban dummy Ban
 scoreboard objectives add IIB dummy IIB
 scoreboard objectives add BanFly dummy BanFly
@@ -368,6 +368,7 @@ scoreboard players set @s 2KK001 0
 gamerule functioncommandlimit 10000
 gamerule commandblocksenabled true
 gamerule commandblockoutput false
+gamerule sendcommandfeedback false
 gamerule showbordereffect false
 gamerule doinsomnia false
 execute @e[scores={kpmtoggle=1}] ~~~ gamerule drowningdamage false
