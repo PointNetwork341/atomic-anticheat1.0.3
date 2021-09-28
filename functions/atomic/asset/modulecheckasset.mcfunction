@@ -44,11 +44,11 @@ execute @s[tag=stafftag,scores={NEM=0}] ~~~ tellraw @s {"rawtext":[{"text":"§¶
 execute @s[tag=stafftag,scores={ACM=1}] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic §¶§b→§¶§bAnti-CBE §7[ §¶§2ENABLED §7]"}]}
 execute @s[tag=stafftag,scores={ACM=0}] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic §¶§b→§¶§bAnti-CBE §7[ §¶§cDISABLED §7]"}]}
 
-execute @s[tag=stafftag,scores={UOIM=1}] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic §¶§b→§¶§bNo Unobtainable Items §7[ §¶§2ENABLED §7]"}]}
-execute @s[tag=stafftag,scores={UOIM=0}] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic §¶§b→§¶§bNo Unobtainable Items §7[ §¶§cDISABLED §7]"}]}
+execute @s[tag=stafftag,scores={IIM=1}] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic §¶§b→§¶§bNo Unobtainable Items §7[ §¶§2ENABLED §7]"}]}
+execute @s[tag=stafftag,scores={IIM=0}] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic §¶§b→§¶§bNo Unobtainable Items §7[ §¶§cDISABLED §7]"}]}
 
-execute @s[tag=stafftag,scores={BBM=1}] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic §¶§b→§¶§bBottom Bedrock Replace §7[ §¶§2ENABLED §7]"}]}
-execute @s[tag=stafftag,scores={BBM=0}] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic §¶§b→§¶§bBottom Bedrock Replace §7[ §¶§cDISABLED §7]"}]}
+execute @s[tag=stafftag,scores={BBRM=1}] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic §¶§b→§¶§bBottom Bedrock Replace §7[ §¶§2ENABLED §7]"}]}
+execute @s[tag=stafftag,scores={BBRM=0}] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic §¶§b→§¶§bBottom Bedrock Replace §7[ §¶§cDISABLED §7]"}]}
 
 execute @s[tag=stafftag,scores={WBM=1}] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic §¶§b→§¶§bWorld Border §7[ §¶§2ENABLED §7]"}]}
 execute @s[tag=stafftag,scores={WBM=0}] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic §¶§b→§¶§bWord Border §7[ §¶§cDISABLED §7]"}]}
@@ -62,8 +62,8 @@ execute @s[tag=stafftag,scores={IBM=0}] ~~~ tellraw @s {"rawtext":[{"text":"§¶
 execute @s[tag=stafftag,scores={SSM=1}] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic §¶§b→§¶§bFake Staff Protection §7[ §¶§2ENABLED §7]"}]}
 execute @s[tag=stafftag,scores={SSM=0}] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic §¶§b→§¶§bFake Staff Protection §7[ §¶§cDISABLED §7]"}]}
 
-execute @s[tag=stafftag,scores={OPAM=1}] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic §¶§b→§¶§bAnti-Op Abuse §7[ §¶§2ENABLED §7]"}]}
-execute @s[tag=stafftag,scores={OPAM=0}] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic §¶§b→§¶§bAnti-Op Abuse §7[ §¶§cDISABLED §7]"}]}
+execute @s[tag=stafftag,scores={AOPAM=1}] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic §¶§b→§¶§bAnti-Op Abuse §7[ §¶§2ENABLED §7]"}]}
+execute @s[tag=stafftag,scores={AOPAM=0}] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic §¶§b→§¶§bAnti-Op Abuse §7[ §¶§cDISABLED §7]"}]}
 
 execute @s[tag=stafftag,scores={DAM=1}] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic §¶§b→§¶§bNo Enchanted Armor §7[ §¶§2ENABLED §7]"}]}
 execute @s[tag=stafftag,scores={DAM=0}] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic §¶§b→§¶§bNo Enchanted Armor §7[ §¶§cDISABLED §7]"}]}

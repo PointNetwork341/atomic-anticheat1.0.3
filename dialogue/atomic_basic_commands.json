@@ -33,7 +33,7 @@
 					{
 						"name": { "rawtext": [ { "text": "§l§2CLEARCHAT" } ] },
 						"commands": [
-							"/execute @s[tag=stafftag] ~~~ function atomic/clearchat",
+							"/execute @s[tag=stafftag] ~~~ function atomic/chatclear",
               "/execute @s[tag=stafftag] ~~~ dialogue open @s @s atomic_basic_commands"
 						]
 					},

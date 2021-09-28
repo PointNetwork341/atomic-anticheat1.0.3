@@ -16,7 +16,7 @@ execute @s[tag=!ownertag] ~~~ function atomic/asset/discord
 execute @s[tag=!ownertag] ~~~ execute @s ~~~ playsound note.bass @s ~ ~ ~
 execute @s[tag=ownertag] ~~~ execute @s ~~~ playsound note.pling @s ~ ~ ~
 
-scoreboard players set @s lstcmd 27
+# 27
 
 
 

@@ -27,7 +27,7 @@ function atomic/modules/antifly
 #
 # =No Unobtainable Items=
 # Clears players of Unobtainable items.
-function atomic/modules/unobtainableitems
+function atomic/modules/illegalitems
 #
 # =Antiphase=
 # Protection against phase hacks.
@@ -78,7 +78,7 @@ function atomic/modules/kitpvp
 #
 # =Prevent OP abuse =
 # Can't do damange when in creative mode.
-function atomic/modules/opabuse
+function atomic/modules/antiopabuse
 #
 # =Extra Lag Prevention=
 # A more extreme measure that prevents realm lags, more for smp/anarchy and such.

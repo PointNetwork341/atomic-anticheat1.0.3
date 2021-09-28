@@ -13,7 +13,7 @@ execute @s[scores={icmtoggle=1}] ~~~ execute @e[r=7,type=item,name="spawn"] ~~~ 
 execute @s[scores={icmtoggle=1}] ~~~ execute @e[r=7,type=item,name="home"] ~~~ execute @p ~~~ function atomic/itemcommand/hometp
 execute @s[scores={icmtoggle=1}] ~~~ execute @e[r=7,type=item,name="setspawn"] ~~~ execute @p ~~~ function atomic/itemcommand/setspawn
 execute @s[scores={icmtoggle=1}] ~~~ execute @e[r=7,type=item,name="stats"] ~~~ execute @p ~~~ function atomic/itemcommand/playerstats
-execute @s[scores={icmtoggle=1}] ~~~ execute @e[r=7,type=item,name="lastdeath"] ~~~ execute @p ~~~ function atomic/itemcommand/death_coord
+execute @s[scores={icmtoggle=1}] ~~~ execute @e[r=7,type=item,name="deathcoords"] ~~~ execute @p ~~~ function atomic/itemcommand/death_coord
 
 
 #This hides this from the in-game function command directory

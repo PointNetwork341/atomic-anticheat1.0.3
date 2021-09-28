@@ -2065,10 +2065,10 @@
         "run_command": {
           "target": "self",
           "command": [
-            "execute @s[tag=!stafftag,scores={UOIM=1}] ~~~ replaceitem entity @s slot.weapon.mainhand 0 air",
-            "execute @s[tag=!stafftag,scores={UOIM=1}] ~~~ function atomic/asset/clearspawneggasset",
-            "execute @s[tag=!stafftag] ~~~ execute @s[scores={UOIM=1}] ~~~ function atomic/asset/illegalitemkickmsg",
-            "execute @s[tag=!stafftag] ~~~ execute @s[scores={UOIM=1}] ~~~ function atomic/asset/illegalitemwarn"
+            "execute @s[tag=!stafftag,scores={IIM=1}] ~~~ replaceitem entity @s slot.weapon.mainhand 0 air",
+            "execute @s[tag=!stafftag,scores={IIM=1}] ~~~ function atomic/asset/clearspawneggasset",
+            "execute @s[tag=!stafftag] ~~~ execute @s[scores={IIM=1}] ~~~ function atomic/asset/illegalitemkickmsg",
+            "execute @s[tag=!stafftag] ~~~ execute @s[scores={IIM=1}] ~~~ function atomic/asset/illegalitemwarn"
           ]
         }
       },

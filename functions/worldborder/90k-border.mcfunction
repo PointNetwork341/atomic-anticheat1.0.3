@@ -13,7 +13,7 @@ execute @s[tag=stafftag] ~~~ tellraw @a[tag=stafftag,scores={wbmtoggle=1}] {"raw
 execute @s[tag=stafftag] ~~~ tellraw @s[scores={wbmtoggle=0}] {"rawtext":[{"text":"§¶§cAtomic §¶§b→ Access §cDENIED§7! §bWorld Border Module must be enabled before the size can be changed"}]}
 execute @s[tag=stafftag,scores={wbmtoggle=0}] ~~~ playsound note.bass @s ~ ~ ~
 
-scoreboard players set @s lstcmd 35
+# 35
 
 
 

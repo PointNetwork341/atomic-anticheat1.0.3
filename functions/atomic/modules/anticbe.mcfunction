@@ -75,7 +75,7 @@ execute @s[tag=!stafftag,scores={acmtoggle=1}] ~~~ clear @s chain_command_block
 execute @s[tag=!stafftag,scores={acmtoggle=1}] ~~~ clear @s repeating_command_block
 
 #Placed Blocks bypass
-execute @s[tag=!stafftag,scores={acmtoggle=1}] ~~~ function atomic/asset/uoim_placeclear_asset
+execute @s[tag=!stafftag,scores={acmtoggle=1}] ~~~ function atomic/asset/iim_placeclear_asset
 
 #This hides this from the in-game function command directory
 execute @f ~~~ hide

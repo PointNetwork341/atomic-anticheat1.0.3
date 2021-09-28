@@ -1,6 +1,6 @@
 execute @s ~~~ scoreboard players reset @s lagtimer
 
-execute @s[scores={bbmtoggle=1}] ~~~ function atomic/modules/bottombedrock
+execute @s[scores={bbrmtoggle=1}] ~~~ function atomic/modules/bottombedrockreplace
 #execute @s[scores={wbmtoggle=1}] ~~~ function atomic/modules/worldborder
 execute @s[scores={ibmtoggle=1}] ~~~ function atomic/modules/itemban
 execute @s[scores={ssmtoggle=1}] ~~~ function atomic/modules/stafftag

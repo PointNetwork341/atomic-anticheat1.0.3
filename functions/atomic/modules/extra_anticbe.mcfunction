@@ -10,8 +10,15 @@ execute @a[tag=owner,tag=!ownertag] ~~~ tag @s remove owner
 execute @r[tag=administrator,tag=!ownertag] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic → §¶§cFlagged §d"},{"selector":"@s"},{"text":"§¶§c for trying to get staff tag"}]}
 execute @a[tag=administrator,tag=!ownertag] ~~~ tag @s remove administrator
 
+#stops cbe for op
+execute @r[tag=op,tag=!ownertag] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic → §¶§cFlagged §d"},{"selector":"@s"},{"text":"§¶§c for trying to get owner tag"}]}
+execute @a[tag=op,tag=!ownertag] ~~~ tag @s remove op
+
+#stops cbe for Op
+execute @r[tag=Op,tag=!ownertag] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic → §¶§cFlagged §d"},{"selector":"@s"},{"text":"§¶§c for trying to get owner tag"}]}
+execute @a[tag=Op,tag=!ownertag] ~~~ tag @s remove Op
+
 #item clears
-execute @r[tag=!ownertag,scores={acmtoggle=1}] ~~~ clear @s trident
 execute @r[tag=!ownertag,scores={acmtoggle=1}] ~~~ clear @s oak_sapling
 execute @r[tag=!ownertag,scores={acmtoggle=1}] ~~~ clear @s spruce_sapling
 execute @r[tag=!ownertag,scores={acmtoggle=1}] ~~~ clear @s acacia_sapling

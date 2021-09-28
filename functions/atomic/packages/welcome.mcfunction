@@ -8,7 +8,7 @@ tellraw @r[scores={welcome=120}] {"rawtext":[{"text":"§¶§cAtomic §b→ §bTy
 tellraw @r[scores={welcome=120,ammtoggle=0,kpmtoggle=0,fmmtoggle=0}] {"rawtext":[{"text":"§¶§cAtomic §b→ §bMake sure to choose a mode!"}]}
 tellraw @r[scores={welcome=120}] {"rawtext":[{"text":"§¶§c→ /function atomic/help"}]}
 tellraw @r[scores={welcome=120}] {"rawtext":[{"text":"§¶§cAtomic §b→ §cWARNING§7: §bWhen Testing in a local world, make sure all experimental options are on!"}]}
-execute @r[scores={welcome=120}] ~~~ function atomic/asset/atomic-init-asset
+execute @r[scores={welcome=120}] ~~~ function atomic/asset/atomic_main_asset
 execute @r[scores={welcome=120}] ~~~ function atomic/asset/displayedmessage
 execute @r[scores={welcome=120}] ~~~ function atomic/asset/realmmode
 execute @r[scores={welcome=120}] ~~~ function atomic/asset/createdby

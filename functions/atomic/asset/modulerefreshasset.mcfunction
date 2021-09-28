@@ -7,7 +7,7 @@ scoreboard players set @a KPT 0
 scoreboard players set @a FT 0
 scoreboard players set @a AFM 0
 scoreboard players set @a APM 0
-scoreboard players set @a BBM 0
+scoreboard players set @a BBRM 0
 scoreboard players set @a SEM 0
 scoreboard players set @a EACM 0
 scoreboard players set @a ELPM 0
@@ -16,14 +16,14 @@ scoreboard players set @a ICM 0
 scoreboard players set @a LTM 0
 scoreboard players set @a NEM 0
 scoreboard players set @a NFM 0
-scoreboard players set @a OPAM 0
+scoreboard players set @a AOPAM 0
 scoreboard players set @a RSM 0
 scoreboard players set @a RTM 0
 scoreboard players set @a SSM 0
 scoreboard players set @a TPM 0
 scoreboard players set @a VIPM 0
 scoreboard players set @a WBM 0
-scoreboard players set @a UOIM 0
+scoreboard players set @a IIM 0
 
 
 execute @s[tag=!stafftag] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic §¶§b→ You must be staff to use this command!"}]}

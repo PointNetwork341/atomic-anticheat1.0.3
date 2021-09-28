@@ -14,7 +14,7 @@ execute @s[tag=stafftag,scores={IBM=2}] ~~~ scoreboard players set ibmtoggledumm
 execute @s[tag=!stafftag] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic §¶§b→ Access §cDENIED§7! §bOnly staff can use this command"}]}
 execute @s[tag=!stafftag] ~~~ execute @s ~~~ playsound note.bass @s ~ ~ ~
 execute @s[tag=stafftag] ~~~ execute @s ~~~ playsound note.pling @s ~ ~ ~
-scoreboard players set @s lstcmd 57
+# 57
 
 
 

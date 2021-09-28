@@ -17,14 +17,14 @@ execute @s[tag=!stafftag] ~~~ title @s[tag=PermBan] title §¶§cAtomic → Bann
 execute @s[tag=!stafftag] ~~~ title @s[tag=BanCreative] title §¶§cAtomic → Banned | Creative Mode
 execute @s[scores={acmtoggle=1}] ~~~ execute @s[tag=!stafftag] ~~~ title @s[tag=BanCBE] title §¶§cAtomic → Banned | CBE
 execute @s[tag=!stafftag] ~~~ title @s[tag=Ban] title §¶§cAtomic → Banned | Manually
-execute @s[scores={UOIM=1}] ~~~ execute @s[tag=!stafftag] ~~~ title @s[tag=illegalitemban] title §¶§cAtomic → Banned | Illegals
+execute @s[scores={IIM=1}] ~~~ execute @s[tag=!stafftag] ~~~ title @s[tag=illegalitemban] title §¶§cAtomic → Banned | Illegals
 execute @s[scores={afmtoggle=1}] ~~~ execute @s[tag=!stafftag] ~~~ title @s[tag=BanFly] title §¶§cAtomic → Banned | Hacks
 execute @s[scores={apmtoggle=1}] ~~~ execute @s[tag=!stafftag] ~~~ title @s[tag=BanPhase] title §¶§cAtomic → Banned | Phase
 execute @s[tag=!stafftag] ~~~ title @s[scores={warn=3}] title §¶§cAtomic → Banned | 3 Warns
 
 #Stops False Bans
 execute @s[tag=!stafftag] ~~~ execute @s[scores={acmtoggle=0,BanCBE=1}] ~~~ tag @s remove BanCBE
-execute @s[tag=!stafftag] ~~~ execute @s[scores={UOIM=0,IIB=1}] ~~~ tag @s remove illegalitemban
+execute @s[tag=!stafftag] ~~~ execute @s[scores={IIM=0,IIB=1}] ~~~ tag @s remove illegalitemban
 execute @s[tag=!stafftag] ~~~ execute @s[scores={afmtoggle=0,BanFly=1}] ~~~ tag @s remove BanFly
 execute @s[tag=!stafftag] ~~~ execute @s[scores={apmtoggle=0,BanPhase=1}] ~~~ tag @s remove BanPhase
 execute @s[tag=!stafftag] ~~~ execute @s[scores={warn=0,BanWarn=1}] ~~~ tag @s remove BanWarn

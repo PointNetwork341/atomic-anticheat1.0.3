@@ -24,7 +24,7 @@ give @s[tag=stafftag] firework_rocket 64 3 {"minecraft:keep_on_death":{}}
 give @s[tag=stafftag] elytra 1 0 {"minecraft:keep_on_death":{}}
 effect @s[tag=stafftag] strength 150 1 true
 effect @s[tag=stafftag] resistance 150 1 true
-scoreboard players set @s lstcmd 108
+# 108
 
 
 
