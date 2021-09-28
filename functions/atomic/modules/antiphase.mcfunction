@@ -1,4 +1,3 @@
-tellraw @s {"rawtext":[{"text":"§¶§cAtomic → §7[ §bAtomic Anti-Cheat §1v1.0.2 §7]"}]}
 
 
 #This hides this from the in-game function command directory

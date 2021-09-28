@@ -1,4 +1,8 @@
 scoreboard players set @a ACM 0
+scoreboard players set @a AAJM 0
+scoreboard players set @a AFM 0
+scoreboard players set @a APM 0
+scoreboard players set @a EACM 0
 scoreboard players set @a AMM 0
 scoreboard players set @a KPM 0
 scoreboard players set @a FMM 0
@@ -21,7 +25,6 @@ scoreboard players set @a RSM 0
 scoreboard players set @a RTM 0
 scoreboard players set @a SSM 0
 scoreboard players set @a TPM 0
-scoreboard players set @a VIPM 0
 scoreboard players set @a WBM 0
 scoreboard players set @a IIM 0
 

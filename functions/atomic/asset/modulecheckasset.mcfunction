@@ -17,6 +17,12 @@ execute @s[tag=stafftag,scores={HMM=0}] ~~~ tellraw @s {"rawtext":[{"text":"§¶
 execute @s[tag=stafftag,scores={OSM=1}] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic §¶§b→§¶§bOneShot Detection §7[ §¶§2ENABLED §7]"}]}
 execute @s[tag=stafftag,scores={OSM=0}] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic §¶§b→§¶§bOneShot Detection §7[ §¶§cDISABLED §7]"}]}
 
+execute @s[tag=stafftag,scores={APM=1}] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic §¶§b→§¶§bbAnti-Phase §7[ §¶§2ENABLED §7]"}]}
+execute @s[tag=stafftag,scores={APM=0}] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic §¶§b→§¶§bAnti-Phase §7[ §¶§cDISABLED §7]"}]}
+
+execute @s[tag=stafftag,scores={AAJM=1}] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic §¶§b→§¶§bbAnti-Air Jump §7[ §¶§2ENABLED §7]"}]}
+execute @s[tag=stafftag,scores={AAJM=0}] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic §¶§b→§¶§bAnti-Air Jump §7[ §¶§cDISABLED §7]"}]}
+
 execute @s[tag=stafftag,scores={EFM=1}] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic §¶§b→§¶§bExtra Features §7[ §¶§2ENABLED §7]"}]}
 execute @s[tag=stafftag,scores={EFM=0}] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic §¶§b→§¶§bExtra Features §7[ §¶§cDISABLED §7]"}]}
 

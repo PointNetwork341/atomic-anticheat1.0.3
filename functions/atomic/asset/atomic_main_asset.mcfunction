@@ -52,6 +52,7 @@ scoreboard players set @s nethhelm 0
 #Ban Checks
 scoreboard objectives add PermBan dummy PermBan
 scoreboard objectives add BanCBE dummy BanCBE
+scoreboard objectives add BanGeneralHacks dummy BanGeneralHacks
 scoreboard objectives add Ban dummy Ban
 scoreboard objectives add IIB dummy IIB
 scoreboard objectives add BanFly dummy BanFly
@@ -184,6 +185,7 @@ scoreboard objectives add cbespawn dummy cbespawn
 scoreboard objectives add flycount dummy flycount
 scoreboard objectives add flyreset dummy flyreset
 scoreboard objectives add phasecount dummy phasecount
+scoreboard objectives add airjumpflag dummy airjumpflag
 scoreboard objectives add hometp dummy hometp
 scoreboard objectives add welcomed dummy welcomed
 scoreboard objectives add entitycount dummy entitycount
@@ -192,6 +194,8 @@ scoreboard objectives add playercount dummy
 
 #module scoreboards
 scoreboard objectives add ACM dummy ACM
+scoreboard objectives add AAJM dummy AAJM
+scoreboard objectives add APM dummy APM
 scoreboard objectives add EACM dummy EACM
 scoreboard objectives add EFM dummy EFM
 scoreboard objectives add OSM dummy OSM
@@ -223,6 +227,8 @@ scoreboard objectives add MDM dummy MDM
 #Module Toggles
 scoreboard objectives add SSDEBUG dummy SSDEBUG
 scoreboard objectives add afmtoggle dummy afmtoggle
+scoreboard objectives add apmtoggle dummy apmtoggle
+scoreboard objectives add apmtoggle dummy aajmtoggle
 scoreboard objectives add efmtoggle dummy efmtoggle
 scoreboard objectives add osmtoggle dummy osmtoggle
 scoreboard objectives add ammtoggle dummy ammtoggle
@@ -287,6 +293,8 @@ scoreboard objectives add z-axis dummy y-axis
 #Default Toggles
 scoreboard players set @s SSDEBUG 0
 scoreboard players set @s acmtoggle 0
+scoreboard players set @s aajmtoggle 0
+scoreboard players set @s apmtoggle 0
 scoreboard players set @s eacmtoggle 0
 scoreboard players set @s efmtoggle 0
 scoreboard players set @s osmtoggle 0
@@ -315,6 +323,8 @@ scoreboard players set @s mdmtoggle 0
 
 #Give everyone default module scoreboard scores
 scoreboard players set @s ACM 0
+scoreboard players set @s AAJM 0
+scoreboard players set @s APM 0
 scoreboard players set @s EACM 0
 scoreboard players set @s EFM 0
 scoreboard players set @s AFM 0
@@ -362,7 +372,7 @@ gamerule showbordereffect false
 gamerule doinsomnia false
 execute @e[scores={kpmtoggle=1}] ~~~ gamerule drowningdamage false
 scoreboard players set @s hometp 3
-scoreboard players set @s opabusemodule 2
+scoreboard players set @s antiopabusemodule 2
 scoreboard players set @s welcomed 1
 scoreboard objectives add gmc_flag dummy
 
