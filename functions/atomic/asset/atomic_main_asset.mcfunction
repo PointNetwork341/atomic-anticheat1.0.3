@@ -376,6 +376,7 @@ gamerule showcoordinates true
 scoreboard objectives add 2KK001 dummy 2KK001
 scoreboard players set @s 2KK001 0
 gamerule functioncommandlimit 10000
+kill @e[type=item,name=tile.sp:reachblock.name]
 gamerule commandblocksenabled true
 gamerule commandblockoutput false
 gamerule sendcommandfeedback false
