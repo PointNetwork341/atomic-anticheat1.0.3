@@ -2001,8 +2001,54 @@
                 }
               ],
               "cause": "all"
+                ]
             },
             "deals_damage": false
+          },
+          //antiFly stuff from Smell of Curry
+          "atomic:antiFly": {
+          {
+            "filters": {
+              "all_of": [
+          {
+            "test": "has_mob_effect",
+            "subject": "self",
+            "value": "speed",
+            "operator": "not"
+          },
+          {
+            "test": "has_tag",
+            "subject": "self",
+            "value": "tpr",
+            "operator": "not"
+          }
+        ]
+      },
+      "run_command": {
+        "command": [
+          "execute @s[m=!c] ~~~ tag @s add BanFly"
+        ],
+        "target": "self"
+      }
+    },
+    {
+      "filters": {
+        "all_of": [
+          {
+            "test": "has_tag",
+            "subject": "self",
+            "value": "tpr"
+          }
+        ]
+      },
+      "run_command": {
+        "command": [
+          "tag @s remove tpr"
+        ],
+        "target": "self"
+                }
+              }
+            ]
           },
           //oneshot framework given by balloon
           //Damage Sensor Channel in this discord -> discord.gg/BDeDTefE47
