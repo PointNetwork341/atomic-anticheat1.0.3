@@ -196,6 +196,7 @@ scoreboard objectives add playercount dummy
 
 #module scoreboards
 scoreboard objectives add ACM dummy ACM
+scoreboard objectives add ACM dummy ARM
 scoreboard objectives add AATM dummy AATM
 scoreboard objectives add AAJM dummy AAJM
 scoreboard objectives add APM dummy APM
@@ -230,6 +231,7 @@ scoreboard objectives add MDM dummy MDM
 #Module Toggles
 scoreboard objectives add SSDEBUG dummy SSDEBUG
 scoreboard objectives add afmtoggle dummy afmtoggle
+scoreboard objectives add armtoggle dummy armtoggle
 scoreboard objectives add apmtoggle dummy apmtoggle
 scoreboard objectives add aajtoggle dummy aajmtoggle
 scoreboard objectives add aattoggle dummy aatmtoggle
@@ -297,6 +299,7 @@ scoreboard objectives add z-axis dummy y-axis
 #Default Toggles
 scoreboard players set @s SSDEBUG 0
 scoreboard players set @s acmtoggle 0
+scoreboard players set @s armtoggle 0
 scoreboard players set @s aajmtoggle 0
 scoreboard players set @s aatmtoggle 0
 scoreboard players set @s apmtoggle 0
@@ -329,6 +332,7 @@ scoreboard players set @s mdmtoggle 0
 #Give everyone default module scoreboard scores
 scoreboard players set @s ACM 0
 scoreboard players set @s AAJM 0
+scoreboard players set @s ARM 0
 scoreboard players set @s AATM 0
 scoreboard players set @s APM 0
 scoreboard players set @s EACM 0

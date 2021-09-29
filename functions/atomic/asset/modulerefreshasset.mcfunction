@@ -5,6 +5,7 @@ scoreboard players set @a AFM 0
 scoreboard players set @a APM 0
 scoreboard players set @a EACM 0
 scoreboard players set @a AMM 0
+scoreboard players set @a ARM 0
 scoreboard players set @a KPM 0
 scoreboard players set @a FMM 0
 scoreboard players set @a AT 0
