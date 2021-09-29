@@ -11,6 +11,7 @@
           "testing",
           "death_effect",
           "on_death",
+          "anti_airjump",
           "oneshot",
           "home_x_negative",
           "home_y_negative",
@@ -42,6 +43,7 @@
         "death_effect": "controller.animation.death_effect",
         "on_death": "controller.animation.on_death",
         "oneshot": "controller.animation.player.oneshot",
+        "anti_airjump": "controller.animation.player.anti_airjump",
         "home_x_negative": "controller.animation.home_x_negative",
         "home_y_negative": "controller.animation.home_y_negative",
         "home_z_negative": "controller.animation.home_z_negative",
@@ -1404,6 +1406,54 @@
                   "test": "has_equipment",
                   "domain": "any",
                   "operator": "==",
+                  "value": "minecraft:leaves:0"
+                },
+                {
+                  "test": "has_equipment",
+                  "domain": "any",
+                  "operator": "==",
+                  "value": "minecraft:leaves:2"
+                },
+                {
+                  "test": "has_equipment",
+                  "domain": "any",
+                  "operator": "==",
+                  "value": "minecraft:leaves:3"
+                },
+                {
+                  "test": "has_equipment",
+                  "domain": "any",
+                  "operator": "==",
+                  "value": "minecraft:leaves2:0"
+                },
+                {
+                  "test": "has_equipment",
+                  "domain": "any",
+                  "operator": "==",
+                  "value": "minecraft:leaves2:5"
+                },
+                {
+                  "test": "has_equipment",
+                  "domain": "any",
+                  "operator": "==",
+                  "value": "minecraft:azalea_leaves"
+                },
+                {
+                  "test": "has_equipment",
+                  "domain": "any",
+                  "operator": "==",
+                  "value": "minecraft:azalea_leaves_flowered"
+                },
+                {
+                  "test": "has_equipment",
+                  "domain": "any",
+                  "operator": "==",
+                  "value": "minecraft::flower_pot"
+                },
+                {
+                  "test": "has_equipment",
+                  "domain": "any",
+                  "operator": "==",
                   "value": "minecraft:glowingobsidian"
                 },
                 {
@@ -1954,7 +2004,7 @@
             },
             "deals_damage": false
           },
-          //oneshot framework given to UAC by balloon
+          //oneshot framework given by balloon
           //Damage Sensor Channel in this discord -> discord.gg/BDeDTefE47
           {
             "on_damage": {

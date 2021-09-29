@@ -1,5 +1,6 @@
 scoreboard players set @a ACM 0
 scoreboard players set @a AAJM 0
+scoreboard players set @a AATM 0
 scoreboard players set @a AFM 0
 scoreboard players set @a APM 0
 scoreboard players set @a EACM 0
