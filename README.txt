@@ -5,6 +5,6 @@
 |             v1.0.2              |
 |_________________________________|
 
-If you're gonna steal code or something, atleast credit us.
+If you're gonna steal code or something, at least credit us.
 
 discord.gg/uGUf34GFn7
