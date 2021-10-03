@@ -1,7 +1,6 @@
 #ban check for stats
 execute @s[scores={BanCBE=1..9}] ~~~ tellraw @a[tag=stafftag] {"rawtext":[{"text":"§¶§cAtomic → §d"},{"selector":"@s"},{"text":" §¶§cgot banned for CBE Exploits"}]}
 execute @s[scores={BanWarn=1..9}] ~~~ tellraw @a[tag=stafftag] {"rawtext":[{"text":"§¶§cAtomic → §d"},{"selector":"@s"},{"text":" §¶§cgot banned for having 3 Warnings"}]}
-execute @s[scores={airjumpflag=3..9,BanAirJump=1..9}] ~~~ tellraw @a[tag=stafftag] {"rawtext":[{"text":"§¶§cAtomic → §d"},{"selector":"@s"},{"text":" §¶§cgot banned for using Air Jump"}]}
 execute @s[scores={PermBan=1..9}] ~~~ tellraw @a[tag=stafftag] {"rawtext":[{"text":"§¶§cAtomic → §d"},{"selector":"@s"},{"text":" §¶§cgot banned for being Globally Banned"}]}
 execute @s[scores={Ban=1..9}] ~~~ tellraw @a[tag=stafftag] {"rawtext":[{"text":"§¶§cAtomic → §d"},{"selector":"@s"},{"text":" §¶§cgot banned by an Operator"}]}
 execute @s[scores={IIB=1..9}] ~~~ tellraw @a[tag=stafftag] {"rawtext":[{"text":"§¶§cAtomic → §d"},{"selector":"@s"},{"text":" §¶§cgot banned for Illegal Items"}]}

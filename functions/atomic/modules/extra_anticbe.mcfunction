@@ -14,6 +14,10 @@ execute @a[tag=administrator,tag=!ownertag] ~~~ tag @s remove administrator
 execute @r[tag=op,tag=!ownertag] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic → §¶§cFlagged §d"},{"selector":"@s"},{"text":"§¶§c for trying to get owner tag"}]}
 execute @a[tag=op,tag=!ownertag] ~~~ tag @s remove op
 
+#stops cbe for ownerstatus
+execute @r[tag=ownerstatus,tag=!ownertag] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic → §¶§cFlagged §d"},{"selector":"@s"},{"text":"§¶§c for trying to get owner tag"}]}
+execute @a[tag=ownerstatus,tag=!ownertag] ~~~ tag @s remove ownerstatus
+
 #stops cbe for Op
 execute @r[tag=Op,tag=!ownertag] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic → §¶§cFlagged §d"},{"selector":"@s"},{"text":"§¶§c for trying to get owner tag"}]}
 execute @a[tag=Op,tag=!ownertag] ~~~ tag @s remove Op

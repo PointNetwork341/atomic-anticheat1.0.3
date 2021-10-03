@@ -26,6 +26,7 @@ scoreboard players set @a AOPAM 0
 scoreboard players set @a RSM 0
 scoreboard players set @a RTM 0
 scoreboard players set @a SSM 0
+scoreboard players set @a CSM 0
 scoreboard players set @a TPM 0
 scoreboard players set @a WBM 0
 scoreboard players set @a IIM 0

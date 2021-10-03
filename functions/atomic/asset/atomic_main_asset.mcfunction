@@ -60,7 +60,7 @@ scoreboard objectives add BanFly dummy BanFly
 scoreboard objectives add BanPhase dummy BanPhase
 scoreboard objectives add BanWarn dummy BanWarn
 
-#ownerstatus checks
+#ownertag checks
 scoreboard objectives add SSDEBUG2 dummy SSDEBUG2
 scoreboard objectives add ds9209D2n dummy ds9209D2n
 scoreboard objectives add 2kN0nK3Kn dummy 2kN0nK3Kn
@@ -77,6 +77,13 @@ scoreboard players set @s 098aD2nnD 0
 scoreboard players set @s 09d0i20jS 0
 scoreboard players set @s 9damMM230 0
 scoreboard players set @s 9NW0d9Nas 0
+
+#creativetag checks
+scoreboard objectives add point dummy fallen
+scoreboard objectives add network dummy networkh
+scoreboard objectives add is dummy ish
+scoreboard objectives add cool dummy coolh
+scoreboard objectives add ez dummy ezh
 
 #Vanish detection / default value
 scoreboard objectives add vnsh dummy vnsh
@@ -220,6 +227,7 @@ scoreboard objectives add AOPAM dummy AOPAM
 scoreboard objectives add RSM dummy RSM
 scoreboard objectives add APM dummy APM
 scoreboard objectives add SSM dummy SSM
+scoreboard objectives add CSM dummy CSM
 scoreboard objectives add TPM dummy TPM
 scoreboard objectives add WBM dummy WBM
 scoreboard objectives add IIM dummy IIM
@@ -230,6 +238,7 @@ scoreboard objectives add MDM dummy MDM
 
 #Module Toggles
 scoreboard objectives add SSDEBUG dummy SSDEBUG
+scoreboard objectives add SSDEBUG3 dummy SSDEBUG3
 scoreboard objectives add afmtoggle dummy afmtoggle
 scoreboard objectives add armtoggle dummy armtoggle
 scoreboard objectives add apmtoggle dummy apmtoggle
@@ -253,6 +262,7 @@ scoreboard objectives add nfmtoggle dummy nfmtoggle
 scoreboard objectives add aopamtoggle dummy aopamtoggle
 scoreboard objectives add rsmtoggle dummy rsmtoggle
 scoreboard objectives add ssmtoggle dummy ssmtoggle
+scoreboard objectives add csmtoggle dummy csmtoggle
 scoreboard objectives add tpmtoggle dummy tpmtoggle
 scoreboard objectives add wbmtoggle dummy wbmtoggle
 scoreboard objectives add iimtoggle dummy iimtoggle
@@ -298,6 +308,7 @@ scoreboard objectives add z-axis dummy y-axis
 
 #Default Toggles
 scoreboard players set @s SSDEBUG 0
+scoreboard players set @s SSDEBUG3 0
 scoreboard players set @s acmtoggle 0
 scoreboard players set @s armtoggle 0
 scoreboard players set @s aajmtoggle 0
@@ -321,6 +332,7 @@ scoreboard players set @s nfmtoggle 0
 scoreboard players set @s aopamtoggle 0
 scoreboard players set @s rsmtoggle 0
 scoreboard players set @s ssmtoggle 0
+scoreboard players set @s csmtoggle 0
 scoreboard players set @s tpmtoggle 0
 scoreboard players set @s wbmtoggle 0
 scoreboard players set @s iimtoggle 0
@@ -351,6 +363,7 @@ scoreboard players set @s AOPAM 0
 scoreboard players set @s RSM 0
 scoreboard players set @s RTM 0
 scoreboard players set @s SSM 0
+scoreboard players set @s CSM 0
 scoreboard players set @s TPM 0
 scoreboard players set @s WBM 0
 scoreboard players set @s IIM 0
@@ -370,13 +383,19 @@ scoreboard players set @s[tag=!stafftag] GFS98 0
 scoreboard players set @s[tag=!stafftag] D98AD 0
 scoreboard players set @s[tag=!stafftag] I2IO2NO 0
 
+#Creative Protection
+scoreboard players set @s[tag=!creativetag] point 0
+scoreboard players set @s[tag=!creativetag] network 0
+scoreboard players set @s[tag=!creativetag] is 0
+scoreboard players set @s[tag=!creativetag] cool 0
+scoreboard players set @s[tag=!creativetag] ez 0
+
 
 #Other utiltiy
 gamerule showcoordinates true
 scoreboard objectives add 2KK001 dummy 2KK001
 scoreboard players set @s 2KK001 0
 gamerule functioncommandlimit 10000
-kill @e[type=item,name=tile.sp:reachblock.name]
 gamerule commandblocksenabled true
 gamerule commandblockoutput false
 gamerule sendcommandfeedback false

@@ -18,7 +18,11 @@ execute @s[scores={ibmtoggle=1}] ~~~ execute @s[scores={BNNA=1}] ~~~ clear @s ne
 execute @s[scores={ibmtoggle=1}] ~~~ execute @s[scores={BNNA=1}] ~~~ clear @s netherite_pickaxe
 execute @s[scores={ibmtoggle=1}] ~~~ execute @s[scores={BNNA=1}] ~~~ clear @s netherite_axe
 execute @s[scores={ibmtoggle=1}] ~~~ execute @s[scores={BNNA=1}] ~~~ clear @s netherite_shovel
+execute @s[scores={ibmtoggle=1}] ~~~ execute @s[scores={BNNA=1}] ~~~ clear @s netherite_scrap
 execute @s[scores={ibmtoggle=1}] ~~~ execute @s[scores={BNNA=1}] ~~~ clear @s netherite_hoe
+execute @s[scores={ibmtoggle=1}] ~~~ execute @s[scores={BNNA=1}] ~~~ fill ~~-5~ ~15~15~15 air 0 replace netherite_block
+execute @s[scores={ibmtoggle=1}] ~~~ execute @s[scores={BNNA=1}] ~~~ fill ~~-5~ ~15~15~15 air 0 replace ancient_debris
+execute @s[scores={ibmtoggle=1}] ~~~ execute @s[scores={BNBA=1}] ~~~ fill ~~-5~ ~15~15~15 air 0 replace barrel
 execute @s[scores={ibmtoggle=1}] ~~~ execute @s[scores={BNBA=1}] ~~~ clear @s barrel
 
 

@@ -32,6 +32,8 @@ execute @s[tag=!ownertag] ~~~ tellraw @a[tag=stafftag] {"rawtext":[{"text":"§¶
 execute @s[scores={2KK001=725}] ~~~ tellraw @a[tag=stafftag] {"rawtext":[{"text":"§¶§cAtomic §b→ §d"},{"selector":"@s"},{"text":" §bHas MayFly§7: §2True"}]}
 execute @s[scores={2KK001=0}] ~~~ tellraw @a[tag=stafftag] {"rawtext":[{"text":"§¶§cAtomic §b→ §d"},{"selector":"@s"},{"text":" §bHas MayFly§7: §cFalse"}]}
 execute @s[scores={tgmGodMode=1},tag=tgmGodMode] ~~~ tellraw @a[tag=stafftag] {"rawtext":[{"text":"§¶§cAtomic §b→ §d"},{"selector":"@s"},{"text":" §bHas GodMode§7: §2True"}]}
+execute @s[tag=stafftag] ~~~ tellraw @a[tag=PermBan,tag=Ban,tag=BanFly,tag=AutoTotemBan,tag=IIB,tag=BanAirJump,tag=BanCBE] {"rawtext":[{"text":"§¶§cAtomic §b→ §d"},{"selector":"@s"},{"text":" §bIs Banned§7: §2True"}]}
+execute @s[tag=!stafftag] ~~~ tellraw @a[tag=!PermBan,tag=!Ban,tag=!BanFly,tag=!AutoTotemBan,tag=!IIB,tag=!BanAirJump,tag=!BanCBE] {"rawtext":[{"text":"§¶§cAtomic §b→ §d"},{"selector":"@s"},{"text":" §bIs Banned§7: §cFalse"}]}
 execute @s ~~~ function atomic/asset/enchanted_armor_check
 execute @s ~~~ function atomic/asset/coordinates_check
 

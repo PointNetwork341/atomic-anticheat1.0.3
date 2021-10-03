@@ -1,0 +1,4 @@
+Default Key for CreativeProtection is
+/function atomic/creativeprotection/e0a09784fdb4c71b30ad27d5fec523c/c4020199be1f45659650f1a35e03aab6
+
+Rename those file path ways to something different to ensure maximum security.

@@ -74,6 +74,9 @@ execute @s[tag=stafftag,scores={IBM=0}] ~~~ tellraw @s {"rawtext":[{"text":"§¶
 execute @s[tag=stafftag,scores={SSM=1}] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic §¶§b→§¶§bFake Staff Protection §7[ §¶§2ENABLED §7]"}]}
 execute @s[tag=stafftag,scores={SSM=0}] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic §¶§b→§¶§bFake Staff Protection §7[ §¶§cDISABLED §7]"}]}
 
+execute @s[tag=stafftag,scores={CSM=1}] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic §¶§b→§¶§bCreative Protection §7[ §¶§2ENABLED §7]"}]}
+execute @s[tag=stafftag,scores={CSM=0}] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic §¶§b→§¶§bCreative Protection §7[ §¶§cDISABLED §7]"}]}
+
 execute @s[tag=stafftag,scores={AOPAM=1}] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic §¶§b→§¶§bAnti-Op Abuse §7[ §¶§2ENABLED §7]"}]}
 execute @s[tag=stafftag,scores={AOPAM=0}] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic §¶§b→§¶§bAnti-Op Abuse §7[ §¶§cDISABLED §7]"}]}
 

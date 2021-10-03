@@ -17,9 +17,9 @@
             }
           ],
           "on_entry": [
-            "/function atomic/asset/autototemdetect",
-            "/tag @s remove totemOn",
-            "/scoreboard players set @s[tag=!totemOn] totemTimer 0"
+            "/execute @e[scores={atmtoggle=1}] ~~~ /function atomic/asset/autototemdetect",
+            "/execute @e[scores={atmtoggle=1}] ~~~ /tag @s remove totemOn",
+            "/execute @e[scores={atmtoggle=1}] ~~~ /scoreboard players set @s[tag=!totemOn] totemTimer 0"
           ],
           "on_exit": [
             "/tag @s add totemOn"
