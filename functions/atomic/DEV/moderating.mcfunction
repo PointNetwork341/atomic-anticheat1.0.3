@@ -1,4 +1,3 @@
-scoreboard objectives add moderating dummy
 execute @s[tag=stafftag] ~~~ scoreboard players set @s moderating 1
 execute @s[scores={moderating=1}] ~~~ effect @s invisibility 32000 255 true
 execute @s[scores={moderating=1}] ~~~ effect @s night_vision 32000 255 true
