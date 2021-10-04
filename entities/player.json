@@ -2005,51 +2005,6 @@
             },
             "deals_damage": false
           },
-          //antiFly stuff from Smell of Curry
-          "atomic:antiFly": {
-          {
-            "filters": {
-              "all_of": [
-          {
-            "test": "has_mob_effect",
-            "subject": "self",
-            "value": "speed",
-            "operator": "not"
-          },
-          {
-            "test": "has_tag",
-            "subject": "self",
-            "value": "tpr",
-            "operator": "not"
-          }
-        ]
-      },
-      "run_command": {
-        "command": [
-          "execute @s[m=!c] ~~~ tag @s add BanFly"
-        ],
-        "target": "self"
-      }
-    },
-    {
-      "filters": {
-        "all_of": [
-          {
-            "test": "has_tag",
-            "subject": "self",
-            "value": "tpr"
-          }
-        ]
-      },
-      "run_command": {
-        "command": [
-          "tag @s remove tpr"
-        ],
-        "target": "self"
-                }
-              }
-            ]
-          },
           //oneshot framework given by balloon
           //Damage Sensor Channel in this discord -> discord.gg/BDeDTefE47
           {
@@ -2161,10 +2116,10 @@
         "run_command": {
           "target": "self",
           "command": [
-            "execute @s[tag=!stafftag,scores={IIM=1}] ~~~ replaceitem entity @s slot.weapon.mainhand 0 air",
-            "execute @s[tag=!stafftag,scores={IIM=1}] ~~~ function atomic/asset/clearspawneggasset",
-            "execute @s[tag=!stafftag] ~~~ execute @s[scores={IIM=1}] ~~~ function atomic/asset/illegalitemkickmsg",
-            "execute @s[tag=!stafftag] ~~~ execute @s[scores={IIM=1}] ~~~ function atomic/asset/illegalitemwarn"
+            "execute @s[tag=!stafftag,scores={iimtoggle=1}] ~~~ replaceitem entity @s slot.weapon.mainhand 0 air",
+            "execute @s[tag=!stafftag,scores={iimtoggle=1}] ~~~ function atomic/asset/clearspawneggasset",
+            "execute @s[tag=!stafftag] ~~~ execute @s[scores={iimtoggle=1}] ~~~ function atomic/asset/illegalitemkickmsg",
+            "execute @s[tag=!stafftag] ~~~ execute @s[scores={iimtoggle=1}] ~~~ function atomic/asset/illegalitemwarn"
           ]
         }
       },
@@ -2181,7 +2136,7 @@
         "run_command": {
           "target": "self",
           "command": [
-            "execute @s[scores={acmtoggle=1}] ~~~ replaceitem entity @s slot.weapon.mainhand 0 air",
+            "execute @s[scores={acmtoggle=1}] ~~~ atomic/asset/clearhotbar",
             "execute @s[scores={acmtoggle=1}] ~~~ gamemode s @a[tag=!stafftag]",
             "execute @s[scores={acmtoggle=1}] ~~~ kill @e[type=!player,r=40]",
             "execute @s[scores={acmtoggle=1}] ~~~ tag @a remove PermBan",

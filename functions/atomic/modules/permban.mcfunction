@@ -114,6 +114,59 @@ tag "JoeMum82" add PermBan
 tag "HydraOnTopp" add PermBan
 tag "altohyperion238" add PermBan
 tag "big sans9695" add PermBan
+<<<<<<< Updated upstream
+=======
+tag "xcuro" add PermBan
+tag "Kingl06" add PermBan
+tag "KingLeo332" add PermBan
+tag "Tinobear222" add PermBan
+tag "MrScientist2699" add PermBan
+tag "wasabiBOBBY9288" add PermBan
+tag "X0XOdantheman3" add PermBan
+tag "Wiped cornfid" add PermBan
+tag "Ayxet" add PermBan
+tag "Ademplayz111" add PermBan
+tag "AtrainBC" add PermBan
+tag "Super Naten" add PermBan
+tag "PrimeSolution54" add PermBan
+tag "XxGhost-_-greif-" add PermBan
+tag "Yung1shot" add PermBan
+tag "Spartn420x09" add PermBan
+tag "FazeJaiden1278" add PermBan
+tag "Gxxlz" add PermBan
+tag "TTV_JCNAVA" add PermBan
+tag "ELITEJACKSON09" add PermBan
+tag "XxIBAREBEARSxX" add PermBan
+tag "XDtacomaster" add PermBan
+tag "TheHusky193" add PermBan
+tag "Ephistian" add PermBan
+tag "shooterman6129" add PermBan
+tag "Jerryspods" add PermBan
+tag "absq" add PermBan
+tag "Withery Sky" add PermBan
+tag "XTM TYZ XL" add PermBan
+tag "LittleKradd" add PermBan
+tag "Minecraftlol452" add PermBan
+tag "Sh4d0wInsane" add PermBan
+tag "LilCharChar2352" add PermBan
+tag "WarriorChad318" add PermBan
+tag "Sirmoezallot" add PermBan
+tag "FireRyer" add PermBan
+tag "SavvyDuchess76" add PermBan
+tag "HaZe Toxicc" add PermBan
+tag "MadLyric0926469" add PermBan
+tag "Xdlapple" add PermBan
+tag "MnMdude1936" add PermBan
+tag "Lazabeam7052" add PermBan
+tag "Avilxs" add PermBan
+tag "xn ceptix" add PermBan
+tag "kingstoniscool8" add PermBan
+tag "Bomber K 5000" add PermBan
+tag "XSLIPPYFOX23" add PermBan
+tag "SparingTax50" add PermBan
+tag "nx2b" add PermBan
+tag "brampedgex" add PermBan
+>>>>>>> Stashed changes
 tag "" add PermBan
 
 
