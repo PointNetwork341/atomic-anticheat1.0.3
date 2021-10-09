@@ -111,6 +111,11 @@ tag "swirlyhusky" add PermBan
 tag "JoeMum82" add PermBan
 tag "altohyperion238" add PermBan
 tag "big sans9695" add PermBan
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+=======
+>>>>>>> private
 tag "xcuro" add PermBan
 tag "Kingl06" add PermBan
 tag "KingLeo332" add PermBan
@@ -136,8 +141,11 @@ tag "XDtacomaster" add PermBan
 tag "TheHusky193" add PermBan
 tag "Ephistian" add PermBan
 tag "shooterman6129" add PermBan
+<<<<<<< HEAD
 tag "Nightwalkerlots" add PermBan
 tag "HydraOnTopp" add PermBan
+=======
+>>>>>>> private
 tag "Jerryspods" add PermBan
 tag "absq" add PermBan
 tag "Withery Sky" add PermBan
@@ -163,6 +171,10 @@ tag "XSLIPPYFOX23" add PermBan
 tag "SparingTax50" add PermBan
 tag "nx2b" add PermBan
 tag "brampedgex" add PermBan
+<<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
+>>>>>>> private
 tag "" add PermBan
 
 

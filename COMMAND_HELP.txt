@@ -1,4 +1,26 @@
 This .txt is to help those who want to edit their version of Atomic but don't know where to begin.
 So this will be almost all of the commands in the anti cheat with helpful tips.
 
+<<<<<<< HEAD
 1. You have to be careful, one error and your entire anticheat could be messed up.
+=======
+---------------------------------------------------------------------------
+TAG COMMAND
+/tag @s add (THE TAG YOU WANT TO GIVE SOMEONE) - adds a tag to @s
+/tag @s remove (THE TAG YOU WANT TO REMOVE FROM SOMEONE) - removes a tag from @s
+@a[tag=(tag)] - Executes on everyone (@a) but only if they have (tag)
+! means "does not have"
+@a[tag=!(tag)] - Executes on everyone (@a) but only if they do not have (tag)
+@a[tag=(tag),(tag2)] - Executes on everyone (@a) but only if they have (tag) and (tag2)
+@a[tag=!(tag),!(tag2)] - Executes on everyone (@a) but only if they do not have (tag) and (tag2)
+@a[tag=!(tag),(tag2)] - Executes on everyone (@a) but only if they have (tag2) and not (tag)
+---------------------------------------------------------------------------
+---------------------------------------------------------------------------
+SCOREBOARD COMMAND
+/scoreboard objectives add score dummy - creates the objective "score (can be changed from score)"
+/scoreboard players add @s score 1 - gives @s 1 "score"
+/scoreboard players remove @s score 1 - removes @s 1 "score"
+/scoreboard players reset @s score - resets the amount of score @s has to 0
+/scoreboard players set @s score 64 - sets the amount of score @s has to 64 regardless of their current amount
+---------------------------------------------------------------------------
+>>>>>>> private

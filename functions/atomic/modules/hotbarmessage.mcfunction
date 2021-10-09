@@ -1,8 +1,22 @@
 #survival (with score)
+<<<<<<< HEAD
 execute @s[scores={hmmtoggle=1,fzplr=0,pvpdis=0,hometp=3,moderating=0},m=s] ~~~ titleraw @s actionbar {"rawtext":[{"text":"§¶§bAtomic AntiCheat §7[§1v1.0.3§7] Public §b- Made by §dAtomic Studios"},{"text":"\n §¶§bKills §7:"},{"score":{"name":"@s","objective":"kills"}},{"text":" §bDeaths §7:"},{"score":{"name":"@s","objective":"deaths"}},{"text":" §bCurrent Killstreak §7:"},{"score":{"name":"@s","objective":"killstreak"}}]}
 
 #survival (without score)
 execute @s[scores={hmmtoggle=2,fzplr=0,pvpdis=0,hometp=3,moderating=0},m=s] ~~~ titleraw @s actionbar {"rawtext":[{"text":"§¶§bAtomic AntiCheat §7[§1v1.0.3§7] Public §b- Made by §dAtomic Studios"}]}
+=======
+<<<<<<< Updated upstream
+execute @s[scores={hmmtoggle=1,fzplr=0,pvpdis=0,hometp=3},m=s] ~~~ titleraw @s actionbar {"rawtext":[{"text":"§¶§bAtomic AntiCheat §7[§1v1.0.2§7] Public §b- Made by §dAtomic Studios"},{"text":"\n §¶§bKills §7:"},{"score":{"name":"@s","objective":"kills"}},{"text":" §bDeaths §7:"},{"score":{"name":"@s","objective":"deaths"}},{"text":" §bCurrent Killstreak §7:"},{"score":{"name":"@s","objective":"killstreak"}}]}
+
+#survival (without score)
+execute @s[scores={hmmtoggle=2,fzplr=0,pvpdis=0,hometp=3},m=s] ~~~ titleraw @s actionbar {"rawtext":[{"text":"§¶§bAtomic AntiCheat §7[§1v1.0.2§7] Public §b- Made by §dAtomic Studios"}]}
+=======
+execute @s[scores={hmmtoggle=1,fzplr=0,pvpdis=0,hometp=3,moderating=0},m=s] ~~~ titleraw @s actionbar {"rawtext":[{"text":"§¶§bAtomic AntiCheat §7[§1v1.0.3§7] PUBLIC §b- Made by §dAtomic Studios"},{"text":"\n §¶§bKills §7:"},{"score":{"name":"@s","objective":"kills"}},{"text":" §bDeaths §7:"},{"score":{"name":"@s","objective":"deaths"}},{"text":" §bCurrent Killstreak §7:"},{"score":{"name":"@s","objective":"killstreak"}}]}
+
+#survival (without score)
+execute @s[scores={hmmtoggle=2,fzplr=0,pvpdis=0,hometp=3,moderating=0},m=s] ~~~ titleraw @s actionbar {"rawtext":[{"text":"§¶§bAtomic AntiCheat §7[§1v1.0.3§7] PUBLIC §b- Made by §dAtomic Studios"}]}
+>>>>>>> Stashed changes
+>>>>>>> private
 
 #Frozen Player
 execute @s[scores={fzplr=1,pvpdis=0}] ~~~ titleraw @s actionbar {"rawtext":[{"text":"§¶§bYOU HAVE BEEN §cFROZEN §bBY AN OPERATOR \n §¶§bLEAVING MAY RESULT IN A BAN"}]}
@@ -11,14 +25,28 @@ execute @s[scores={fzplr=1,pvpdis=0}] ~~~ titleraw @s actionbar {"rawtext":[{"te
 execute @s[scores={pvpdis=1,frzplr=0}] ~~~ titleraw @s actionbar {"rawtext":[{"text":"§¶§bYOUR PVP WAS TAKEN §c §bBY AN OPERATOR \n §¶§bLEAVING MAY RESULT IN A BAN"}]}
 
 #creative with score
+<<<<<<< HEAD
 execute @a[tag=stafftag,m=c,scores={hmmtoggle=1,AOPAM=0,aopamtoggle=0,hometp=3,moderating=0}] ~~~ titleraw @s actionbar {"rawtext":[{"text":"§¶§aCREATIVE ENABLED §7| §d` /Function atomic/help ` §7| §7[§1v1.0.3§7]§b\n §bEntity Count §7: "},{"score":{"name":"@a[tag=entitycounter]","objective":"entitycount"}},{"text":" §bPlayer Count §7: "},{"score":{"name":"playerdummy","objective":"playercount"}},{"text":" §bCurrent WorldSpawn§7: X = "},{"score":{"name":"@a[tag=randomspawn,scores={randomspawn=10..450}]","objective":"x-axis"}},{"text":" Z = "},{"score":{"name":"@a[scores={randomspawn=10..450}]","objective":"z-axis"}}]}
 #creative without score
+=======
+<<<<<<< Updated upstream
+execute @a[tag=stafftag,m=c,scores={hmmtoggle=1,AOPAM=0,aopamtoggle=0,hometp=3}] ~~~ titleraw @s actionbar {"rawtext":[{"text":"§¶§aCREATIVE ENABLED §7| §d` /Function atomic/help ` §7| §7[§1v1.0.2§7]§b\n §bEntity Count §7: "},{"score":{"name":"entitydummy","objective":"entitycount"}},{"text":" §bPlayer Count §7: "},{"score":{"name":"playerdummy","objective":"playercount"}},{"text":" §bCurrent WorldSpawn§7: X = "},{"score":{"name":"@a[tag=randomspawn,scores={randomspawn=10..450}]","objective":"x-axis"}},{"text":" Z = "},{"score":{"name":"@a[scores={randomspawn=10..340}]","objective":"z-axis"}}]}
+#creative without score
+execute @a[tag=stafftag,m=c,scores={hmmtoggle=1,AOPAM=0,aopamtoggle=0,hometp=3}] ~~~ titleraw @s actionbar {"rawtext":[{"text":"§¶§aCREATIVE ENABLED §7| §d` /Function atomic/help ` §7| §7[§1v1.0.2§7]§b\n §bEntity Count §7: "},{"score":{"name":"entitydummy","objective":"entitycount"}},{"text":" §bPlayer Count §7: "},{"score":{"name":"playerdummy","objective":"playercount"}},{"text":" §bCurrent WorldSpawn§7: X = "},{"score":{"name":"@a[tag=randomspawn,scores={randomspawn=10..450}]","objective":"x-axis"}},{"text":" Z = "},{"score":{"name":"@a[scores={randomspawn=10..340}]","objective":"z-axis"}}]}
+=======
+execute @a[tag=stafftag,m=c,scores={hmmtoggle=1,AOPAM=0,aopamtoggle=0,hometp=3,moderating=0}] ~~~ titleraw @s actionbar {"rawtext":[{"text":"§¶§aCREATIVE ENABLED §7| §d` /Function atomic/help ` §7| §7[§1v1.0.3§7]§b\n §bEntity Count §7: "},{"score":{"name":"@a[tag=entitycounter]","objective":"entitycount"}},{"text":" §bPlayer Count §7: "},{"score":{"name":"playerdummy","objective":"playercount"}},{"text":" §bCurrent WorldSpawn§7: X = "},{"score":{"name":"@a[tag=randomspawn,scores={randomspawn=10..450}]","objective":"x-axis"}},{"text":" Z = "},{"score":{"name":"@a[scores={randomspawn=10..450}]","objective":"z-axis"}}]}
+#creative without score
+>>>>>>> private
 execute @a[tag=stafftag,m=c,scores={hmmtoggle=1,AOPAM=0,aopamtoggle=0,hometp=3,moderating=0}] ~~~ titleraw @s actionbar {"rawtext":[{"text":"§¶§aCREATIVE ENABLED §7| §d` /Function atomic/help ` §7| §7[§1v1.0.3§7]§b\n §bEntity Count §7: "},{"score":{"name":"@a[tag=entitycounter]","objective":"entitycount"}},{"text":" §bPlayer Count §7: "},{"score":{"name":"playerdummy","objective":"playercount"}},{"text":" §bCurrent WorldSpawn§7: X = "},{"score":{"name":"@a[tag=randomspawn,scores={randomspawn=10..450}]","objective":"x-axis"}},{"text":" Z = "},{"score":{"name":"@a[scores={randomspawn=10..450}]","objective":"z-axis"}}]}
 
 #moderating with score
 execute @a[tag=stafftag,m=c,scores={hmmtoggle=1,AOPAM=0,aopamtoggle=0,hometp=3,moderating=1}] ~~~ titleraw @s actionbar {"rawtext":[{"text":"§¶§aMODERATING §7| §d` /Function atomic/help ` §7| §7[§1v1.0.3§7]§b\n §bEntity Count §7: "},{"score":{"name":"@a[tag=entitycounter]","objective":"entitycount"}},{"text":" §bPlayer Count §7: "},{"score":{"name":"playerdummy","objective":"playercount"}},{"text":" §bCurrent WorldSpawn§7: X = "},{"score":{"name":"@a[tag=randomspawn,scores={randomspawn=10..450}]","objective":"x-axis"}},{"text":" Z = "},{"score":{"name":"@a[scores={randomspawn=10..450}]","objective":"z-axis"}}]}
 #moderating without score
 execute @a[tag=stafftag,m=c,scores={hmmtoggle=1,AOPAM=0,aopamtoggle=0,hometp=3,moderating=1}] ~~~ titleraw @s actionbar {"rawtext":[{"text":"§¶§aMODERATING §7| §d` /Function atomic/help ` §7| §7[§1v1.0.3§7]§b\n §bEntity Count §7: "},{"score":{"name":"@a[tag=entitycounter]","objective":"entitycount"}},{"text":" §bPlayer Count §7: "},{"score":{"name":"playerdummy","objective":"playercount"}},{"text":" §bCurrent WorldSpawn§7: X = "},{"score":{"name":"@a[tag=randomspawn,scores={randomspawn=10..450}]","objective":"x-axis"}},{"text":" Z = "},{"score":{"name":"@a[scores={randomspawn=10..450}]","objective":"z-axis"}}]}
+<<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
+>>>>>>> private
 
 #Op abuse with score message
 execute @s[tag=stafftag,m=c,scores={hmmtoggle=1,AOPAM=1,aopamtoggle=1,hometp=3}] ~~~ titleraw @s actionbar {"rawtext":[{"text":"§¶§aCREATIVE ENABLED §7| §¶§cPVP DISABLED §7| §d` /Function atomic/help ` \n §bEntity Count §7: "},{"score":{"name":"@a[tag=entitycounter]","objective":"entitycount"}},{"text":" §bCurrent WorldSpawn§7: X = "},{"score":{"name":"@a[tag=randomspawn,scores={randomspawn=10..450}]","objective":"x-axis"}},{"text":" Z = "},{"score":{"name":"@r[scores={randomspawn=10..450}]","objective":"z-axis"}}]}
