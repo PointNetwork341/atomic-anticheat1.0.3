@@ -199,6 +199,7 @@ scoreboard objectives add moderating dummy
 
 #module scoreboards
 scoreboard objectives add ACM dummy ACM
+scoreboard objectives add lockdown dummy lockdown
 scoreboard objectives add ACM dummy ARM
 scoreboard objectives add APM dummy APM
 scoreboard objectives add EACM dummy EACM
@@ -234,6 +235,7 @@ scoreboard objectives add MDM dummy MDM
 scoreboard objectives add SSDEBUG dummy SSDEBUG
 scoreboard objectives add SSDEBUG3 dummy SSDEBUG3
 scoreboard objectives add afmtoggle dummy afmtoggle
+scoreboard objectives add lockdowntoggle dummy lockdowntoggle
 scoreboard objectives add armtoggle dummy armtoggle
 scoreboard objectives add apmtoggle dummy apmtoggle
 scoreboard objectives add efmtoggle dummy efmtoggle
@@ -302,6 +304,7 @@ scoreboard objectives add z-axis dummy y-axis
 scoreboard players set @s SSDEBUG 0
 scoreboard players set @s SSDEBUG3 0
 scoreboard players set @s acmtoggle 0
+scoreboard players set @s lockdowntoggle 0
 scoreboard players set @s armtoggle 0
 scoreboard players set @s apmtoggle 0
 scoreboard players set @s eacmtoggle 0
@@ -333,6 +336,7 @@ scoreboard players set @s mdmtoggle 0
 
 #Give everyone default module scoreboard scores
 scoreboard players set @s ACM 0
+scoreboard players set @s lockdown 0
 scoreboard players set @s ARM 0
 scoreboard players set @s APM 0
 scoreboard players set @s EACM 0
