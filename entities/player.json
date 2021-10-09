@@ -43,7 +43,6 @@
         "death_effect": "controller.animation.death_effect",
         "on_death": "controller.animation.on_death",
         "oneshot": "controller.animation.player.oneshot",
-        "anti_airjump": "controller.animation.player.anti_airjump",
         "home_x_negative": "controller.animation.home_x_negative",
         "home_y_negative": "controller.animation.home_y_negative",
         "home_z_negative": "controller.animation.home_z_negative",
