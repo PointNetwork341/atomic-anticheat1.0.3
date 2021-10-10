@@ -27,7 +27,6 @@ execute @s[tag=!stafftag] ~~~ execute @s[tag=PermBan] ~~~ function atomic/asset/
 execute @s[tag=!stafftag] ~~~ execute @s[tag=BanCBE] ~~~ function atomic/asset/ban_asset
 execute @s[tag=!stafftag] ~~~ execute @s[tag=BanCreative] ~~~ function atomic/asset/ban_asset
 execute @s[tag=!stafftag] ~~~ execute @s[tag=Ban] ~~~ function atomic/asset/ban_asset
-execute @s[tag=!stafftag] ~~~ execute @s[tag=BanAirJump] ~~~ function atomic/asset/ban_asset
 execute @s[tag=!stafftag] ~~~ execute @s[tag=illegalitemban] ~~~ function atomic/asset/ban_asset
 execute @s[tag=!stafftag] ~~~ execute @s[tag=BanFly] ~~~ function atomic/asset/ban_asset
 execute @s[tag=!stafftag] ~~~ execute @s[tag=BanPhase] ~~~ function atomic/asset/ban_asset
