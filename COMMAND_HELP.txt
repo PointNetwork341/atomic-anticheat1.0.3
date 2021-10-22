@@ -1,4 +1,0 @@
-This .txt is to help those who want to edit their version of Atomic but don't know where to begin.
-So this will be almost all of the commands in the anti cheat with helpful tips.
-
-1. You have to be careful, one error and your entire anticheat could be messed up.
