@@ -1,4 +1,4 @@
-tellraw @s {"rawtext":[{"text":"§¶§cAtomic → §bdiscord.gg/uGUf34GFn7"}]}
+tellraw @s {"rawtext":[{"text":"§¶§cAtomic §¶§b→ §bdiscord.gg/uGUf34GFn7"}]}
 
 #This hides this from the in-game function command directory
 execute @f ~~~ hide

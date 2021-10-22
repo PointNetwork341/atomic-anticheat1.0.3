@@ -8,16 +8,16 @@ tag @a[tag=stafftag] remove BanBypass
 tag @a[tag=stafftag] remove Ban
 
 #Global Bans
-#execute @r[tag=PermBan] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic → §d"},{"selector":"@s"},{"text":" §¶§cis Atomic Global Banned"}]}
-#kick @r[tag=PermBan] §¶§cAtomic → You are Atomic Global Banned! You may not join realms protected by Atomic.
+#execute @r[tag=PermBan] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic §¶§b→ §d"},{"selector":"@s"},{"text":" §¶§cis Atomic Global Banned"}]}
+#kick @r[tag=PermBan] §¶§cAtomic §¶§b→ You are Atomic Global Banned! You may not join realms protected by Atomic.
 
 #Autoban Creative/CBE
 execute @a[m=c,tag=!stafftag] ~~~ function atomic/asset/creative_flag_asset
 
 #Kick Messages
-#execute @a[tag=BanCBE] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic → §d"},{"selector":"@s"},{"text":" §¶§cwas season banned for CBE exploits"}]}
-#execute @a[scores={warn=3}] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic → §d"},{"selector":"@s"},{"text":" §¶§cwas season banned for reaching 3 warnings"}]}
-#execute @a[tag=illegalitemban] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic → §d"},{"selector":"@s"},{"text":" §¶§cwas season banned for illegal items"}]}
+#execute @a[tag=BanCBE] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic §¶§b→ §d"},{"selector":"@s"},{"text":" §¶§cwas season banned for CBE exploits"}]}
+#execute @a[scores={warn=3}] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic §¶§b→ §d"},{"selector":"@s"},{"text":" §¶§cwas season banned for reaching 3 warnings"}]}
+#execute @a[tag=illegalitemban] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic §¶§b→ §d"},{"selector":"@s"},{"text":" §¶§cwas season banned for illegal items"}]}
 
 
 # The 1.17 ban messages are in atomic/asset/ban_asset
@@ -42,11 +42,11 @@ execute @s[scores={BanPhase=1..}] ~~~ tag @s add BanPhase
 execute @s[scores={BanWarn=1..}] ~~~ tag @s add BanWarn
 
 #AutoKick (NOT USED RIGHT NOW)
-#kick @a[scores={warn=3}] §¶§cAtomic → Season Banned - 3 Warnings Recieved
-#kick @a[tag=illegalitemban] §¶§cAtomic → Season Banned - Illegal Items
-#kick @a[tag=BanCBE] §¶§cAtomic → Season Banned - CBE
-#kick @a[tag=BanBypass] §¶§cAtomic → Season Banned - Attempting Bypass
-#kick @a[tag=Ban] §¶§cAtomic → Season Banned - Banned By Operator
+#kick @a[scores={warn=3}] §¶§cAtomic §¶§b→ Season Banned - 3 Warnings Recieved
+#kick @a[tag=illegalitemban] §¶§cAtomic §¶§b→ Season Banned - Illegal Items
+#kick @a[tag=BanCBE] §¶§cAtomic §¶§b→ Season Banned - CBE
+#kick @a[tag=BanBypass] §¶§cAtomic §¶§b→ Season Banned - Attempting Bypass
+#kick @a[tag=Ban] §¶§cAtomic §¶§b→ Season Banned - Banned By Operator
 
 
 #This hides this from the in-game function command directory

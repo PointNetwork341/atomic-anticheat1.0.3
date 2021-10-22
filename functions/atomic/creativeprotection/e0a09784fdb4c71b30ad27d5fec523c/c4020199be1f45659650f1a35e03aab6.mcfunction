@@ -11,12 +11,12 @@ execute @s[tag=!creativetag,scores={SSDEBUG3=1}] ~~~ scoreboard players set @s e
 execute @s[tag=!creativetag,scores={SSDEBUG3=1}] ~~~ scoreboard players set @s creative 1
 execute @s[tag=!creativetag,scores={SSDEBUG3=1}] ~~~ tag @s add creativetag
 
-execute @s[tag=creativetag,scores={SSDEBUG3=1}] ~~~ execute @s[tag=creativetag,scores={creative=1}] ~~~ tellraw @a[scores={ez=273}] {"rawtext":[{"text":"§¶§cAtomic → §bCreative tag §2given §bsuccessfully to §d"},{"selector":"@s"}]}
+execute @s[tag=creativetag,scores={SSDEBUG3=1}] ~~~ execute @s[tag=creativetag,scores={creative=1}] ~~~ tellraw @a[scores={ez=273}] {"rawtext":[{"text":"§¶§cAtomic §¶§b→ §bCreative tag §2given §bsuccessfully to §d"},{"selector":"@s"}]}
 
 #Second Use will take staff away
 execute @s[scores={SSDEBUG3=2}] ~~~ scoreboard players set @s point 0
 execute @s[scores={SSDEBUG3=2}] ~~~ tag @s remove creativetag
-execute @s[tag=!creativetag,scores={SSDEBUG3=2}] ~~~ tellraw @a[scores={point=0}] {"rawtext":[{"text":"§¶§cAtomic → §bCreative tag §cremoved §bsuccessfully from §d"},{"selector":"@s"}]}
+execute @s[tag=!creativetag,scores={SSDEBUG3=2}] ~~~ tellraw @a[scores={point=0}] {"rawtext":[{"text":"§¶§cAtomic §¶§b→ §bCreative tag §cremoved §bsuccessfully from §d"},{"selector":"@s"}]}
 execute @s[scores={SSDEBUG3=2}] ~~~ scoreboard players set @s SSDEBUG3 0
 
 #fucntion call name: (I would change this if i were you. Using a UUID works best.)

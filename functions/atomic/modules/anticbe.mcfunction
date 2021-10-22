@@ -19,15 +19,15 @@ execute @r[scores={acmtoggle=1}] ~~~ effect @e[type=llama] resistance 10 255
 execute @r[scores={acmtoggle=1}] ~~~ effect @e[type=llama] regeneration 10 255
 
 #stops cbe for staffstatus
-execute @r[tag=staffstatus,tag=!stafftag] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic → §¶§cFlagged §d"},{"selector":"@s"},{"text":"§¶§c for trying to get staff tag"}]}
+execute @r[tag=staffstatus,tag=!stafftag] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic §¶§b→ §¶§cFlagged §d"},{"selector":"@s"},{"text":"§¶§c for trying to get staff tag"}]}
 execute @a[tag=staffstatus,tag=!stafftag] ~~~ tag @s remove staffstatus
 
 #stops cbe for staff
-execute @r[tag=staff,tag=!stafftag] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic → §¶§cFlagged §d"},{"selector":"@s"},{"text":"§¶§c for trying to get staff tag"}]}
+execute @r[tag=staff,tag=!stafftag] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic §¶§b→ §¶§cFlagged §d"},{"selector":"@s"},{"text":"§¶§c for trying to get staff tag"}]}
 execute @a[tag=staff,tag=!stafftag] ~~~ tag @s remove staff
 
 #stops cbe for admin
-execute @r[tag=admin,tag=!stafftag] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic → §¶§cFlagged §d"},{"selector":"@s"},{"text":"§¶§c for trying to get staff tag"}]}
+execute @r[tag=admin,tag=!stafftag] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic §¶§b→ §¶§cFlagged §d"},{"selector":"@s"},{"text":"§¶§c for trying to get staff tag"}]}
 execute @a[tag=admin,tag=!stafftag] ~~~ tag @s remove admin
 
 #leaf blocks (yes i know lol, you can cbe with them)

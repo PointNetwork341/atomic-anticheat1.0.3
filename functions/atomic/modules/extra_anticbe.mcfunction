@@ -1,49 +1,49 @@
 #stops cbe for Owner
-execute @r[tag=Owner,tag=!ownertag] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic → §¶§cFlagged §d"},{"selector":"@s"},{"text":"§¶§c for trying to get owner tag"}]}
+execute @r[tag=Owner,tag=!ownertag] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic §¶§b→ §¶§cFlagged §d"},{"selector":"@s"},{"text":"§¶§c for trying to get owner tag"}]}
 execute @a[tag=Owner,tag=!ownertag] ~~~ tag @s remove Owner
 
 #stops cbe for ban
-execute @r[tag=ban,tag=!ownertag] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic → §¶§cFlagged §d"},{"selector":"@s"},{"text":"§¶§c for having false ban tag"}]}
+execute @r[tag=ban,tag=!ownertag] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic §¶§b→ §¶§cFlagged §d"},{"selector":"@s"},{"text":"§¶§c for having false ban tag"}]}
 execute @a[tag=ban,tag=!ownertag] ~~~ tag @s remove ban
 
 #stops cbe for Banned
-execute @r[tag=Banned,tag=!ownertag] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic → §¶§cFlagged §d"},{"selector":"@s"},{"text":"§¶§c for having false ban tag"}]}
+execute @r[tag=Banned,tag=!ownertag] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic §¶§b→ §¶§cFlagged §d"},{"selector":"@s"},{"text":"§¶§c for having false ban tag"}]}
 execute @a[tag=Banned,tag=!ownertag] ~~~ tag @s remove Banned
 
 #stops cbe for Banned
-execute @r[tag=banned,tag=!ownertag] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic → §¶§cFlagged §d"},{"selector":"@s"},{"text":"§¶§c for having false ban tag"}]}
+execute @r[tag=banned,tag=!ownertag] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic §¶§b→ §¶§cFlagged §d"},{"selector":"@s"},{"text":"§¶§c for having false ban tag"}]}
 execute @a[tag=banned,tag=!ownertag] ~~~ tag @s remove banned
 
 #stops cbe for owner
-execute @r[tag=owner,tag=!ownertag] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic → §¶§cFlagged §d"},{"selector":"@s"},{"text":"§¶§c for trying to get owner tag"}]}
+execute @r[tag=owner,tag=!ownertag] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic §¶§b→ §¶§cFlagged §d"},{"selector":"@s"},{"text":"§¶§c for trying to get owner tag"}]}
 execute @a[tag=owner,tag=!ownertag] ~~~ tag @s remove owner
 
 #stops cbe for administrator
-execute @r[tag=administrator,tag=!ownertag] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic → §¶§cFlagged §d"},{"selector":"@s"},{"text":"§¶§c for trying to get staff tag"}]}
+execute @r[tag=administrator,tag=!ownertag] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic §¶§b→ §¶§cFlagged §d"},{"selector":"@s"},{"text":"§¶§c for trying to get staff tag"}]}
 execute @a[tag=administrator,tag=!ownertag] ~~~ tag @s remove administrator
 
 #stops cbe for op
-execute @r[tag=op,tag=!ownertag] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic → §¶§cFlagged §d"},{"selector":"@s"},{"text":"§¶§c for trying to get owner tag"}]}
+execute @r[tag=op,tag=!ownertag] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic §¶§b→ §¶§cFlagged §d"},{"selector":"@s"},{"text":"§¶§c for trying to get owner tag"}]}
 execute @a[tag=op,tag=!ownertag] ~~~ tag @s remove op
 
 #stops cbe for ownerstatus
-execute @r[tag=ownerstatus,tag=!ownertag] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic → §¶§cFlagged §d"},{"selector":"@s"},{"text":"§¶§c for trying to get owner tag"}]}
+execute @r[tag=ownerstatus,tag=!ownertag] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic §¶§b→ §¶§cFlagged §d"},{"selector":"@s"},{"text":"§¶§c for trying to get owner tag"}]}
 execute @a[tag=ownerstatus,tag=!ownertag] ~~~ tag @s remove ownerstatus
 
 #stops cbe for Op
-execute @r[tag=Op,tag=!ownertag] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic → §¶§cFlagged §d"},{"selector":"@s"},{"text":"§¶§c for trying to get owner tag"}]}
+execute @r[tag=Op,tag=!ownertag] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic §¶§b→ §¶§cFlagged §d"},{"selector":"@s"},{"text":"§¶§c for trying to get owner tag"}]}
 execute @a[tag=Op,tag=!ownertag] ~~~ tag @s remove Op
 
 #stops cbe for MOD
-execute @r[tag=MOD,tag=!stafftag] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic → §¶§cFlagged §d"},{"selector":"@s"},{"text":"§¶§c for trying to get staff tag"}]}
+execute @r[tag=MOD,tag=!stafftag] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic §¶§b→ §¶§cFlagged §d"},{"selector":"@s"},{"text":"§¶§c for trying to get staff tag"}]}
 execute @a[tag=MOD,tag=!stafftag] ~~~ tag @s remove MOD
 
 #stops cbe for Moderator
-execute @r[tag=Moderator,tag=!stafftag] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic → §¶§cFlagged §d"},{"selector":"@s"},{"text":"§¶§c for trying to get staff tag"}]}
+execute @r[tag=Moderator,tag=!stafftag] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic §¶§b→ §¶§cFlagged §d"},{"selector":"@s"},{"text":"§¶§c for trying to get staff tag"}]}
 execute @a[tag=Moderator,tag=!stafftag] ~~~ tag @s remove Moderator
 
 #stops cbe for Mod
-execute @r[tag=Mod,tag=!stafftag] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic → §¶§cFlagged §d"},{"selector":"@s"},{"text":"§¶§c for trying to get staff tag"}]}
+execute @r[tag=Mod,tag=!stafftag] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic §¶§b→ §¶§cFlagged §d"},{"selector":"@s"},{"text":"§¶§c for trying to get staff tag"}]}
 execute @a[tag=Mod,tag=!stafftag] ~~~ tag @s remove Mod
 
 #item clears

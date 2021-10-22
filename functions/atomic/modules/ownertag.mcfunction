@@ -1,5 +1,5 @@
 #Fake staff flag
-execute @s[scores={9NW0d9Nas=!7102}] ~~~ execute @s[tag=ownertag] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic → §6Fake Owner Protection : §bFlagged §d"},{"selector":"@s"},{"text":"§¶§b for unauthorized owner tag."}]}
+execute @s[scores={9NW0d9Nas=!7102}] ~~~ execute @s[tag=ownertag] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic §¶§b→ §6Fake Owner Protection : §bFlagged §d"},{"selector":"@s"},{"text":"§¶§b for unauthorized owner tag."}]}
 
 #Fake staff checks
 execute @s[scores={ssmtoggle=1,ds9209D2n=!2938}] ~~~ scoreboard players set @s 2kN0nK3Kn 0

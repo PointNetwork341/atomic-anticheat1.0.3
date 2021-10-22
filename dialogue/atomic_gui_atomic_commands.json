@@ -7,7 +7,7 @@
 			{
 				"scene_tag": "atomic_gui_atomic_commands",
         "npc_name": { "rawtext": [ { "text": "§¶§bAtomic AntiCheat §7[§1v0.1§7]" } ] },
-				"text": { "rawtext": [ { "text": "§¶§cAtomic → §5§lGUI MAIN MENU" } ] },
+				"text": { "rawtext": [ { "text": "§¶§cAtomic §¶§b→ §5§lGUI MAIN MENU" } ] },
 				"buttons": [
 					{
 						"name": { "rawtext": [ { "text": "§l§5BASIC CMDS" } ] },

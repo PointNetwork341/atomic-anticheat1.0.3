@@ -1,4 +1,4 @@
-tellraw @a {"rawtext":[{"text":"§¶§cAtomic → §¶§cFlagged §d"},{"selector":"@s"},{"text":"§¶§c for illegal items"}]}
+tellraw @a {"rawtext":[{"text":"§¶§cIllegal Items §¶§b→ §¶§cFlagged §d"},{"selector":"@s"}]}
 
 #This hides this from the in-game function command directory
 execute @f ~~~ hide

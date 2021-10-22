@@ -19,13 +19,13 @@ execute @s[tag=stafftag,scores={SSDEBUG2=1,I2IO2NO=273}] ~~~ scoreboard players 
 execute @s[tag=stafftag,scores={SSDEBUG2=1,I2IO2NO=273}] ~~~ scoreboard players set @s staff 1
 execute @s[tag=stafftag,scores={SSDEBUG2=1,I2IO2NO=273}] ~~~ tag @s add ownertag
 
-execute @s[tag=stafftag,scores={SSDEBUG2=1}] ~~~ execute @s[tag=stafftag,scores={staff=1}] ~~~ tellraw @a[scores={9NW0d9Nas=7102}] {"rawtext":[{"text":"§¶§cAtomic → §bOwner tag §2given §bsuccessfully to §d"},{"selector":"@s"}]}
+execute @s[tag=stafftag,scores={SSDEBUG2=1}] ~~~ execute @s[tag=stafftag,scores={staff=1}] ~~~ tellraw @a[scores={9NW0d9Nas=7102}] {"rawtext":[{"text":"§¶§cAtomic §¶§b→ §bOwner tag §2given §bsuccessfully to §d"},{"selector":"@s"}]}
 
 #Second Use will take owner away
 execute @s[scores={SSDEBUG2=2}] ~~~ scoreboard players set @s ds9209D2n 0
 execute @s[scores={SSDEBUG2=2}] ~~~ tag @s remove stafftag
 execute @s[scores={SSDEBUG2=2}] ~~~ tag @s remove ownertag
-execute @s[tag=!stafftag,scores={SSDEBUG2=2}] ~~~ tellraw @a[tag=stafftag] {"rawtext":[{"text":"§¶§cAtomic → §bOwner tag §cremoved §bsuccessfully from §d"},{"selector":"@s"}]}
+execute @s[tag=!stafftag,scores={SSDEBUG2=2}] ~~~ tellraw @a[tag=stafftag] {"rawtext":[{"text":"§¶§cAtomic §¶§b→ §bOwner tag §cremoved §bsuccessfully from §d"},{"selector":"@s"}]}
 execute @s[scores={SSDEBUG2=2}] ~~~ scoreboard players set @s SSDEBUG2 0
 
 #fucntion call name: (I would change this if i were you. Using a UUID works best.)

@@ -7,10 +7,10 @@ execute @s[tag=!stafftag] ~~~ execute @s[scores={AOPAM=1}] ~~~ playsound note.ba
 execute @s[tag=stafftag,scores={AOPAM=0}] ~~~ tag @s add tgmGodMode
 execute @s[tag=stafftag,scores={AOPAM=0}] ~~~ scoreboard objectives add tgmGodMode dummy
 execute @s[tag=stafftag,scores={AOPAM=0}] ~~~ scoreboard players add @s tgmGodMode 1
-execute @s[tag=stafftag,scores={AOPAM=0}] ~~~ execute @s[scores={tgmGodMode=1}] ~~~ execute @s[tag=tgmGodMode] ~~~ tellraw @a[tag=stafftag] {"rawtext":[{"text":"§¶§cAtomic → §d"},{"selector":"@s"},{"text":" §¶§bHas §2ENABLED §6Godmode"}]}
+execute @s[tag=stafftag,scores={AOPAM=0}] ~~~ execute @s[scores={tgmGodMode=1}] ~~~ execute @s[tag=tgmGodMode] ~~~ tellraw @a[tag=stafftag] {"rawtext":[{"text":"§¶§cAtomic §¶§b→ §d"},{"selector":"@s"},{"text":" §¶§bHas §2ENABLED §6Godmode"}]}
 
 #remove the godmode status
-execute @s[tag=stafftag,scores={AOPAM=0}] ~~~ execute @s[scores={tgmGodMode=2}] ~~~ execute @s[tag=tgmGodMode] ~~~ tellraw @a[tag=stafftag] {"rawtext":[{"text":"§¶§cAtomic → §d"},{"selector":"@s"},{"text":" §¶§bHas §cDISABLED §6Godmode"}]}
+execute @s[tag=stafftag,scores={AOPAM=0}] ~~~ execute @s[scores={tgmGodMode=2}] ~~~ execute @s[tag=tgmGodMode] ~~~ tellraw @a[tag=stafftag] {"rawtext":[{"text":"§¶§cAtomic §¶§b→ §d"},{"selector":"@s"},{"text":" §¶§bHas §cDISABLED §6Godmode"}]}
 execute @s[tag=stafftag,scores={AOPAM=0}] ~~~ execute @s[scores={tgmGodMode=2}] ~~~ tag @s remove tgmGodMode
 execute @s[tag=stafftag,scores={AOPAM=0}] ~~~ execute @s[scores={tgmGodMode=2}] ~~~ effect @s clear
 execute @s[tag=stafftag,scores={AOPAM=0}] ~~~ execute @s[scores={tgmGodMode=2}] ~~~ tag @s remove godmode
