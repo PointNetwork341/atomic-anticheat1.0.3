@@ -1,5 +1,0 @@
-Default Key for Owner Protection is
-/function atomic/ownerprotection/58d504930aa74dfc99df2758725c7480/4efb435a8f174515afeef1f0c76adb8f
-
-Change this key by renaming the File Pathways to different UUIDs
-Then take out all the " - " so that it is only numaric and alphibetic characters.
