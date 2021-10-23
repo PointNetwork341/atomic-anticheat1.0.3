@@ -9,7 +9,7 @@ execute @s[scores={aopamtoggle=1}] ~~~ function atomic/modules/antiopabuse
 ##Lagtimer=50..999999 <- Has been changed to 50.. to test for anything above 50
 
 
-execute @s[tag=!stafftag,scores={fzplr=1}] ~~~ tp @s @e[r=4,name=fzplr]
+execute @s[scores={stafftag=0,fzplr=1}] ~~~ tp @s @e[r=4,name=fzplr]
 
 
 #This hides this from the in-game function command directory

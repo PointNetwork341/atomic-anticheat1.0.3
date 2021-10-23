@@ -4,11 +4,11 @@ execute @s[scores={bbrmtoggle=1}] ~~~ function atomic/modules/bottombedrockrepla
 #execute @s[scores={wbmtoggle=1}] ~~~ function atomic/modules/worldborder
 execute @s[scores={ibmtoggle=1}] ~~~ function atomic/modules/itemban
 execute @s[scores={ssmtoggle=1}] ~~~ function atomic/modules/stafftag
-execute @s[scores={nemtoggle=1},tag=!stafftag] ~~~ function atomic/asset/echestdisable
+execute @s[scores={nemtoggle=1,stafftag=0}] ~~~ function atomic/asset/echestdisable
 function atomic/modules/enchanted_armor
 function atomic/packages/bans
 function atomic/modules/permban
-function atomic/modules/ownerstatus
+function atomic/modules/ownertag
 function atomic/asset/toggle_sync
 
 #player counter

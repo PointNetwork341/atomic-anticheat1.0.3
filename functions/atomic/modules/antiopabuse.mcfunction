@@ -16,10 +16,10 @@ clear @r[m=c,scores={aopamtoggle=1,moderating=0}] lingering_potion
 clear @r[m=c,scores={aopamtoggle=1,moderating=0}] splash_potion
 
 #Disable the GodMode tool & vanish mode
-execute @s[tag=stafftag,scores={aopamtoggle=1,moderating=0}] ~~~ tag @s remove tgmGodMode
-execute @s[tag=stafftag,scores={aopamtoggle=1,moderating=0}] ~~~ scoreboard players reset @s tgmGodMode
-execute @s[tag=stafftag,scores={aopamtoggle=1,moderating=0}] ~~~ tag @s remove spectate
-execute @s[tag=stafftag,scores={aopamtoggle=1,moderating=0}] ~~~ scoreboard players reset @s vnsh
+execute @s[scores={stafftag=1,aopamtoggle=1,moderating=0}] ~~~ tag @s remove tgmGodMode
+execute @s[scores={stafftag=1,aopamtoggle=1,moderating=0}] ~~~ scoreboard players reset @s tgmGodMode
+execute @s[scores={stafftag=1,aopamtoggle=1,moderating=0}] ~~~ tag @s remove spectate
+execute @s[scores={stafftag=1,aopamtoggle=1,moderating=0}] ~~~ scoreboard players reset @s vnsh
 
 
 #This hides this from the in-game function command directory

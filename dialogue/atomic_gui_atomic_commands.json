@@ -12,22 +12,22 @@
 					{
 						"name": { "rawtext": [ { "text": "§l§5BASIC CMDS" } ] },
 						"commands": [
-							"/execute @s[tag=stafftag] ~~~ dialogue open @s @s atomic_basic_commands",
-							"/execute @s[tag=stafftag] ~~~ playsound note.pling @s ~ ~ ~"
+							"/execute @s[scores={stafftag=1}] ~~~ dialogue open @s @s atomic_basic_commands",
+							"/execute @s[scores={stafftag=1}] ~~~ playsound note.pling @s ~ ~ ~"
 						]
 					},
 					{
 						"name": { "rawtext": [ { "text": "§l§5KITS" } ] },
 						"commands": [
-              "/execute @s[tag=stafftag] ~~~ dialogue open @s @s atomic_kit_commands",
-              "/execute @s[tag=stafftag] ~~~ playsound note.pling @s ~ ~ ~"
+              "/execute @s[scores={stafftag=1}] ~~~ dialogue open @s @s atomic_kit_commands",
+              "/execute @s[scores={stafftag=1}] ~~~ playsound note.pling @s ~ ~ ~"
 						]
 					},
 					{
 						"name": { "rawtext": [ { "text": "§l§5MODULES" } ] },
 						"commands": [
-							"/execute @s[tag=stafftag] ~~~ dialogue open @s @s toggle_module_pag1",
-							"//execute @s[tag=stafftag] ~~~ playsound note.pling @s ~ ~ ~"
+							"/execute @s[scores={stafftag=1}] ~~~ dialogue open @s @s toggle_module_pag1",
+							"//execute @s[scores={stafftag=1}] ~~~ playsound note.pling @s ~ ~ ~"
 						]
 					},
 					{
@@ -47,7 +47,7 @@
 					{
 						"name": { "rawtext": [ { "text": "§l§5MAIN MENU" } ] },
 						"commands": [
-							"/execute @s[tag=stafftag] ~~~ function atomic/gui"
+							"/execute @s[scores={stafftag=1}] ~~~ function atomic/gui"
 						]
 					}
 				],

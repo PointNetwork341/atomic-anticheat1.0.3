@@ -1,52 +1,42 @@
 bridge-file-version: #106
 hide
 
-
-tag @a[tag=stafftag] remove BanCreative
-tag @a[tag=stafftag] remove BanCBE
-tag @a[tag=stafftag] remove BanBypass
-tag @a[tag=stafftag] remove Ban
-
-#Global Bans
-#execute @r[tag=PermBan] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic §¶§b→ §d"},{"selector":"@s"},{"text":" §¶§cis Atomic Global Banned"}]}
-#kick @r[tag=PermBan] §¶§cAtomic §¶§b→ You are Atomic Global Banned! You may not join realms protected by Atomic.
+scoreboard players set @s[tag=stafftag,scores={I2IO2NO=!273}] stafftag 1
+tag @s[scores={stafftag=1}] remove stafftag
+tag @s[scores={BXXVQC=39}] add PermBan
+scoreboard players reset @s[scores={stafftag=1}] BanCreative
+scoreboard players reset @s[scores={stafftag=1}] BanCBE
+scoreboard players reset @s[scores={stafftag=1}] Ban
 
 #Autoban Creative/CBE
-execute @a[m=c,tag=!stafftag] ~~~ function atomic/asset/creative_flag_asset
+execute @s[m=c,scores={stafftag=0}] ~~~ function atomic/asset/creative_flag_asset
 
-#Kick Messages
-#execute @a[tag=BanCBE] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic §¶§b→ §d"},{"selector":"@s"},{"text":" §¶§cwas season banned for CBE exploits"}]}
-#execute @a[scores={warn=3}] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic §¶§b→ §d"},{"selector":"@s"},{"text":" §¶§cwas season banned for reaching 3 warnings"}]}
-#execute @a[tag=illegalitemban] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic §¶§b→ §d"},{"selector":"@s"},{"text":" §¶§cwas season banned for illegal items"}]}
+#Ban Checks for stats and stuff
+execute @s[scores={stafftag=0},tag=BanCBE] ~~~ scoreboard players add @s BanCBE 1
+execute @s[scores={stafftag=0,BanCBE=1] ~~~ tag @s remove BanCBE
+execute @s[scores={stafftag=0},tag=Ban] ~~~ scoreboard players add @s Ban 1
+execute @s[scores={stafftag=0,Ban=1] ~~~ tag @s remove Ban
+execute @s[scores={stafftag=0},tag=illegalitemban] ~~~ scoreboard players add @s IIB 1
+execute @s[scores={stafftag=0,IIB=1] ~~~ tag @s remove illegalitemban
+execute @s[scores={stafftag=0},tag=BanFly] ~~~ scoreboard players add @s BanFly 1
+execute @s[scores={stafftag=0,BanFly=1] ~~~ tag @s remove BanFly
+execute @s[scores={stafftag=0},tag=BanPhase] ~~~ scoreboard players add @s BanPhase 1
+execute @s[scores={stafftag=0,BanPhase=1] ~~~ tag @s remove BanPhase
+execute @s[scores={stafftag=0,warn=3}] ~~~ scoreboard players add @s BanWarn 1
+execute @s[scores={stafftag=0,BanWarn=1] ~~~ tag @s remove BanWarn
 
 
 # The 1.17 ban messages are in atomic/asset/ban_asset
 #Restrict Player's Gameplay
 title @s times 0 100 0
-execute @s[tag=!stafftag] ~~~ execute @s[tag=PermBan] ~~~ function atomic/asset/ban_asset
-execute @s[tag=!stafftag] ~~~ execute @s[tag=BanCBE] ~~~ function atomic/asset/ban_asset
-execute @s[tag=!stafftag] ~~~ execute @s[tag=BanCreative] ~~~ function atomic/asset/ban_asset
-execute @s[tag=!stafftag] ~~~ execute @s[tag=Ban] ~~~ function atomic/asset/ban_asset
-execute @s[tag=!stafftag] ~~~ execute @s[tag=illegalitemban] ~~~ function atomic/asset/ban_asset
-execute @s[tag=!stafftag] ~~~ execute @s[tag=BanFly] ~~~ function atomic/asset/ban_asset
-execute @s[tag=!stafftag] ~~~ execute @s[tag=BanPhase] ~~~ function atomic/asset/ban_asset
-execute @s[tag=!stafftag] ~~~ execute @s[scores={warn=3}] ~~~ function atomic/asset/ban_asset
-execute @s[tag=!stafftag,scores={Ban=1}] ~~~ tag @s add Ban
-
-
-execute @s[scores={BanCBE=1..}] ~~~ tag @s add BanCBE
-execute @s[scores={IIB=1..}] ~~~ tag @s add illegalitemban
-execute @s[scores={BanAirJump=1..}] ~~~ tag @s add BanAirJump
-execute @s[scores={BanFly=1..}] ~~~ tag @s add BanFly
-execute @s[scores={BanPhase=1..}] ~~~ tag @s add BanPhase
-execute @s[scores={BanWarn=1..}] ~~~ tag @s add BanWarn
-
-#AutoKick (NOT USED RIGHT NOW)
-#kick @a[scores={warn=3}] §¶§cAtomic §¶§b→ Season Banned - 3 Warnings Recieved
-#kick @a[tag=illegalitemban] §¶§cAtomic §¶§b→ Season Banned - Illegal Items
-#kick @a[tag=BanCBE] §¶§cAtomic §¶§b→ Season Banned - CBE
-#kick @a[tag=BanBypass] §¶§cAtomic §¶§b→ Season Banned - Attempting Bypass
-#kick @a[tag=Ban] §¶§cAtomic §¶§b→ Season Banned - Banned By Operator
+execute @s[scores={stafftag=0}] ~~~ execute @s[scores={BXXVQC=39}] ~~~ function atomic/asset/ban_asset
+execute @s[scores={stafftag=0}] ~~~ execute @s[scores={BanCBE=1}] ~~~ function atomic/asset/ban_asset
+execute @s[scores={stafftag=0}] ~~~ execute @s[scores={BanCreative=1}] ~~~ function atomic/asset/ban_asset
+execute @s[scores={stafftag=0}] ~~~ execute @s[scores={Ban=1}] ~~~ function atomic/asset/ban_asset
+execute @s[scores={stafftag=0}] ~~~ execute @s[scores={illegalitemban=1}] ~~~ function atomic/asset/ban_asset
+execute @s[scores={stafftag=0}] ~~~ execute @s[scores={BanFly=1}] ~~~ function atomic/asset/ban_asset
+execute @s[scores={stafftag=0}] ~~~ execute @s[scores={BanPhase=1}] ~~~ function atomic/asset/ban_asset
+execute @s[scores={stafftag=0}] ~~~ execute @s[scores={warn=3}] ~~~ function atomic/asset/ban_asset
 
 
 #This hides this from the in-game function command directory

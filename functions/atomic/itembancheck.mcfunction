@@ -1,1 +1,1 @@
-execute @s[tag=stafftag] ~~~ function atomic/asset/itembancheck
+execute @s[scores={stafftag=1}] ~~~ function atomic/asset/itembancheck

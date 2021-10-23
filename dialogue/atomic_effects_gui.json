@@ -12,48 +12,48 @@
 					{
 						"name": { "rawtext": [ { "text": "§l§2SPEED" } ] },
 						"commands": [
-							"/execute @s[tag=stafftag] ~~~ effect @s speed 99999999 2 true",
-              "/execute @s[tag=stafftag] ~~~ dialogue open @s @s atomic_effects_gui",
-							"/execute @s[tag=stafftag] ~~~ playsound note.pling @s ~ ~ ~"
+							"/execute @s[scores={stafftag=1}] ~~~ effect @s speed 99999999 2 true",
+              "/execute @s[scores={stafftag=1}] ~~~ dialogue open @s @s atomic_effects_gui",
+							"/execute @s[scores={stafftag=1}] ~~~ playsound note.pling @s ~ ~ ~"
 						]
 					},
 					{
 						"name": { "rawtext": [ { "text": "§l§2REGEN" } ] },
 						"commands": [
-              "/execute @s[tag=stafftag] ~~~ effect @s regeneration 99999999 3 true",
-              "/execute @s[tag=stafftag] ~~~ dialogue open @s @s atomic_effects_gui",
-              "/execute @s[tag=stafftag] ~~~ playsound note.pling @s ~ ~ ~"
+              "/execute @s[scores={stafftag=1}] ~~~ effect @s regeneration 99999999 3 true",
+              "/execute @s[scores={stafftag=1}] ~~~ dialogue open @s @s atomic_effects_gui",
+              "/execute @s[scores={stafftag=1}] ~~~ playsound note.pling @s ~ ~ ~"
 						]
 					},
 					{
 						"name": { "rawtext": [ { "text": "§l§2WATER BREATH" } ] },
 						"commands": [
-							"/execute @s[tag=stafftag] ~~~ effect @s water_breathing 99999999 3 true",
-              "/execute @s[tag=stafftag] ~~~ dialogue open @s @s atomic_effects_gui",
-							"/execute @s[tag=stafftag] ~~~ playsound note.pling @s ~ ~ ~"
+							"/execute @s[scores={stafftag=1}] ~~~ effect @s water_breathing 99999999 3 true",
+              "/execute @s[scores={stafftag=1}] ~~~ dialogue open @s @s atomic_effects_gui",
+							"/execute @s[scores={stafftag=1}] ~~~ playsound note.pling @s ~ ~ ~"
 						]
 					},
 					{
 						"name": { "rawtext": [ { "text": "§l§2NIGHT VIS" } ] },
 						"commands": [
-							"/execute @s[tag=stafftag] ~~~ effect @s night_vision 99999999 3 true",
-              "/execute @s[tag=stafftag] ~~~ dialogue open @s @s atomic_effects_gui",
-							"/execute @s[tag=stafftag] ~~~ playsound note.pling @s ~ ~ ~"
+							"/execute @s[scores={stafftag=1}] ~~~ effect @s night_vision 99999999 3 true",
+              "/execute @s[scores={stafftag=1}] ~~~ dialogue open @s @s atomic_effects_gui",
+							"/execute @s[scores={stafftag=1}] ~~~ playsound note.pling @s ~ ~ ~"
 						]
 					},
 					{
 						"name": { "rawtext": [ { "text": "§l§2STRENGTH" } ] },
 						"commands": [
-							"/execute @s[tag=stafftag] ~~~ effect @s strength 99999999 2 true",
-              "/execute @s[tag=stafftag] ~~~ dialogue open @s @s atomic_effects_gui",
-							"/execute @s[tag=stafftag] ~~~ playsound note.pling @s ~ ~ ~"
+							"/execute @s[scores={stafftag=1}] ~~~ effect @s strength 99999999 2 true",
+              "/execute @s[scores={stafftag=1}] ~~~ dialogue open @s @s atomic_effects_gui",
+							"/execute @s[scores={stafftag=1}] ~~~ playsound note.pling @s ~ ~ ~"
 						]
 					},
 					{
 						"name": { "rawtext": [ { "text": "§l§9PAGE 2" } ] },
 						"commands": [
-							"/execute @s[tag=stafftag] ~~~ dialogue open @s @s atomic_effects_gui2",
-							"/execute @s[tag=stafftag] ~~~ playsound note.pling @s ~ ~ ~"
+							"/execute @s[scores={stafftag=1}] ~~~ dialogue open @s @s atomic_effects_gui2",
+							"/execute @s[scores={stafftag=1}] ~~~ playsound note.pling @s ~ ~ ~"
 						]
 					}
 				],

@@ -12,47 +12,47 @@
 					{
 						"name": { "rawtext": [ { "text": "§l§2WARD" } ] },
 						"commands": [
-							"/execute @s[tag=stafftag] ~~~ execute @a ~~~ music play record.ward 1 0 play_once",
-              "/execute @s[tag=stafftag] ~~~ dialogue open @s @s atomic_music_gui3",
-							"/execute @s[tag=stafftag] ~~~ playsound note.pling @s ~ ~ ~"
+							"/execute @s[scores={stafftag=1}] ~~~ execute @a ~~~ music play record.ward 1 0 play_once",
+              "/execute @s[scores={stafftag=1}] ~~~ dialogue open @s @s atomic_music_gui3",
+							"/execute @s[scores={stafftag=1}] ~~~ playsound note.pling @s ~ ~ ~"
 						]
 					},
 					{
 						"name": { "rawtext": [ { "text": "§l§211" } ] },
 						"commands": [
-              "/execute @s[tag=stafftag] ~~~ execute @a ~~~ music play record.11 1 0 play_once",
-              "/execute @s[tag=stafftag] ~~~ dialogue open @s @s atomic_music_gui3",
-              "/execute @s[tag=stafftag] ~~~ playsound note.pling @s ~ ~ ~"
+              "/execute @s[scores={stafftag=1}] ~~~ execute @a ~~~ music play record.11 1 0 play_once",
+              "/execute @s[scores={stafftag=1}] ~~~ dialogue open @s @s atomic_music_gui3",
+              "/execute @s[scores={stafftag=1}] ~~~ playsound note.pling @s ~ ~ ~"
 						]
 					},
 					{
 						"name": { "rawtext": [ { "text": "§l§2WAIT" } ] },
 						"commands": [
-							"/execute @s[tag=stafftag] ~~~ execute @a ~~~ music play record.wait 1 0 play_once",
-              "/execute @s[tag=stafftag] ~~~ dialogue open @s @s atomic_music_gui3",
-							"/execute @s[tag=stafftag] ~~~ playsound note.pling @s ~ ~ ~"
+							"/execute @s[scores={stafftag=1}] ~~~ execute @a ~~~ music play record.wait 1 0 play_once",
+              "/execute @s[scores={stafftag=1}] ~~~ dialogue open @s @s atomic_music_gui3",
+							"/execute @s[scores={stafftag=1}] ~~~ playsound note.pling @s ~ ~ ~"
 						]
 					},
 					{
 						"name": { "rawtext": [ { "text": "§l§2STOP MUSIC" } ] },
 						"commands": [
-							"/execute @s[tag=stafftag] ~~~ execute @a ~~~ music stop",
-              "/execute @s[tag=stafftag] ~~~ dialogue open @s @s atomic_music_gui3",
-							"/execute @s[tag=stafftag] ~~~ playsound note.pling @s ~ ~ ~"
+							"/execute @s[scores={stafftag=1}] ~~~ execute @a ~~~ music stop",
+              "/execute @s[scores={stafftag=1}] ~~~ dialogue open @s @s atomic_music_gui3",
+							"/execute @s[scores={stafftag=1}] ~~~ playsound note.pling @s ~ ~ ~"
 						]
 					},
           {
 						"name": { "rawtext": [ { "text": "§l§9Page 1" } ] },
 						"commands": [
-							"/execute @s[tag=stafftag] ~~~ dialogue open @s @s atomic_music_gui1",
-							"/execute @s[tag=stafftag] ~~~ playsound note.pling @s ~ ~ ~"
+							"/execute @s[scores={stafftag=1}] ~~~ dialogue open @s @s atomic_music_gui1",
+							"/execute @s[scores={stafftag=1}] ~~~ playsound note.pling @s ~ ~ ~"
 						]
 					},
 					{
 						"name": { "rawtext": [ { "text": "§l§5MAIN MENU" } ] },
 						"commands": [
-							"/execute @s[tag=stafftag] ~~~ function atomic/gui",
-							"/execute @s[tag=stafftag] ~~~ playsound note.pling @s ~ ~ ~"
+							"/execute @s[scores={stafftag=1}] ~~~ function atomic/gui",
+							"/execute @s[scores={stafftag=1}] ~~~ playsound note.pling @s ~ ~ ~"
 						]
 					}
 				],

@@ -1,1 +1,1 @@
-execute @s[tag=stafftag] ~~~ function atomic/asset/unban_window_asset
+execute @s[scores={stafftag=1}] ~~~ function atomic/asset/unban_window_asset

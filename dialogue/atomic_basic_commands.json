@@ -12,42 +12,42 @@
 					{
 						"name": { "rawtext": [ { "text": "§l§2VANISH" } ] },
 						"commands": [
-							"/execute @s[tag=stafftag] ~~~ function atomic/vanish",
-              "/execute @s[tag=stafftag] ~~~ dialogue open @s @s atomic_basic_commands"
+							"/execute @s[scores={stafftag=1}] ~~~ function atomic/vanish",
+              "/execute @s[scores={stafftag=1}] ~~~ dialogue open @s @s atomic_basic_commands"
 						]
 					},
 					{
 						"name": { "rawtext": [ { "text": "§l§2TGM" } ] },
 						"commands": [
-							"/execute @s[tag=stafftag] ~~~ function atomic/tgm",
-              "/execute @s[tag=stafftag] ~~~ dialogue open @s @s atomic_basic_commands"
+							"/execute @s[scores={stafftag=1}] ~~~ function atomic/tgm",
+              "/execute @s[scores={stafftag=1}] ~~~ dialogue open @s @s atomic_basic_commands"
 						]
 					},
 					{
 						"name": { "rawtext": [ { "text": "§l§2LAGCLEAR" } ] },
 						"commands": [
-							"/execute @s[tag=stafftag] ~~~ function atomic/lagclear",
-              "/execute @s[tag=stafftag] ~~~ dialogue open @s @s atomic_basic_commands"
+							"/execute @s[scores={stafftag=1}] ~~~ function atomic/lagclear",
+              "/execute @s[scores={stafftag=1}] ~~~ dialogue open @s @s atomic_basic_commands"
 						]
 					},
 					{
 						"name": { "rawtext": [ { "text": "§l§2CLEARCHAT" } ] },
 						"commands": [
-							"/execute @s[tag=stafftag] ~~~ function atomic/chatclear",
-              "/execute @s[tag=stafftag] ~~~ dialogue open @s @s atomic_basic_commands"
+							"/execute @s[scores={stafftag=1}] ~~~ function atomic/chatclear",
+              "/execute @s[scores={stafftag=1}] ~~~ dialogue open @s @s atomic_basic_commands"
 						]
 					},
 					{
 						"name": { "rawtext": [ { "text": "§l§2CREDIT" } ] },
 						"commands": [
-							"/execute @s[tag=stafftag] ~~~ function atomic/credit",
-              "/execute @s[tag=stafftag] ~~~ dialogue open @s @s atomic_basic_commands"
+							"/execute @s[scores={stafftag=1}] ~~~ function atomic/credit",
+              "/execute @s[scores={stafftag=1}] ~~~ dialogue open @s @s atomic_basic_commands"
 						]
 					},
 					{
 						"name": { "rawtext": [ { "text": "§l§5MAIN MENU" } ] },
 						"commands": [
-							"/execute @s[tag=stafftag] ~~~ function atomic/gui"
+							"/execute @s[scores={stafftag=1}] ~~~ function atomic/gui"
 						]
 					}
 				],

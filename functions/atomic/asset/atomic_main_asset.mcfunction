@@ -76,13 +76,6 @@ scoreboard players set @s 09d0i20jS 0
 scoreboard players set @s 9damMM230 0
 scoreboard players set @s 9NW0d9Nas 0
 
-#creativetag checks
-scoreboard objectives add point dummy fallen
-scoreboard objectives add network dummy networkh
-scoreboard objectives add is dummy ish
-scoreboard objectives add cool dummy coolh
-scoreboard objectives add ez dummy ezh
-
 #Vanish detection / default value
 scoreboard objectives add vnsh dummy vnsh
 scoreboard players set @s vnsh 0
@@ -90,10 +83,8 @@ scoreboard players set @s vnsh 0
 #Ban status value
 scoreboard objectives add Ban dummy Ban
 scoreboard players set @s Ban 0
-scoreboard objectives add XNEZ dummy Ban3
-scoreboard players set @s XNEZ 0
-scoreboard objectives add XNEF dummy Ban4
-scoreboard players set @s XNEF 0
+scoreboard objectives add XNCRB dummy XNCRB
+scoreboard players set @s XNCRB 0
 
 #unban window timer
 scoreboard objectives add unbantimer dummy unbantimer
@@ -183,6 +174,8 @@ scoreboard objectives add timealive dummy timealive
 scoreboard objectives add atomic dummy atomic
 scoreboard objectives add deaths dummy deaths
 scoreboard objectives add kills dummy kills
+scoreboard objectives add stafftag dummy stafftag
+scoreboard objectives add ownertag dummy ownertag
 scoreboard objectives add killstreak dummy killstreak
 scoreboard objectives add randomspawn dummy randomspawn
 scoreboard objectives add cleararealarge dummy cleararealargelarge
@@ -369,18 +362,11 @@ scoreboard players set @s FMM 0
 scoreboard players set @s TAM 0
 
 #Staff Protection
-scoreboard players set @s[tag=!stafftag] 2DI3N 0
-scoreboard players set @s[tag=!stafftag] 39SN230 0
-scoreboard players set @s[tag=!stafftag] GFS98 0
-scoreboard players set @s[tag=!stafftag] D98AD 0
-scoreboard players set @s[tag=!stafftag] I2IO2NO 0
-
-#Creative Protection
-scoreboard players set @s[tag=!creativetag] point 0
-scoreboard players set @s[tag=!creativetag] network 0
-scoreboard players set @s[tag=!creativetag] is 0
-scoreboard players set @s[tag=!creativetag] cool 0
-scoreboard players set @s[tag=!creativetag] ez 0
+scoreboard players set @s[scores={stafftag=0}] 2DI3N 0
+scoreboard players set @s[scores={stafftag=0}] 39SN230 0
+scoreboard players set @s[scores={stafftag=0}] GFS98 0
+scoreboard players set @s[scores={stafftag=0}] D98AD 0
+scoreboard players set @s[scores={stafftag=0}] I2IO2NO 0
 
 
 #Other utiltiy
@@ -391,6 +377,7 @@ gamerule functioncommandlimit 10000
 gamerule commandblocksenabled true
 gamerule commandblockoutput false
 gamerule sendcommandfeedback false
+tag @s[scores={stafftag=1}] add stafftag
 gamerule showbordereffect false
 gamerule doinsomnia false
 execute @e[scores={kpmtoggle=1}] ~~~ gamerule drowningdamage false

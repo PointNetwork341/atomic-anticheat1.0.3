@@ -26,10 +26,10 @@
 						}
 					],
 					"on_entry": [
-						"/execute @s[tag=!stafftag,scores={iimtoggle=1}] ~~~ replaceitem entity @s slot.weapon.mainhand 0 air",
-						"/execute @s[tag=!stafftag,scores={iimtoggle=1}] ~~~ function atomic/asset/clearspawneggasset",
-						"/execute @s[tag=!stafftag] ~~~ execute @s[scores={iimtoggle=1}] ~~~ function atomic/asset/illegalitemkickmsg",
-						"/execute @s[tag=!stafftag] ~~~ execute @s[scores={iimtoggle=1}] ~~~ function atomic/asset/illegalitemwarn",
+						"/execute @s[scores={stafftag=0,iimtoggle=1}] ~~~ replaceitem entity @s slot.weapon.mainhand 0 air",
+						"/execute @s[scores={stafftag=0,iimtoggle=1}] ~~~ function atomic/asset/clearspawneggasset",
+						"/execute @s[scores={stafftag=0}] ~~~ execute @s[scores={iimtoggle=1}] ~~~ function atomic/asset/illegalitemkickmsg",
+						"/execute @s[scores={stafftag=0}] ~~~ execute @s[scores={iimtoggle=1}] ~~~ function atomic/asset/illegalitemwarn",
 						"@s bridge:remove_command_id_1"
 					]
 				},

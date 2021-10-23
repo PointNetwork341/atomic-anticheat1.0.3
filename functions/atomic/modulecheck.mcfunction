@@ -1,5 +1,5 @@
 execute @s ~~~ function atomic/asset/modulecheckasset
 
 
-execute @s[tag=stafftag] ~~~ playsound note.pling @s ~ ~ ~
-execute @s[tag=!stafftag] ~~~ playsound note.bass @s ~ ~ ~
+execute @s[scores={stafftag=1}] ~~~ playsound note.pling @s ~ ~ ~
+execute @s[scores={stafftag=0}] ~~~ playsound note.bass @s ~ ~ ~

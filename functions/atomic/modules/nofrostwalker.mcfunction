@@ -1,5 +1,5 @@
 #Anti-FrostWalker Messages
-execute @s[scores={nfmtoggle=1,feeten=1}] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAtomic §¶§b→ §6Anti Frostwalker §bremoved Enchanted Boots from §d"},{"selector":"@s"}]}
+execute @s[scores={nfmtoggle=1,feeten=1}] ~~~ tellraw @a {"rawtext":[{"text":"§¶§cAnti Frostwalker §¶§b→ §bremoved Enchanted Boots from §d"},{"selector":"@s"}]}
 
 
 replaceitem entity @s[scores={nfmtoggle=1,feeten=1}] slot.armor.feet 1 air

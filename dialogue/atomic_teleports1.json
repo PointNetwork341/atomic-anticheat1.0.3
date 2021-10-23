@@ -12,40 +12,40 @@
 					{
 						"name": { "rawtext": [ { "text": "§l§2SPAWN" } ] },
 						"commands": [
-							"/execute @s[tag=stafftag] ~~~ tp @s 10 90 -10",
-              "/execute @s[tag=stafftag] ~~~ function dialogue_messages/spawntp_message",
-              "/execute @s[tag=stafftag] ~~~ effect @s slow_falling 4 1 true",
-							"/execute @s[tag=stafftag] ~~~ playsound note.pling @s ~ ~ ~"
+							"/execute @s[scores={stafftag=1}] ~~~ tp @s 10 90 -10",
+              "/execute @s[scores={stafftag=1}] ~~~ function dialogue_messages/spawntp_message",
+              "/execute @s[scores={stafftag=1}] ~~~ effect @s slow_falling 4 1 true",
+							"/execute @s[scores={stafftag=1}] ~~~ playsound note.pling @s ~ ~ ~"
 						]
 					},
 					{
 						"name": { "rawtext": [ { "text": "§l§2TP @R" } ] },
 						"commands": [
-              "/execute @s[tag=stafftag] ~~~ tp @s @r[tag=!stafftag]",
-              "/execute @s[tag=stafftag] ~~~ function dialogue_messages/r_playertp_message",
-              "/execute @s[tag=stafftag] ~~~ playsound note.pling @s ~ ~ ~"
+              "/execute @s[scores={stafftag=1}] ~~~ tp @s @r[scores={stafftag=0}]",
+              "/execute @s[scores={stafftag=1}] ~~~ function dialogue_messages/r_playertp_message",
+              "/execute @s[scores={stafftag=1}] ~~~ playsound note.pling @s ~ ~ ~"
 						]
 					},
 					{
 						"name": { "rawtext": [ { "text": "§l§2SPAWN SET" } ] },
 						"commands": [
-							"/execute @s[tag=stafftag] ~~~ function atomic/itemcommand/setspawn",
-              "/execute @s[tag=stafftag] ~~~ dialogue open @s @s atomic_teleports1",
-							"/execute @s[tag=stafftag] ~~~ playsound note.pling @s ~ ~ ~"
+							"/execute @s[scores={stafftag=1}] ~~~ function atomic/itemcommand/setspawn",
+              "/execute @s[scores={stafftag=1}] ~~~ dialogue open @s @s atomic_teleports1",
+							"/execute @s[scores={stafftag=1}] ~~~ playsound note.pling @s ~ ~ ~"
 						]
 					},
 					{
 						"name": { "rawtext": [ { "text": "§l§2TP HOME" } ] },
 						"commands": [
-							"/execute @s[tag=stafftag,tag=spawnset] ~~~ scoreboard players set @s teleporting_home 1",
-              "/execute @s[tag=stafftag] ~~~ function dialogue_messages/hometp_message",
-							"/execute @s[tag=stafftag] ~~~ playsound note.pling @s ~ ~ ~"
+							"/execute @s[scores={stafftag=1},tag=spawnset] ~~~ scoreboard players set @s teleporting_home 1",
+              "/execute @s[scores={stafftag=1}] ~~~ function dialogue_messages/hometp_message",
+							"/execute @s[scores={stafftag=1}] ~~~ playsound note.pling @s ~ ~ ~"
 						]
 					},
           {
 						"name": { "rawtext": [ { "text": "§l§5MAIN MENU" } ] },
 						"commands": [
-							"/execute @s[tag=stafftag] ~~~ function atomic/gui"
+							"/execute @s[scores={stafftag=1}] ~~~ function atomic/gui"
 						]
 					},
           {

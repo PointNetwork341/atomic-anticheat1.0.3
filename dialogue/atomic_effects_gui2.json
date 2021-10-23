@@ -12,31 +12,31 @@
 					{
 						"name": { "rawtext": [ { "text": "§l§2HASTE" } ] },
 						"commands": [
-							"/execute @s[tag=stafftag] ~~~ effect @s haste 99999999 2 true",
-              "/execute @s[tag=stafftag] ~~~ dialogue open @s @s atomic_effects_gui2",
-							"/execute @s[tag=stafftag] ~~~ playsound note.pling @s ~ ~ ~"
+							"/execute @s[scores={stafftag=1}] ~~~ effect @s haste 99999999 2 true",
+              "/execute @s[scores={stafftag=1}] ~~~ dialogue open @s @s atomic_effects_gui2",
+							"/execute @s[scores={stafftag=1}] ~~~ playsound note.pling @s ~ ~ ~"
 						]
 					},
 					{
 						"name": { "rawtext": [ { "text": "§l§2FIRE RESIST" } ] },
 						"commands": [
-              "/execute @s[tag=stafftag] ~~~ effect @s fire_resistance 99999999 2 true",
-              "/execute @s[tag=stafftag] ~~~ dialogue open @s @s atomic_effects_gui2",
-              "/execute @s[tag=stafftag] ~~~ playsound note.pling @s ~ ~ ~"
+              "/execute @s[scores={stafftag=1}] ~~~ effect @s fire_resistance 99999999 2 true",
+              "/execute @s[scores={stafftag=1}] ~~~ dialogue open @s @s atomic_effects_gui2",
+              "/execute @s[scores={stafftag=1}] ~~~ playsound note.pling @s ~ ~ ~"
 						]
 					},
 					{
 						"name": { "rawtext": [ { "text": "§l§2CLEAR EFFECTS" } ] },
 						"commands": [
-							"/execute @s[tag=stafftag] ~~~ effect @s clear",
-              "/execute @s[tag=stafftag] ~~~ dialogue open @s @s atomic_effects_gui2",
-							"/execute @s[tag=stafftag] ~~~ playsound note.pling @s ~ ~ ~"
+							"/execute @s[scores={stafftag=1}] ~~~ effect @s clear",
+              "/execute @s[scores={stafftag=1}] ~~~ dialogue open @s @s atomic_effects_gui2",
+							"/execute @s[scores={stafftag=1}] ~~~ playsound note.pling @s ~ ~ ~"
 						]
 					},
 					{
 						"name": { "rawtext": [ { "text": "§l§5MAIN MENU" } ] },
 						"commands": [
-							"/execute @s[tag=stafftag] ~~~ function atomic/gui"
+							"/execute @s[scores={stafftag=1}] ~~~ function atomic/gui"
 						]
 					},
           {

@@ -12,47 +12,47 @@
 					{
 						"name": { "rawtext": [ { "text": "§l§2STOP RAIN" } ] },
 						"commands": [
-							"/execute @s[tag=stafftag] ~~~ toggledownfall",
-              "/execute @s[tag=stafftag] ~~~ dialogue open @s @s atomic_realm_cmd_gui",
-							"/execute @s[tag=stafftag] ~~~ playsound note.pling @s ~ ~ ~"
+							"/execute @s[scores={stafftag=1}] ~~~ toggledownfall",
+              "/execute @s[scores={stafftag=1}] ~~~ dialogue open @s @s atomic_realm_cmd_gui",
+							"/execute @s[scores={stafftag=1}] ~~~ playsound note.pling @s ~ ~ ~"
 						]
 					},
 					{
 						"name": { "rawtext": [ { "text": "§l§2SET DAYTIME" } ] },
 						"commands": [
-              "/execute @s[tag=stafftag] ~~~ time set 100",
-              "/execute @s[tag=stafftag] ~~~ dialogue open @s @s atomic_realm_cmd_gui",
-              "/execute @s[tag=stafftag] ~~~ playsound note.pling @s ~ ~ ~"
+              "/execute @s[scores={stafftag=1}] ~~~ time set 100",
+              "/execute @s[scores={stafftag=1}] ~~~ dialogue open @s @s atomic_realm_cmd_gui",
+              "/execute @s[scores={stafftag=1}] ~~~ playsound note.pling @s ~ ~ ~"
 						]
 					},
 					{
 						"name": { "rawtext": [ { "text": "§l§2PVP TOGGLE" } ] },
 						"commands": [
-							"/execute @s[tag=stafftag] ~~~ function dialogue_messages/pvp_toggle_message",
-              "/execute @s[tag=stafftag] ~~~ dialogue open @s @s atomic_realm_cmd_gui",
-							"/execute @s[tag=stafftag] ~~~ playsound note.pling @s ~ ~ ~"
+							"/execute @s[scores={stafftag=1}] ~~~ function dialogue_messages/pvp_toggle_message",
+              "/execute @s[scores={stafftag=1}] ~~~ dialogue open @s @s atomic_realm_cmd_gui",
+							"/execute @s[scores={stafftag=1}] ~~~ playsound note.pling @s ~ ~ ~"
 						]
 					},
 					{
 						"name": { "rawtext": [ { "text": "§l§2KILL ALL" } ] },
 						"commands": [
-							"/execute @s[tag=stafftag] ~~~ kill @e[type=!player]",
-              "/execute @s[tag=stafftag] ~~~ dialogue open @s @s atomic_realm_cmd_gui",
-							"/execute @s[tag=stafftag] ~~~ playsound note.pling @s ~ ~ ~"
+							"/execute @s[scores={stafftag=1}] ~~~ kill @e[type=!player]",
+              "/execute @s[scores={stafftag=1}] ~~~ dialogue open @s @s atomic_realm_cmd_gui",
+							"/execute @s[scores={stafftag=1}] ~~~ playsound note.pling @s ~ ~ ~"
 						]
 					},
           {
 						"name": { "rawtext": [ { "text": "§l§5PLAY MUSIC" } ] },
 						"commands": [
-							"/execute @s[tag=stafftag] ~~~ dialogue open @s @s atomic_music_gui1",
-							"/execute @s[tag=stafftag] ~~~ playsound note.pling @s ~ ~ ~"
+							"/execute @s[scores={stafftag=1}] ~~~ dialogue open @s @s atomic_music_gui1",
+							"/execute @s[scores={stafftag=1}] ~~~ playsound note.pling @s ~ ~ ~"
 						]
 					},
 					{
 						"name": { "rawtext": [ { "text": "§l§9PAGE 2" } ] },
 						"commands": [
-							"/execute @s[tag=stafftag] ~~~ function atomic/test",
-							"/execute @s[tag=stafftag] ~~~ playsound note.pling @s ~ ~ ~"
+							"/execute @s[scores={stafftag=1}] ~~~ function atomic/test",
+							"/execute @s[scores={stafftag=1}] ~~~ playsound note.pling @s ~ ~ ~"
 						]
 					}
 				],
