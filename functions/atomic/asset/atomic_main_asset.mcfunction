@@ -428,6 +428,10 @@ scoreboard objectives add torchtimer dummy torchtimer
 scoreboard objectives add hastorch dummy hastorch
 scoreboard objectives add testin dummy testin
 
+#adding javascript scoreboards
+scoreboard objectives add crasher dummy
+
+
 #This hides this from the in-game function command directory
 execute @f ~~~ hide
 tag @f[tag=""] add hide
