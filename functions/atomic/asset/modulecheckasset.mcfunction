@@ -20,14 +20,8 @@ execute @s[scores={stafftag=1,OSM=0}] ~~~ tellraw @s {"rawtext":[{"text":"§¶§
 execute @s[scores={stafftag=1,APM=1}] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic §¶§b→§¶§bbAnti-Phase §7[ §¶§2ENABLED §7]"}]}
 execute @s[scores={stafftag=1,APM=0}] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic §¶§b→§¶§bAnti-Phase §7[ §¶§cDISABLED §7]"}]}
 
-execute @s[scores={stafftag=1,ARM=1}] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic §¶§b→§¶§bbAnti-Reach §7[ §¶§2ENABLED §7]"}]}
-execute @s[scores={stafftag=1,ARM=0}] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic §¶§b→§¶§bAnti-Reach §7[ §¶§cDISABLED §7]"}]}
-
-execute @s[scores={stafftag=1,AAJM=1}] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic §¶§b→§¶§bbAnti-Air Jump §7[ §¶§2ENABLED §7]"}]}
-execute @s[scores={stafftag=1,AAJM=0}] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic §¶§b→§¶§bAnti-Air Jump §7[ §¶§cDISABLED §7]"}]}
-
-execute @s[scores={stafftag=1,AATM=1}] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic §¶§b→§¶§bbAnti-Auto Totem §7[ §¶§2ENABLED §7]"}]}
-execute @s[scores={stafftag=1,AATM=0}] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic §¶§b→§¶§bAnti-Auto Totem §7[ §¶§cDISABLED §7]"}]}
+execute @s[scores={stafftag=1,AHCM=1}] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic §¶§b→§¶§bAnti-Hack Client §7[ §¶§2ENABLED §7]"}]}
+execute @s[scores={stafftag=1,AHCM=0}] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic §¶§b→§¶§bAnti-Hack Client §7[ §¶§cDISABLED §7]"}]}
 
 execute @s[scores={stafftag=1,EFM=1}] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic §¶§b→§¶§bExtra Features §7[ §¶§2ENABLED §7]"}]}
 execute @s[scores={stafftag=1,EFM=0}] ~~~ tellraw @s {"rawtext":[{"text":"§¶§cAtomic §¶§b→§¶§bExtra Features §7[ §¶§cDISABLED §7]"}]}

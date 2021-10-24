@@ -11,6 +11,4 @@ execute @s ~~~ function atomic/warnreset
 
 clear @s
 
-
-
 kill @s

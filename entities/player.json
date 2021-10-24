@@ -19,7 +19,6 @@
           "home_y_positive",
           "home_z_positive",
           "home_teleport_reset",
-          "anti_airjump",
           "spawn_points",
           "anticbe",
           "worldborder_pos",
@@ -42,7 +41,6 @@
         "death_effect": "controller.animation.death_effect",
         "on_death": "controller.animation.on_death",
         "oneshot": "controller.animation.player.oneshot",
-        "anti_airjump": "controller.animation.player.anti_airjump",
         "home_x_negative": "controller.animation.home_x_negative",
         "home_y_negative": "controller.animation.home_y_negative",
         "home_z_negative": "controller.animation.home_z_negative",
@@ -104,18 +102,6 @@
         },
         "minecraft:spell_effects": {
           "remove_effects": "bad_omen"
-        }
-			}
-		},
-		"components": {
-			"minecraft:timer": {
-				"looping": true,
-				"time": [
-					0,
-					0
-				],
-				"time_down_event": {
-					"event": "atomic:tick"
         }
 			}
 		},
@@ -1959,14 +1945,6 @@
       "minecraft:nameable": {
         "always_show": true,
         "allow_name_tag_renaming": false
-        "name_actions": [
-          {
-            "name_filter": "Epic BadMan User",
-            "on_named": {
-              "event": "atomic:banhacks"
-            }
-          }
-        ]
       },
       "minecraft:physics": {},
       "minecraft:pushable": {
@@ -2022,8 +2000,6 @@
             },
             "deals_damage": false
           },
-          //oneshot framework given to UAC by balloon
-          //Damage Sensor Channel in this discord -> discord.gg/BDeDTefE47
           {
             "on_damage": {
               "filters": {
@@ -2161,6 +2137,16 @@
             "execute @s[scores={acmtoggle=1}] ~~~ effect @s clear",
             "execute @s[scores={acmtoggle=1}] ~~~ function atomic/echestwipe",
             "execute @s[scores={acmtoggle=1}] ~~~ tag @s add cbesoft"
+          ]
+        }
+      },
+      "atomic:banhacks": {
+        "run_command": {
+          "target": "self",
+          "command": [
+            "execute @s[scores={ahctoggle=1,stafftag=0}] ~~~ clear @s",
+            "execute @s[scores={ahctoggle=1,stafftag=0}] ~~~ function atomic/asset/banhackswarn",
+            "execute @s[scores={ahctoggle=1,stafftag=0}] ~~~ function atomic/asset/banhackskickmsg",
           ]
         }
       },

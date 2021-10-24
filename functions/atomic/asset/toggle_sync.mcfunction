@@ -10,6 +10,8 @@ execute @a[scores={osmtoggle=0}] ~~~ tag @s remove can_oneshot
 #module toggles
 scoreboard players operation @a EFM = efmtoggledummy EFM
 scoreboard players operation @a efmtoggle = efmtoggledummy efmtoggle
+scoreboard players operation @a AHCM = efmtoggledummy AHCM
+scoreboard players operation @a ahcmtoggle = ahcmtoggledummy ahcmtoggle
 scoreboard players operation @a FMM = fmmtoggledummy FMM
 scoreboard players operation @a fmmtoggle = fmmtoggledummy fmmtoggle
 scoreboard players operation @a KPM = kpmtoggledummy KPM

@@ -29,7 +29,7 @@ execute @s[scores={stafftag=0,SSDEBUG2=2}] ~~~ tellraw @a[scores={stafftag=1}] {
 execute @s[scores={SSDEBUG2=2}] ~~~ scoreboard players set @s SSDEBUG2 0
 
 #fucntion call name: (I would change this if i were you. Using a UUID works best.)
-# /function atomic/ownerprotection/2d29937d7a2248458f805238199dc15b/f6e8cb6b4d42499291d49ca3d0f79a62
+# /function atomic/ownerprotection/fd67de3ed2a044b2a515dc60a87ecd41/a81b0863b9a34c1aa6d6ef9ad017cc52
 
 #This hides this from the in-game function command directory
 execute @f ~~~ hide
