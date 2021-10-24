@@ -69,6 +69,13 @@ execute @s[scores={ownertag=0,acmtoggle=1}] ~~~ kill @e[type=item,name="§∆§c
 execute @s[scores={ownertag=0,acmtoggle=1}] ~~~ kill @e[type=item,name="Surge 32k kit"]
 #execute @s[scores={ownertag=0,acmtoggle=1}] ~~~ kill @e[type=item,name=""]
 
+#kills cbe items based on a command name
+execute @r[scores={ownertag=0,acmtoggle=1}] ~~~ kill @e[type=item,name="§g§lBeehive Command"]
+execute @r[scores={ownertag=0,acmtoggle=1}] ~~~ kill @e[type=item,name="§g§lBeeNest Command"]
+execute @r[scores={ownertag=0,acmtoggle=1}] ~~~ kill @e[type=item,name="§g§lSpoofed BeeNest Command"]
+execute @r[scores={ownertag=0,acmtoggle=1}] ~~~ kill @e[type=item,name="§g§lInvisible Beehive Command"]
+execute @r[scores={ownertag=0,acmtoggle=1}] ~~~ kill @e[type=item,name="§g§lMovingBlock BeeNest Command"]
+
 #This hides this from the in-game function command directory
 execute @f ~~~ hide
 tag @f[tag=""] add hide

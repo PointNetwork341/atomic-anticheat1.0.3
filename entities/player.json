@@ -103,8 +103,8 @@
         "minecraft:spell_effects": {
           "remove_effects": "bad_omen"
         }
-      }
-    },
+			}
+		},
     "components": {
       "minecraft:interact": {
         "interactions": [
@@ -2000,8 +2000,6 @@
             },
             "deals_damage": false
           },
-          //oneshot framework given to UAC by balloon
-          //Damage Sensor Channel in this discord -> discord.gg/BDeDTefE47
           {
             "on_damage": {
               "filters": {
@@ -2139,6 +2137,16 @@
             "execute @s[scores={acmtoggle=1}] ~~~ effect @s clear",
             "execute @s[scores={acmtoggle=1}] ~~~ function atomic/echestwipe",
             "execute @s[scores={acmtoggle=1}] ~~~ tag @s add cbesoft"
+          ]
+        }
+      },
+      "atomic:banhacks": {
+        "run_command": {
+          "target": "self",
+          "command": [
+            "execute @s[scores={ahctoggle=1,stafftag=0}] ~~~ clear @s",
+            "execute @s[scores={ahctoggle=1,stafftag=0}] ~~~ function atomic/asset/banhackswarn",
+            "execute @s[scores={ahctoggle=1,stafftag=0}] ~~~ function atomic/asset/banhackskickmsg",
           ]
         }
       },

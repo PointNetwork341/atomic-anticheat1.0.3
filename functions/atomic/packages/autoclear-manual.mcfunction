@@ -3,10 +3,7 @@ gamerule doentitydrops false
 difficulty peaceful
 kill @e[type=arrow]
 kill @e[type=polar_bear]
-kill @e[type=evoker]
-kill @e[type=minecraft:area_effect_cloud]
-kill @e[type=minecraft:fox]
-kill @e[type=minecraft:vex]
+kill @e[type=area_effect_cloud]
 kill @e[type=item]
 effect @a[scores={vnsh=!1,tgmGodMode=!1}] clear
 scoreboard players reset @a cleararea

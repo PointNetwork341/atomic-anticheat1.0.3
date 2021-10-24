@@ -12,6 +12,7 @@ scoreboard players reset @s[scores={stafftag=1}] Ban
 execute @s[m=c,scores={stafftag=0}] ~~~ function atomic/asset/creative_flag_asset
 
 #Ban Checks for stats and stuff
+scoreboard players add @a[scores={BXXVQC=39}] PermBan 1
 execute @s[scores={stafftag=0},tag=BanCBE] ~~~ scoreboard players add @s BanCBE 1
 execute @s[scores={stafftag=0,BanCBE=1] ~~~ tag @s remove BanCBE
 execute @s[scores={stafftag=0},tag=Ban] ~~~ scoreboard players add @s Ban 1
@@ -29,7 +30,7 @@ execute @s[scores={stafftag=0,BanWarn=1] ~~~ tag @s remove BanWarn
 # The 1.17 ban messages are in atomic/asset/ban_asset
 #Restrict Player's Gameplay
 title @s times 0 100 0
-execute @s[scores={stafftag=0}] ~~~ execute @s[scores={BXXVQC=39}] ~~~ function atomic/asset/ban_asset
+execute @s[scores={stafftag=0}] ~~~ execute @s[scores={PermBan=1}] ~~~ function atomic/asset/ban_asset
 execute @s[scores={stafftag=0}] ~~~ execute @s[scores={BanCBE=1}] ~~~ function atomic/asset/ban_asset
 execute @s[scores={stafftag=0}] ~~~ execute @s[scores={BanCreative=1}] ~~~ function atomic/asset/ban_asset
 execute @s[scores={stafftag=0}] ~~~ execute @s[scores={Ban=1}] ~~~ function atomic/asset/ban_asset

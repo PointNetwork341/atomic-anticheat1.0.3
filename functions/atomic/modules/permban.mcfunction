@@ -1,6 +1,4 @@
-scoreboard objectives add BXXVQC dummy
-tag @r[scores={BXXVQC=39}] add PermBan
-execute @r[tag=PermBan] ~~~ execute @r[scores={BXXVQC=0}] ~~~ atomic/asset/fakepermbanflag
+execute @a[tag=PermBan] ~~~ execute @a[scores={BXXVQC=0}] ~~~ atomic/asset/fakepermbanflag
 scoreboard players set Beast89900 BXXVQC 39
 scoreboard players set "igorrites26164" BXXVQC 39
 scoreboard players set "gingerfrog79175" BXXVQC 39
@@ -63,9 +61,7 @@ scoreboard players set "whitemexican891" BXXVQC 39
 scoreboard players set "whitemexican890" BXXVQC 39
 scoreboard players set "BruhPipe420" BXXVQC 39
 scoreboard players set "MerryWall17592" BXXVQC 39
-scoreboard players set "XdIapple" BXXVQC 39
 scoreboard players set "xilshnagslix" BXXVQC 39
-scoreboard players set "Slime King66" BXXVQC 39
 scoreboard players set "OrangeWater858" BXXVQC 39
 scoreboard players set "haaland man" BXXVQC 39
 scoreboard players set "Fener19079412" BXXVQC 39
@@ -74,24 +70,14 @@ scoreboard players set "SoppierZebra371" BXXVQC 39
 scoreboard players set "Legendarymacj" BXXVQC 39
 scoreboard players set "UnearnedPark312" BXXVQC 39
 scoreboard players set "Misterkiller003" BXXVQC 39
-scoreboard players set "LittleGman4156" BXXVQC 39
-scoreboard players set "FartKnocker2017" BXXVQC 39
 scoreboard players set "Snooperr98" BXXVQC 39
 scoreboard players set "Quitleaf7507845" BXXVQC 39
 scoreboard players set "Fazemonkey9374" BXXVQC 39
 scoreboard players set "MnMdude1936" BXXVQC 39
 scoreboard players set "Fnxz4310" BXXVQC 39
 scoreboard players set "FazeJaiden1278" BXXVQC 39
-scoreboard players set "ClemboNacho" BXXVQC 39
 scoreboard players set "Eeveetastic" BXXVQC 39
 scoreboard players set "snipernation317" BXXVQC 39
-scoreboard players set "springmusic3366" BXXVQC 39
-scoreboard players set "day530" BXXVQC 39
-scoreboard players set "removingbasil56" BXXVQC 39
-scoreboard players set "not brisk1305" BXXVQC 39
-scoreboard players set "dampmusician374" BXXVQC 39
-scoreboard players set "alertedmango240" BXXVQC 39
-scoreboard players set "starwarsrocks22" BXXVQC 39
 scoreboard players set "mexicandrmalt" BXXVQC 39
 scoreboard players set "silentr10t211" BXXVQC 39
 scoreboard players set "firepowerfull" BXXVQC 39
@@ -103,7 +89,6 @@ scoreboard players set "NinjaXhunter130" BXXVQC 39
 scoreboard players set "BeadiXBL" BXXVQC 39
 scoreboard players set "TuskMaster8284" BXXVQC 39
 scoreboard players set "UrgentTrash7032" BXXVQC 39
-scoreboard players set "shnags v2" BXXVQC 39
 scoreboard players set "shnags v2" BXXVQC 39
 scoreboard players set "Mereth3 man e" BXXVQC 39
 scoreboard players set "BadManClient302" BXXVQC 39
@@ -131,7 +116,6 @@ scoreboard players set "Yung1shot" BXXVQC 39
 scoreboard players set "Spartn420x09" BXXVQC 39
 scoreboard players set "FazeJaiden1278" BXXVQC 39
 scoreboard players set "Gxxlz" BXXVQC 39
-scoreboard players set "TTV_JCNAVA" BXXVQC 39
 scoreboard players set "ELITEJACKSON09" BXXVQC 39
 scoreboard players set "XxIBAREBEARSxX" BXXVQC 39
 scoreboard players set "XDtacomaster" BXXVQC 39
@@ -147,24 +131,34 @@ scoreboard players set "Minecraftlol452" BXXVQC 39
 scoreboard players set "Sh4d0wInsane" BXXVQC 39
 scoreboard players set "LilCharChar2352" BXXVQC 39
 scoreboard players set "WarriorChad318" BXXVQC 39
-scoreboard players set "Sirmoezallot" BXXVQC 39
-scoreboard players set "FireRyer" BXXVQC 39
-scoreboard players set "SavvyDuchess76" BXXVQC 39
-scoreboard players set "HaZe Toxicc" BXXVQC 39
-scoreboard players set "MadLyric0926469" BXXVQC 39
 scoreboard players set "Xdlapple" BXXVQC 39
 scoreboard players set "MnMdude1936" BXXVQC 39
 scoreboard players set "Lazabeam7052" BXXVQC 39
-scoreboard players set "Avilxs" BXXVQC 39
-scoreboard players set "xn ceptix" BXXVQC 39
-scoreboard players set "kingstoniscool8" BXXVQC 39
-scoreboard players set "Bomber K 5000" BXXVQC 39
-scoreboard players set "XSLIPPYFOX23" BXXVQC 39
-scoreboard players set "SparingTax50" BXXVQC 39
 scoreboard players set "nx2b" BXXVQC 39
 scoreboard players set "brampedgex" BXXVQC 39
+scoreboard players set "thatETH" BXXVQC 39
+scoreboard players set "OpTic Wolfiezzz" BXXVQC 39
+scoreboard players set "lilshooter28" BXXVQC 39
+scoreboard players set "xxnightfoxxx421" BXXVQC 39
+scoreboard players set "cantbetovchd" BXXVQC 39
+scoreboard players set "stridentgoat1" BXXVQC 39
+scoreboard players set "fribaymypoos" BXXVQC 39
+scoreboard players set "VOID GUILD" BXXVQC 39
+scoreboard players set "dreamlol7684" BXXVQC 39
+scoreboard players set "baajann" BXXVQC 39
+scoreboard players set "imbacknewbz" BXXVQC 39
+scoreboard players set "schasy" BXXVQC 39
+scoreboard players set "packetclientop" BXXVQC 39
+scoreboard players set "bypassinghive87" BXXVQC 39
+scoreboard players set "realmraids" BXXVQC 39
+scoreboard players set "horioncilent" BXXVQC 39
+scoreboard players set "dribfr" BXXVQC 39
+scoreboard players set "Dribler1742" BXXVQC 39
+scoreboard players set "SNK Gbombz" BXXVQC 39
+scoreboard players set "littlekradd" BXXVQC 39
+scoreboard players set "Pacmanplayzgame" BXXVQC 39
+scoreboard players set "HistoricHalo559" BXXVQC 39
 scoreboard players set "" BXXVQC 39
-
 
 #This hides this from the in-game function command directory
 execute @f ~~~ hide

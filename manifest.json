@@ -1,9 +1,9 @@
 {
 	"format_version": 1,
 	"header": {
-		"name": "§¶§7⋰⋰ Atomic Anti-Cheat 1.0.3 Official ⋱",
+		"name": "§¶§7⋰⋰ Atomic Anti-Cheat 1.0.4 Official ⋱",
 		"description": "§¶§6§lBest Anti-Cheat on §2Bedrock, §cENABLE: §l§bHoliday Creator Features §f& §4Additional Modding Capabilities",
-		"uuid": "b77a1dc3-7a77-4d90-a36c-cdba1e326808",
+		"uuid": "8f0842af-4335-44d5-9f25-65d5cdda8143",
 		"version": [
 			1,
 			0,
@@ -18,7 +18,7 @@
 	"modules": [
 		{
 			"type": "data",
-			"uuid": "4c37083f-ff85-4931-bf36-3456a1c338f8",
+			"uuid": "f3933056-2fc8-4d9d-a358-53a928008a64",
 			"version": [
 				1,
 				1,

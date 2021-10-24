@@ -54,6 +54,7 @@ scoreboard objectives add PermBan dummy PermBan
 scoreboard objectives add BanCBE dummy BanCBE
 scoreboard objectives add Ban dummy Ban
 scoreboard objectives add IIB dummy IIB
+scoreboard objectives add BanHacks dummy BanHacks
 scoreboard objectives add BanFly dummy BanFly
 scoreboard objectives add BanPhase dummy BanPhase
 scoreboard objectives add BanWarn dummy BanWarn
@@ -162,7 +163,9 @@ scoreboard players set @s feeten 0
 #This adds all the scoreboard stuff we need
 scoreboard objectives add warn dummy warn
 scoreboard objectives add warnillegal dummy warnillegal
+scoreboard objectives add warnhacks dummy warnhacks
 scoreboard objectives add warncbe dummy
+scoreboard objectives add warncbecartflag dummy
 scoreboard objectives add lagtimer dummy lagtimer
 scoreboard objectives add hometimer dummy hometimer
 scoreboard objectives add timeplayedtick dummy timeplayedtick
@@ -188,12 +191,13 @@ scoreboard objectives add welcomed dummy welcomed
 scoreboard objectives add entitycount dummy entitycount
 scoreboard objectives add playercount dummy
 scoreboard objectives add moderating dummy
+scoreboard objectives add BXXVQC dummy
 
 
 #module scoreboards
 scoreboard objectives add ACM dummy ACM
+scoreboard objectives add AHCM dummy AHCM
 scoreboard objectives add lockdown dummy lockdown
-scoreboard objectives add ACM dummy ARM
 scoreboard objectives add APM dummy APM
 scoreboard objectives add EACM dummy EACM
 scoreboard objectives add EFM dummy EFM
@@ -203,7 +207,6 @@ scoreboard objectives add AMM dummy AMM
 scoreboard objectives add KPM dummy KPM
 scoreboard objectives add FMM dummy FMM
 scoreboard objectives add AFM dummy AFM
-scoreboard objectives add APM dummy APM
 scoreboard objectives add BBRM dummy BBRM
 scoreboard objectives add SEM dummy SEM
 scoreboard objectives add HMM dummy HMM
@@ -213,7 +216,6 @@ scoreboard objectives add NEM dummy NEM
 scoreboard objectives add NFM dummy NFM
 scoreboard objectives add AOPAM dummy AOPAM
 scoreboard objectives add RSM dummy RSM
-scoreboard objectives add APM dummy APM
 scoreboard objectives add SSM dummy SSM
 scoreboard objectives add CSM dummy CSM
 scoreboard objectives add TPM dummy TPM
@@ -229,7 +231,6 @@ scoreboard objectives add SSDEBUG dummy SSDEBUG
 scoreboard objectives add SSDEBUG3 dummy SSDEBUG3
 scoreboard objectives add afmtoggle dummy afmtoggle
 scoreboard objectives add lockdowntoggle dummy lockdownmtoggle
-scoreboard objectives add armtoggle dummy armtoggle
 scoreboard objectives add apmtoggle dummy apmtoggle
 scoreboard objectives add efmtoggle dummy efmtoggle
 scoreboard objectives add osmtoggle dummy osmtoggle
@@ -238,6 +239,7 @@ scoreboard objectives add kpmtoggle dummy kpmtoggle
 scoreboard objectives add fmmtoggle dummy fmmtoggle
 scoreboard objectives add eacmtoggle dummy eacmtoggle
 scoreboard objectives add acmtoggle dummy acmtoggle
+scoreboard objectives add ahcmtoggle dummy ahcmtoggle
 scoreboard objectives add bbrmtoggle dummy bbrmtoggle
 scoreboard objectives add semtoggle dummy semtoggle
 scoreboard objectives add hmmtoggle dummy hmmtoggle
@@ -297,8 +299,8 @@ scoreboard objectives add z-axis dummy y-axis
 scoreboard players set @s SSDEBUG 0
 scoreboard players set @s SSDEBUG3 0
 scoreboard players set @s acmtoggle 0
+scoreboard players set @s ahcmtoggle 0
 scoreboard players set @s lockdownmtoggle 0
-scoreboard players set @s armtoggle 0
 scoreboard players set @s apmtoggle 0
 scoreboard players set @s eacmtoggle 0
 scoreboard players set @s efmtoggle 0
@@ -329,7 +331,7 @@ scoreboard players set @s mdmtoggle 0
 
 #Give everyone default module scoreboard scores
 scoreboard players set @s ACM 0
-scoreboard players set @s ARM 0
+scoreboard players set @s AHCM 0
 scoreboard players set @s lockdown 0
 scoreboard players set @s APM 0
 scoreboard players set @s EACM 0
@@ -385,6 +387,8 @@ scoreboard players set @s hometp 3
 scoreboard players set @s antiopabusemodule 2
 scoreboard players set @s welcomed 1
 scoreboard objectives add gmc_flag dummy
+execute @r[scores={acmtoggle=1}] ~~~ effect @e[type=llama] resistance 32000 255
+execute @r[scores={acmtoggle=1}] ~~~ effect @e[type=llama] regeneration 32000 255
 
 #stops multiple modes from activating at once
 execute @s[scores={ammtoggle=1}] ~~~ scoreboard players set @s KPM 0
