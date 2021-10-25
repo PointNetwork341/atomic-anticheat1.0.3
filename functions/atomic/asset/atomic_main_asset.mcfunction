@@ -163,7 +163,10 @@ scoreboard players set @s feeten 0
 #This adds all the scoreboard stuff we need
 scoreboard objectives add warn dummy warn
 scoreboard objectives add warnillegal dummy warnillegal
-scoreboard objectives add warnhacks dummy warnhacks
+scoreboard objectives add spammerflag dummy spammerflag
+scoreboard objectives add namespoofflag dummy namespoofflag
+scoreboard objectives add flyflag dummy flyflag
+scoreboard objectives add crasherflag dummy crasherflag
 scoreboard objectives add warncbe dummy
 scoreboard objectives add warncbecartflag dummy
 scoreboard objectives add lagtimer dummy lagtimer
@@ -183,9 +186,6 @@ scoreboard objectives add killstreak dummy killstreak
 scoreboard objectives add randomspawn dummy randomspawn
 scoreboard objectives add cleararealarge dummy cleararealargelarge
 scoreboard objectives add cbespawn dummy cbespawn
-scoreboard objectives add flycount dummy flycount
-scoreboard objectives add flyreset dummy flyreset
-scoreboard objectives add phasecount dummy phasecount
 scoreboard objectives add hometp dummy hometp
 scoreboard objectives add welcomed dummy welcomed
 scoreboard objectives add entitycount dummy entitycount
