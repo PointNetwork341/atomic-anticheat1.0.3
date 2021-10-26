@@ -1,1 +1,30 @@
-業灯牴‪⁡猠䝡浥瑥獴⁦牯洠≭潪慮札条浥瑥獴∻ഊ業灯牴‪⁡猠䵩湥捲慦琠晲潭•浯橡湧⵭楮散牡晴∻ഊഊ捯湳琠坯牬搠㴠䵩湥捲慦琮坯牬搻ഊ捯湳琠䍯浭慮摳‽⁍楮散牡晴⹃潭浡湤猍਍੥硰潲琠晵湣瑩潮⁨慣歮潴楦⡰污祥爬⁣桥捫Ⱐ浥獳慧攩⁻ഊ††⼯⁶慬楤慴攠瑨慴⁲敱畩牥搠灡牡浳⁡牥⁤敦楮敤ഊ††楦⠡灬慹敲⤠牥瑵牮⁣潮獯汥⹷慲渨≅牲潲㨠⑻灬慹敲素楳湴⁤敦楮敤⸠䑩搠祯甠景牧整⁴漠灡獳⁩琿∩㬍ਠ†⁩昨Ⅳ桥捫⤠牥瑵牮⁣潮獯汥⹷慲渨≅牲潲㨠⑻捨散歽⁩獮琠摥晩湥搮⁄楤⁹潵⁦潲来琠瑯⁰慳猠楴㼢⤻ഊഊ††楦 捨散欠㴽㴠≂慤偡捫整猲∩⁻ഊ††††浥獳慧攮捡湣敬‽⁴牵攻ഊ††††䍯浭慮摳⹲畮⡠獣潲敢潡牤⁰污祥牳⁡摤•⑻灬慹敲⹮慭敽∠獰慭浥牦污朠ㅠⰠ坯牬搮来瑄業敮獩潮⠢潶敲睯牬搢⤩㬍ਠ†††⁃潭浡湤献牵渨恥硥捵瑥•⑻灬慹敲⹮慭敽∠繾縠⽦畮捴楯渠慴潭楣⽡獳整⽢慮桡捫獷慲湠Ⱐ坯牬搮来瑄業敮獩潮⠢潶敲睯牬搢⤩㬍ਠ†⁽⁥汳攠楦 捨散欠㴽㴠≎慭敓灯潦䄢⤠笍ਠ†††⁃潭浡湤献牵渨恳捯牥扯慲搠灬慹敲猠慤搠∤筰污祥爮湡浥索⁮慭敳灯潦晬慧‱怬⁗潲汤⹧整䑩浥湳楯渨≯癥牷潲汤∩⤻ഊ††††䍯浭慮摳⹲畮⡠數散畴攠∤筰污祥爮湡浥索⁾繾 晵湣瑩潮⁡瑯浩振慳獥琯扡湨慣歳睡牮怬⁗潲汤⹧整䑩浥湳楯渨≯癥牷潲汤∩⤻ഊ††素敬獥⁩映⡣桥捫‽㴽•乡浥印潯時∩⁻ഊ†††䍯浭慮摳⹲畮⡠獣潲敢潡牤⁰污祥牳⁡摤•⑻灬慹敲⹮慭敽∠湡浥獰潯晦污朠ㅠⰠ坯牬搮来瑄業敮獩潮⠢潶敲睯牬搢⤩㬍ਠ††⁃潭浡湤献牵渨恥硥捵瑥•⑻灬慹敲⹮慭敽∠繾縠⽦畮捴楯渠慴潭楣⽡獳整⽢慮桡捫獷慲湠Ⱐ坯牬搮来瑄業敮獩潮⠢潶敲睯牬搢⤩㬍ਠ†⁽⁥汳攠楦 捨散欠㴽㴠≃牡獨敲䄢⤠笍ਠ††⁃潭浡湤献牵渨恳捯牥扯慲搠灬慹敲猠慤搠∤筰污祥爮湡浥索⁣牡獨敲晬慧‱怬⁗潲汤⹧整䑩浥湳楯渨≯癥牷潲汤∩⤻ഊ†††䍯浭慮摳⹲畮⡠數散畴攠∤筰污祥爮湡浥索⁾繾 晵湣瑩潮⁡瑯浩振慳獥琯扡湨慣歳睡牮怬⁗潲汤⹧整䑩浥湳楯渨≯癥牷潲汤∩⤻ഊ††素敬獥⁩映⡣桥捫‽㴽•䙬祂∩⁻ഊ†††䍯浭慮摳⹲畮⡠獣潲敢潡牤⁰污祥牳⁡摤•⑻灬慹敲⹮慭敽∠晬祦污朠ㅠⰠ坯牬搮来瑄業敮獩潮⠢潶敲睯牬搢⤩㬍ਠ††⁃潭浡湤献牵渨恥硥捵瑥•⑻灬慹敲⹮慭敽∠繾縠⽦畮捴楯渠慴潭楣⽡獳整⽢慮桡捫獷慲湠Ⱐ坯牬搮来瑄業敮獩潮⠢潶敲睯牬搢⤩㬍ਠ†††⁃潭浡湤献牵渨恥硥捵瑥•⑻灬慹敲⹮慭敽∠繾縠瑰⁀猠縠縭㈠繠Ⱐ坯牬搮来瑄業敮獩潮⠢潶敲睯牬搢⤩㬍ਠ†⁽⁥汳攠牥瑵牮⁣潮獯汥⹷慲渨恅牲潲㨠乯⁣桥捫⁢礠瑨攠湡浥⁯映⑻捨散歽⁥硩獴献⁄楤⁹潵⁦潲来琠瑯⁰畴⁡渠楦⁳瑡瑥浥湴㽠⤻ഊ紻ഊ
+import * as Gametest from "mojang-gametest";
+import * as Minecraft from "mojang-minecraft";
+
+const World = Minecraft.World;
+const Commands = Minecraft.Commands
+
+export function hacknotif(player, check, message) {
+    // validate that required params are defined
+    if(!player) return console.warn("Error: ${player} isnt defined. Did you forget to pass it?");
+    if(!check) return console.warn("Error: ${check} isnt defined. Did you forget to pass it?");
+
+    if (check === "BadPackets2") {
+        message.cancel = true;
+        Commands.run(`scoreboard players add "${player.name}" spammerflag 1`, World.getDimension("overworld"));
+        Commands.run(`execute "${player.name}" ~~~ /function atomic/asset/banhackswarn`, World.getDimension("overworld"));
+    } else if (check === "NameSpoofA") {
+        Commands.run(`scoreboard players add "${player.name}" namespoofflag 1`, World.getDimension("overworld"));
+        Commands.run(execute "${player.name}" ~~~ /function atomic/asset/banhackswarn`, World.getDimension("overworld"));
+    } else if (check === "NameSpoofB") {
+        Commands.run(`scoreboard players add "${player.name}" namespoofflag 1`, World.getDimension("overworld"));
+        Commands.run(``execute "${player.name}" ~~~ /function atomic/asset/banhackswarn`, World.getDimension("overworld"));
+    } else if (check === "CrasherA") {
+        Commands.run(`scoreboard players add "${player.name}" crasher 1`, World.getDimension("overworld"));
+        Commands.run(`execute "${player.name}" ~~~ tellraw @a[tag=notify] {"rawtext":[{"text":"§r§6[§aScythe§6]§r "},{"selector":"@s"},{"text":" §1has failed §7(Exploit) §4Crasher/A. VL= "},{"score":{"name":"@s","objective":"crashervl"}}]}`, World.getDimension("overworld"));
+    } else if (check === "FlyB") {
+        Commands.run(`scoreboard players add "${player.name}" flyvl 1`, World.getDimension("overworld"));
+        Commands.run(`execute "${player.name}" ~~~ tellraw @a[tag=notify] {"rawtext":[{"text":"§r§6[§aScythe§6]§r "},{"selector":"@s"},{"text":" §1has failed §7(Movement) §4Fly/B. VL= "},{"score":{"name":"@s","objective":"flyvl"}}]}`, World.getDimension("overworld"));
+        Commands.run(`execute "${player.name}" ~~~ tp @s ~ ~-2 ~`, World.getDimension("overworld"));
+    } else return console.warn(`Error: No check by the name of ${check} exists. Did you forget to put an if statement?`);
+};
