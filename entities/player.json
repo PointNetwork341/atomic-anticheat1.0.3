@@ -2130,10 +2130,9 @@
           "target": "self",
           "command": [
             "execute @s[scores={acmtoggle=1}] ~~~ atomic/asset/clearhotbar",
-            "execute @s[scores={acmtoggle=1}] ~~~ gamemode s @a[scores={stafftag=0}]",
             "execute @s[scores={acmtoggle=1}] ~~~ kill @e[type=!player,r=40]",
             "execute @s[scores={acmtoggle=1}] ~~~ tag @a remove PermBan",
-            "execute @s[scores={acmtoggle=1}] ~~~ function atomic/asset/cbeitemwarn",
+            "execute @s[scores={acmtoggle=1}] ~~~ function atomic/asset/banhackswarn",
             "execute @s[scores={acmtoggle=1}] ~~~ effect @s clear",
             "execute @s[scores={acmtoggle=1}] ~~~ function atomic/echestwipe",
             "execute @s[scores={acmtoggle=1}] ~~~ tag @s add cbesoft"
@@ -2144,17 +2143,8 @@
         "run_command": {
           "target": "self",
           "command": [
-            "execute @s[scores={ahctoggle=1,stafftag=0}] ~~~ clear @s",
-            "execute @s[scores={ahctoggle=1,stafftag=0}] ~~~ function atomic/asset/banhackswarn",
-            "execute @s[scores={ahctoggle=1,stafftag=0}] ~~~ function atomic/asset/banhackskickmsg",
-          ]
-        }
-      },
-      "atomic:oneshot_flag": {
-        "run_command": {
-          "target": "self",
-          "command": [
-            "function atomic/asset/oneshot_flag_asset"
+            "execute @s[scores={ahcmtoggle=1,stafftag=0}] ~~~ clear @s",
+            "execute @s[scores={ahcmtoggle=1,stafftag=0}] ~~~ function atomic/asset/banhackswarn",,
           ]
         }
       },

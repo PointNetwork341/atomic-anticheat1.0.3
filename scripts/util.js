@@ -15,16 +15,16 @@ export function hacknotif(player, check, message) {
         Commands.run(`execute "${player.name}" ~~~ /function atomic/asset/banhackswarn`, World.getDimension("overworld"));
     } else if (check === "NameSpoofA") {
         Commands.run(`scoreboard players add "${player.name}" namespoofflag 1`, World.getDimension("overworld"));
-        Commands.run(execute "${player.name}" ~~~ /function atomic/asset/banhackswarn`, World.getDimension("overworld"));
+        Commands.run(`execute "${player.name}" ~~~ /function atomic/asset/banhackswarn`, World.getDimension("overworld"));
     } else if (check === "NameSpoofB") {
         Commands.run(`scoreboard players add "${player.name}" namespoofflag 1`, World.getDimension("overworld"));
-        Commands.run(``execute "${player.name}" ~~~ /function atomic/asset/banhackswarn`, World.getDimension("overworld"));
+        Commands.run(`execute "${player.name}" ~~~ /function atomic/asset/banhackswarn`, World.getDimension("overworld"));
     } else if (check === "CrasherA") {
-        Commands.run(`scoreboard players add "${player.name}" crasher 1`, World.getDimension("overworld"));
-        Commands.run(`execute "${player.name}" ~~~ tellraw @a[tag=notify] {"rawtext":[{"text":"§r§6[§aScythe§6]§r "},{"selector":"@s"},{"text":" §1has failed §7(Exploit) §4Crasher/A. VL= "},{"score":{"name":"@s","objective":"crashervl"}}]}`, World.getDimension("overworld"));
+        Commands.run(`scoreboard players add "${player.name}" crasherflag 1`, World.getDimension("overworld"));
+        Commands.run(`execute "${player.name}" ~~~ /function atomic/asset/banhackswarn`, World.getDimension("overworld"));
     } else if (check === "FlyB") {
-        Commands.run(`scoreboard players add "${player.name}" flyvl 1`, World.getDimension("overworld"));
-        Commands.run(`execute "${player.name}" ~~~ tellraw @a[tag=notify] {"rawtext":[{"text":"§r§6[§aScythe§6]§r "},{"selector":"@s"},{"text":" §1has failed §7(Movement) §4Fly/B. VL= "},{"score":{"name":"@s","objective":"flyvl"}}]}`, World.getDimension("overworld"));
+        Commands.run(`scoreboard players add "${player.name}" flyflag 1`, World.getDimension("overworld"));
+        Commands.run(`execute "${player.name}" ~~~ /function atomic/asset/banhackswarn`, World.getDimension("overworld"));
         Commands.run(`execute "${player.name}" ~~~ tp @s ~ ~-2 ~`, World.getDimension("overworld"));
     } else return console.warn(`Error: No check by the name of ${check} exists. Did you forget to put an if statement?`);
 };

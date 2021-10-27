@@ -51,12 +51,9 @@ scoreboard players set @s nethhelm 0
 
 #Ban Checks
 scoreboard objectives add PermBan dummy PermBan
-scoreboard objectives add BanCBE dummy BanCBE
 scoreboard objectives add Ban dummy Ban
 scoreboard objectives add IIB dummy IIB
 scoreboard objectives add BanHacks dummy BanHacks
-scoreboard objectives add BanFly dummy BanFly
-scoreboard objectives add BanPhase dummy BanPhase
 scoreboard objectives add BanWarn dummy BanWarn
 
 #ownertag checks
@@ -166,6 +163,7 @@ scoreboard objectives add warnillegal dummy warnillegal
 scoreboard objectives add spammerflag dummy spammerflag
 scoreboard objectives add namespoofflag dummy namespoofflag
 scoreboard objectives add flyflag dummy flyflag
+scoreboard objectives add phaseflag dummy phaseflag
 scoreboard objectives add crasherflag dummy crasherflag
 scoreboard objectives add warncbe dummy
 scoreboard objectives add warncbecartflag dummy
