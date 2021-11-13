@@ -1,4 +1,0 @@
-Default Key for StaffProtection is
-/function atomic/staffprotection/24b03243019f40f88da2c35ccc3a646b/c1e3df3815ba439bb9111cea1cd1f632
-
-Rename those file path ways to something different to ensure maximum security.
